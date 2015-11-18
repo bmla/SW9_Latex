@@ -1,4 +1,4 @@
-﻿:: et script til at compile pdf filer, fra main.tex til main-%date% (system datoen
+﻿::et script til at compile pdf filer, fra main.tex til main-%date% (system datoen
 :: på dit system) der er også et antal linjer som sletter alle de små filer
 :: pdflatex skaber når den bliver kørt.
 :: Filen kan sættes til at køre sletningen alene, eller til at beholde filerne.
@@ -7,17 +7,17 @@
 :: tjek om main.tex faktisk findes...
 :: brug andre filer -f/--file
 @echo off
+SETLOCAL
+SET _filename=report.tex
 
 if "%1" == "-c" goto :cleanup
 if "%1" == "--cleanup" goto :cleanup
 
-pdflatex rapport.tex -job-name=main-%date%
-:: bibtex skal køres to gange, på filen af uvisse grunde.
-bibtex main-%date%
-bibtex main-%date%
-pdflatex rapport.tex -job-name=main-%date%
-bibtex main-%date%
-pdflatex rapport.tex -job-name=main-%date%
+pdflatex %_filename% -job-name=main-%date%
+biber main-%date%
+pdflatex %_filename% -job-name=main-%date%
+pdflatex %_filename% -job-name=main-%date%
+
 
 if "%1" == "-nc" goto :END
 if "%1" == "--nocleanup" goto :END
@@ -49,3 +49,4 @@ del /S "*.sty"
 
 
 :END
+ENDLOCAL

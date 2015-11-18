@@ -7,17 +7,16 @@
 :: tjek om main.tex faktisk findes...
 :: brug andre filer -f/--file
 @echo off
+SETLOCAL
+SET _filename=report.tex
 
 if "%1" == "-c" goto :cleanup
 if "%1" == "--cleanup" goto :cleanup
 
-pdflatex rapport.tex -job-name=main-%date% -interaction=nonstopmode
-:: bibtex skal køres to gange, på filen af uvisse grunde.
-bibtex main-%date%
-bibtex main-%date%
-pdflatex rapport.tex -job-name=main-%date% -interaction=nonstopmode
-bibtex main-%date%
-pdflatex rapport.tex -job-name=main-%date% -interaction=nonstopmode
+pdflatex %_filename% -job-name=main-%date% -interaction=nonstopmode
+biber main-%date%
+pdflatex %_filename% -job-name=main-%date% -interaction=nonstopmode
+pdflatex %_filename% -job-name=main-%date% -interaction=nonstopmode
 
 if "%1" == "-nc" goto :END
 if "%1" == "--nocleanup" goto :END
@@ -49,3 +48,4 @@ del /S "*.sty"
 
 
 :END
+ENDLOCAL
