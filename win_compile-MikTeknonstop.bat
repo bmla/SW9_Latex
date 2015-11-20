@@ -44,7 +44,6 @@ del /S "*.tps"
 del /S "*.tdo"
 del /S "*.synctex.gz"
 del /S "*.gz*"
-del /S "*.sty"
 
 
 :END
