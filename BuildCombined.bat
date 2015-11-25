@@ -1,4 +1,4 @@
-::et script til at compile pdf filer, fra main.tex til main-%date% (system datoen
+﻿::et script til at compile pdf filer, fra main.tex til main-%date% (system datoen
 :: på dit system) der er også et antal linjer som sletter alle de små filer
 :: pdflatex skaber når den bliver kørt.
 :: Filen kan sættes til at køre sletningen alene, eller til at beholde filerne.
@@ -10,11 +10,11 @@
 
 :: Set Local Variables
 SETLOCAL
-SET _filename=paper.tex
+SET _filename=report.tex
 ::SET _target=main-%date%
-SET _target=paper
+SET _target=report
 
-del /F /Q "paper.pdf"
+del /F /Q "report.pdf"
 
 if "%1" == "-c" goto :cleanup
 if "%1" == "--cleanup" goto :cleanup
@@ -69,3 +69,4 @@ del "*.xml"
 
 :END
 ENDLOCAL
+exit
