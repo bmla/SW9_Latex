@@ -23,6 +23,7 @@ if "%1" == "-nonstop" goto :nonstop
 
 pdflatex %_filename% -job-name=%_target%
 biber %_target%
+pause
 pdflatex %_filename% -job-name=%_target%
 pdflatex %_filename% -job-name=%_target%
 
