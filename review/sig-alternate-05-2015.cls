@@ -179,7 +179,7 @@
 
 
 \def\doi#1{\def\@doi{#1}}
-\doi{http://dx.doi.org/10.1145/0000000.0000000}
+%\doi{http://dx.doi.org/10.1145/0000000.0000000}
 
 \oddsidemargin 4.5pc
 \evensidemargin 4.5pc
@@ -1632,7 +1632,7 @@
 % ISBN
 %
 \def\isbn#1{\global\acmcopyr={#1}}
-\isbn{978-1-4503-2138-9}
+%\isbn{978-1-4503-2138-9}
 
 \RequirePackage{url}
 \urlstyle{rm}
