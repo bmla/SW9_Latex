@@ -1,4 +1,4 @@
-::et script til at compile pdf filer, fra main.tex til main-%date% (system datoen
+﻿::et script til at compile pdf filer, fra main.tex til main-%date% (system datoen
 :: på dit system) der er også et antal linjer som sletter alle de små filer
 :: pdflatex skaber når den bliver kørt.
 :: Filen kan sættes til at køre sletningen alene, eller til at beholde filerne.
@@ -23,6 +23,7 @@ if "%1" == "-nonstop" goto :nonstop
 
 pdflatex %_filename% -job-name=%_target%
 biber %_target%
+pause
 pdflatex %_filename% -job-name=%_target%
 pdflatex %_filename% -job-name=%_target%
 
