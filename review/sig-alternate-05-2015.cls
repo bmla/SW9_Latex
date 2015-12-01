@@ -1673,7 +1673,7 @@
     \copyright\ \the\copyrtyr\ \@copyrightowner
   \fi
   %\if@acmowned ISBN \else\ifnum\acm@copyrightmode=2 ISBN \else \par\smallskip ACM ISBN \fi\fi
- \the\acmcopyr\ifx\@acmPrice\@empty.\else\dots\@acmPrice\fi\par\smallskip
+% \the\acmcopyr\ifx\@acmPrice\@empty.\else\dots\@acmPrice\fi\par\smallskip
 %{DOI: \small\expandafter\printdoi\expandafter{\@doi}}
 } 
 \toappear{\fontsize{7.5pt}{8.5pt}\fontfamily{ptm}\selectfont
