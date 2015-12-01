@@ -45,7 +45,7 @@
 %
 % For tracking purposes - this is V2.0 - May 2012
 
-\documentclass{sig-alternate-05-2015}
+\documentclass[10pt]{sig-alternate-05-2015}
 
 \usepackage{hyperref}
 \usepackage{cleveref}
@@ -68,7 +68,7 @@
 %\setcopyright{usgovmixed}
 %\setcopyright{cagov}
 %\setcopyright{cagovmixed}
-\setcopyright{none}
+\setcopyright{rightsretained}
 
 % DOI
 %\doi{10.475/123_4}
@@ -87,7 +87,15 @@
 %\CopyrightYear{2007} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
 %\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
 % --- End of Author Metadata ---
-
+%\permission{Permission to make digital or hard copies of all or part of
+%this work for personal or classroom use is granted without fee provided 
+%that copies are not made or distributed for profit or commercial advantage 
+%and that copies bear this notice and the full citation on the first page. 
+%Copyrights for components of this work owned by others than the author(s) 
+%must be honored. Abstracting with credit is permitted. To copy otherwise, 
+%or republish, to post on servers or to redistribute to lists, requires 
+%prior specific permission and/or a fee. Request permissions from 
+%Permissions@acm.org.}
 %%%%%%%%%%%%%%%%%%
 %TITLE
 %%%%%%%%%%%%%%%%%%
@@ -150,7 +158,7 @@
 %
 % 1st. author
 \alignauthor
-Jeni Paay\titlenote{Dr.~Paay insisted her name be first. :P}\\
+Jeni Paay\\%\titlenote{Dr.~Paay insisted her name be first. :P}\\
        \affaddr{Research Centre for Socio-Interactive Design}\\
        \affaddr{Selma Lagerlofs Vej 300}\\
        \affaddr{Aalborg East 9220, Denmark}\\
@@ -179,8 +187,7 @@ Eric Vignola Ruder\\
        \email{eruder10@student.aau.dk}
 % 5th. author
 \alignauthor
-Ivan Svilenov Penchev\titlenote{This author is the
-one who did all the really hard work.}\\
+Ivan Svilenov Penchev\\%\titlenote{This author is the one who did all the really hard work.}\\
        \affaddr{Institute for Computer Science}\\
        \affaddr{Selma Lagerlofs Vej 300}\\
        \affaddr{Aalborg East 9220, Denmark}\\
@@ -208,11 +215,12 @@ one who did all the really hard work.}\\
 
 
 \maketitle %Must be after autor declaration as it also makes that part
-%\keywords{ACM proceedings; \LaTeX; text tagging}
+
 %%%%%%%%%%%%
 %INPUTS
 %%%%%%%%%%%%
 \input{docs/abstract}
+\keywords{ACM proceedings; \LaTeX; text tagging}
 \input{docs/intro}
 \input{docs/stateofart}
 \input{docs/conclusion}
