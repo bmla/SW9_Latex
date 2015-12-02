@@ -1,11 +1,20 @@
-\documentclass{sig-alternate-05-2015}
-
-\usepackage[backend=biber,style=numeric,sorting=nyt]{biblatex}
+\documentclass{article}
 \usepackage{pdfpages}
+\usepackage{fancyhdr}
+
+%fancy style for pagenumbers
+\fancypagestyle{customplain}{%
+\fancyhf{}%
+\fancyhf[cf]{\thepage}%
+\setlength{\footskip}{80pt}
+\renewcommand*\headrulewidth{0pt}}
 \begin{document}
-hey
-%\includepdf[pages=-]{paper1}
-%\includepdf[pages=-]{paper2}
+\includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{review/literature.pdf}
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\setcounter{page}{1}
+\includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{paper/paper.pdf}
 %OR
 %\includepdf[pages=1-,pagecommand={\thispagestyle{fancy}}]{paper1.pdf}
 %\includepdf[pages=1-,pagecommand={\thispagestyle{fancy}}]{paper2.pdf}
