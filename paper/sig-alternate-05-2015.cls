@@ -179,7 +179,7 @@
 
 
 \def\doi#1{\def\@doi{#1}}
-\doi{http://dx.doi.org/10.1145/0000000.0000000}
+%\doi{http://dx.doi.org/10.1145/0000000.0000000}
 
 \oddsidemargin 4.5pc
 \evensidemargin 4.5pc
@@ -975,7 +975,7 @@
 \def\endabstract{\if@twocolumn\else\endquotation\fi}
 
 \def\keywords{\if@twocolumn
-\section*{Keywords}
+\section*{Author Keywords}
 \else \small
 \quotation
 \fi}
@@ -1632,7 +1632,7 @@
 % ISBN
 %
 \def\isbn#1{\global\acmcopyr={#1}}
-\isbn{978-1-4503-2138-9}
+%\isbn{978-1-4503-2138-9}
 
 \RequirePackage{url}
 \urlstyle{rm}
@@ -1646,7 +1646,7 @@
 \RequirePackage{acmcopyright}
 \setcopyright{none}
 
-%
+
 \global\boilerplate={\@copyrightpermission}
 
 
@@ -1658,9 +1658,10 @@
   \if@printcopyright
     \copyright\ \the\copyrtyr\ \@copyrightowner
   \fi
-  \if@acmowned ISBN \else\ifnum\acm@copyrightmode=2 ISBN \else \par\smallskip ACM ISBN \fi\fi
- \the\acmcopyr\ifx\@acmPrice\@empty.\else\dots\@acmPrice\fi\par\smallskip
-{DOI: \small\expandafter\printdoi\expandafter{\@doi}}} 
+ % \if@acmowned ISBN \else\ifnum\acm@copyrightmode=2 ISBN \else \par\smallskip ACM ISBN \fi\fi
+% \the\acmcopyr\ifx\@acmPrice\@empty.\else\dots\@acmPrice\fi\par\smallskip
+%{DOI: \small\expandafter\printdoi\expandafter{\@doi}}
+} 
 \toappear{\fontsize{7pt}{8pt}\fontfamily{ptm}\selectfont
   \the\boilerplate\par\smallskip
  \the\copyrightetc}
@@ -1671,13 +1672,15 @@
   \if@printcopyright
     \copyright\ \the\copyrtyr\ \@copyrightowner
   \fi
-  \if@acmowned ISBN \else\ifnum\acm@copyrightmode=2 ISBN \else \par\smallskip ACM ISBN \fi\fi
- \the\acmcopyr\ifx\@acmPrice\@empty.\else\dots\@acmPrice\fi\par\smallskip
-{DOI: \small\expandafter\printdoi\expandafter{\@doi}}} 
+  %\if@acmowned ISBN \else\ifnum\acm@copyrightmode=2 ISBN \else \par\smallskip ACM ISBN \fi\fi
+% \the\acmcopyr\ifx\@acmPrice\@empty.\else\dots\@acmPrice\fi\par\smallskip
+%{DOI: \small\expandafter\printdoi\expandafter{\@doi}}
+} 
 \toappear{\fontsize{7.5pt}{8.5pt}\fontfamily{ptm}\selectfont
   \the\boilerplate\par\smallskip
  \the\copyrightetc}
 \fi
+
 %\DeclareFixedFont{\altcrnotice}{OT1}{tmr}{m}{n}{8}  % << patch needed for accenting e.g. Montreal - Gerry, May 2007
 %\DeclareFixedFont{\altconfname}{OT1}{tmr}{m}{it}{8}  % << patch needed for accenting in italicized confname - Gerry, May 2007
 %
