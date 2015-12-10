@@ -15,11 +15,6 @@
 % page numbers for the camera ready copy
 % \pagenumbering{arabic}
 
-\newcommand{\pinch}{\emph{Pinch} }
-\newcommand{\swipe}{\emph{Swipe} }
-\newcommand{\throw}{\emph{Throw} }
-\newcommand{\tilt}{\emph{Tilt} }
-
 % Load basic packages
 \usepackage{balance}  % to better equalize the last page
 \usepackage{graphics} % for EPS, load graphicx instead 
@@ -31,6 +26,7 @@
 \usepackage{booktabs}
 \usepackage{textcomp}
 \usepackage[inline]{enumitem}
+\usepackage{xspace}
 % Some optional stuff you might like/need.
 \usepackage{microtype} % Improved Tracking and Kerning
 % \usepackage[all]{hypcap}  % Fixes bug in hyperref caption linking
@@ -47,6 +43,12 @@
 % line to: "\documentclass[chi_draft]{sigchi}". You can then place todo notes by using the "\todo{...}"
 % command. Make sure to disable the draft option again before submitting your final document.
 \usepackage{todonotes}
+
+% Variable definitions
+\newcommand{\pinch}{\emph{Pinch}\xspace}
+\newcommand{\swipe}{\emph{Swipe}\xspace}
+\newcommand{\throw}{\emph{Throw}\xspace}
+\newcommand{\tilt}{\emph{Tilt}\xspace}
 
 % Paper metadata (use plain text, for PDF inclusion and later
 % re-using, if desired).  Use \emtpyauthor when submitting for review
