@@ -34,4 +34,21 @@ These where the following measures that were logged throughout the experiment:
 
 User were able to rate their answers to each question on a 7 level Likert scale. We also wrote down any comments we heard during the experiment in order to get a qualitative understanding of each technique.  
 
+\subsection{Implementation}
+
+The 4 implementation techniques mentioned above were implemented in order to push data onto the big display. These four techniques together will be referred to as \textit{push techniques}. They were implemented in a simple and short game, with the combination of a Microsoft Kinect and the accelerometer of the mobile phone used in our experiment. 
+
+Users would control the pointer on the large display with their hands. Which ever hand was closest to the screen would determine the position of the pointer on the large screen. This meant that users could switch hands whenever they pleased at any point during the test. 
+
+The \throw technique was implemented with the help of the Kinect and the accelerometer on the mobile phone. The Kinect would be looking at the user and trying to recognize when a user moved the mobile phone 10 centimeters from behind his midsection to 10 centimeters in front of his midsection, and at the same time detect when a significant change in the accelerometer happened, as to not simply detect a unintentional wave of the arm. It would then use the position of the other hand to see where on the screen the user intended to perform the \throw technique towards. 
+
+The \pinch technique was also implemented with the help of the Kinect and the touch screen on the mobile phone. This technique would start by having the user pinch the shape on the screen of the mobile phone and close his or her hand around it, as if to grab it. The Kinect would then look for a opening of the hand motion, as if the user were to drop the shape at the pointers location. 
+
+The \tilt technique was implemented mostly with the accelerometer of the phone, by listening for a significant change in the x and y axis, as if tilting the phone forward. The intention here was that the users would point and tilt with the phone, but because of our implementation, it was possible for users to point with one hand and tilt the phone with the other. 
+
+The \swipe technique was implemented with touch screen of the phone. Here, we would detect when a significant swipe would happen on the screen, and then use the pointer location to place the shape that was swiped up onto the screen. Again, because of our implementation, users were capable of pointing with one hand and swiping with the other. 
+
+\subsection{Procedure}
+
+
 \todo[inline]{Write about the the experiment here; Design, implementation etc.}
