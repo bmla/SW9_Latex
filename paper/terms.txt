@@ -5,5 +5,5 @@ Please add to the list if you find any.
 cross device; cross-device;
 smartphone; phone; hand-held device; mobile phone;
 et. al.; et al.;
-don't; do not;
+don't; do not; (contractions)
 vs; vs.;
