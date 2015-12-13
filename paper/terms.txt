@@ -1,0 +1,9 @@
+No ambiguity. We need to decide which terms to use, such that we are consistent throughout the paper.
+For some terms it might make more sense to decide on one way, for others it might be irrelevant.
+Please add to the list if you find any.
+
+cross device; cross-device;
+smartphone; phone; hand-held device; mobile phone;
+et. al.; et al.;
+don't; do not;
+vs; vs.;
