@@ -7,8 +7,9 @@ In this section we describe and explain why these four techniques were chosen.
 As mentioned, the techniques have been used in previously published papers where they were part of applications or systems, facilitating interaction between devices such as the interaction between a phone and display. 
 We have named the techniques used in our experiment: \swipe, \tilt, \throw, and \pinch.
 These techniques are different in the way they are performed, meaning both \swipe and \tilt are one-handed techniques, i.e. they are to be performed with only one hand, opposed to \throw and \pinch which are techniques that require both hands.
+Also, looking at how the different techniques are put together in terms of steps the user has to do to complete the technique, we see that \throw and \pinch require more steps and therefore their complexity is slightly higher.
 
-\todo[inline]{This goes for all the techniques: is it a good idea to introduce concepts from the experiment in this section. I mean, if we are going to talk about shapes the whole idea of what a shape and target is needs to be clear to the reader I think. That part is explained in the \nameref{sec:experiment} section.}
+%\todo[inline]{This goes for all the techniques: is it a good idea to introduce concepts from the experiment in this section. I mean, if we are going to talk about shapes the whole idea of what a shape and target is needs to be clear to the reader I think. That part is explained in the \nameref{sec:experiment} section.}
 
 The \swipe technique (\Cref*{fig:swipeTechnique}) is used by Bragdon et al. \cite{Bragdon:2011} in Code Space, a system using the Kinect and smartphones to support developer meetings. 
 Bragdon et al. describes the technique as: \emph{``cross-device interaction with touch and air pointing''} and the swipe motion is described as \emph{``flicking up on the touch screen''}. 
@@ -28,7 +29,7 @@ The \tilt technique is performed by
 	\item{making a forwards tilt with the phone (\cref{fig:tiltTechnique}).}
 \end{enumerate*}
 
-\begin{figure}
+\begin{figure}[H]
 \subfloat[]{\includegraphics[width = 0.5\columnwidth]{images/swipe.jpg}\label{fig:swipeTechnique}} 
 \subfloat[]{\includegraphics[width = 0.5\columnwidth]{images/tilt.jpg}\label{fig:tiltTechnique}}
 \caption{
@@ -50,7 +51,7 @@ The \throw technique is performed by
 	\item{making a swinging motion towards the large display (\cref{fig:throwTechnique2}).}
 \end{enumerate*}
 
-\begin{figure}
+\begin{figure}[H]
 \subfloat[]{\includegraphics[width = 0.48\columnwidth]{images/throw1.jpg}\label{fig:throwTechnique1}}
 \hspace{0.02\columnwidth} 
 \subfloat[]{\includegraphics[width = 0.48\columnwidth]{images/throw2.jpg}\label{fig:throwTechnique2}}
@@ -72,7 +73,7 @@ The \pinch technique is performed by
 	\item{opening the hand to complete the technique (\cref{fig:pinchTechnique2} 3).}
 \end{enumerate*}
 
-\begin{figure}
+\begin{figure}[H]
 \subfloat[]{\includegraphics[width = 0.48\columnwidth]{images/pinch1.jpg}\label{fig:pinchTechnique1}}
 \hspace{0.02\columnwidth}  
 \subfloat[]{\includegraphics[width = 0.48\columnwidth]{images/pinch2.jpg}\label{fig:pinchTechnique2}}
@@ -81,8 +82,9 @@ The \pinch technique is performed by
 	\protect\subref{fig:pinchTechnique2} Third step is to release by opening the hand. 
 }
 \label{fig:pinchTechnique}
-
-Our four techniques all make use of some combination of air pointing and touch gestures on the smartphone screen.
-Air pointing is achieved by using the Microsoft Kinect for Windows which uses a depth camera making it possible to track a user's hand in mid-air.
-A smartphones has an accelerometer and a touchscreen, former making it possible to detect motion input and the latter makes it possible to detect contact between e.g. a finger and the screen.
 \end{figure}
+
+Our four techniques all make use of some combination of pointing in mid-air and touch gestures on the smartphone screen.
+Mid-air pointing is achieved by using the Microsoft Kinect for Windows which uses a depth camera making it possible to track a user's hand in mid-air.
+A smartphones has an accelerometer and a touchscreen, former making it possible to detect motion input and the latter makes it possible to detect contact between e.g. a finger and the screen.
+These technologies are, in combination with each other, used to recognize the four techniques described in this section. 
