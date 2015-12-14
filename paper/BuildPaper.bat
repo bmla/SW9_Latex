@@ -45,8 +45,8 @@ del /F *.out
 del /F *.aux
 del /F *.bbl
 del /F *.blg
-del /F *.txt
-del /F *.synctex
+:: del /F *.txt
+:: del /F *.synctex
 del /F *.toc
 del /F *.log
 del /F *.gz
@@ -61,7 +61,7 @@ del /S "*.aux"
 del /S "*.lox"
 del /S "*.tps"
 del /S "*.tdo"
-del /S "*.synctex.gz"
+:: del /S "*.synctex.gz"
 del /S "*.gz*"
 del /S "*.bcf"
 del "*.xml"
