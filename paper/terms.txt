@@ -7,3 +7,4 @@ smartphone; phone; hand-held device; mobile phone;
 et. al.; et al.;
 don't; do not; (contractions)
 vs; vs.;
+data transfer; object transfer; (i.e. between devices)
