@@ -1,25 +1,41 @@
 % !TEX root = ../paper.tex
 \section{Experiment} \label{sec:experiment}
-The four cross device interaction techniques mentioned above where implemented and then evaluated in a lab study in order to judge their performance compared to each other.
+The four cross device interaction techniques mentioned above were implemented and then evaluated in a lab study in order to judge their performance compared to each other.
 
 \subsection{Participants}
-In total, 53 people took part in our experiment, which was conducted at Aalborg University's usability lab. The participants where between 20-45 years old (M: 24.4, SD: 4.3) and were between 1.63 and 1.95 meters tall (M: 1.82, SD:7.8). 88.7\% of users were right handed, 90.6\% were male, and 96.2\% of them where smart phone users. Of those who owned smart phones, they had owned one for 2-15 years (M:5, SD:2.1). The participants had several different backgrounds, but a very large part of them were university students. This was not formally recorded. They were recruited through a mixture of our social network, recruitment posters around the campus, and going through group rooms and asking for participants. 
+In total, 53 people took part in our experiment, which was conducted at Aalborg University's usability lab. 
+The participants where between 20-45 years old (M: 24.4, SD: 4.3) and were between 1.63 and 1.95 meters tall (M: 1.82, SD:7.8). 
+88.7\% of users were right handed, 90.6\% were male, and 96.2\% of them where smart phone users. 
+Of those who owned smart phones, they had owned one for 2-15 years (M:5, SD:2.1). 
+The participants had several different backgrounds, but a very large part of them were university students, although, this was not formally recorded. 
+They were recruited through a mixture of our social network, recruitment posters around the campus, and going through group rooms and asking for participants. 
 
-\subsection{Experimental Design}\label{subsec:expdesign}
-The experiment was conducted as a withing-subject research, with the four different interaction techniques and two grid sizes as independent variables. For the dependent variables, different measures of completion time and accuracy were used, as well as a small questionnaire in regards to the given interaction technique. Which technique started the test was randomized in order to mitigate the learning effect on the entire set of tests. In the end, the \pinch gesture started 25.4\% of all tests, \swipe started 22.6\% of all tests, \throw started 24.5\% of all tests, and \tilt started 26.4\% of all tests. All of this was automatically logged, and every test session was also video recorded in order to be able to go through them in case we wanted to go into detail in one of the test sessions.
+\subsection{Experimental Design}\label{sec:expdesign}
+The experiment was conducted as a withing-subject research, with the four different interaction techniques and two grid sizes \todo{show an example of the two grid sizes?} as independent variables.
+For the dependent variables, different measures of completion time and accuracy were used, as well as a short questionnaire in regards to the given interaction technique. 
+Which technique started the test was randomized in order to mitigate the learning effect on the entire set of tests. 
+In the end, the \pinch gesture started 25.4\% of all tests, \swipe started 22.6\% of all tests, \throw started 24.5\% of all tests, and \tilt started 26.4\% of all tests. \todo{This adds up to 98.9. Why doesn't it add up to 100\%? :)}
+All of this was automatically logged, and every test session was also video recorded in order to be able to go through them in case we wanted to go into detail in one of the test sessions.
 
-These where the following measures that were logged throughout the experiment: 
+These where the following measures that were logged throughout the experiment:
 
-\textit{Practice Time:} This was the time each user spent during the practice portion of the experiment for each interaction technique. This was measured as the time from where user started the test for a given interaction technique until the user had hit his 3\ts{rd} target. 
+\textit{Practice Time:} This was the time each user spent during the practice portion of the experiment for each interaction technique. 
+This was measured as the time from where user started the test for a given interaction technique until the user had hit his 3\ts{rd} target. 
 
-\textit{Total Time:} This was the time each user spent completing the test for a given interaction technique.  This was measured from the time each user had hit his first target after the practice period until he had hit his last target. There were a total of 18 targets, plus the first target. 
+\textit{Total Time:} This was the time each user spent completing the test for a given interaction technique. 
+This was measured from the time each user had hit his first target after the practice period until he had hit his last target. 
+There were a total of 18 targets, plus the first target. 
 
-\textit{Time per target:} This was the time each user spent hitting each of the target. This was simply measured as the time since each user last hit a target until he hit the current one.
+\textit{Time per target:} This was the time each user spent hitting each of the target. 
+This was simply measured as the time since each user last hit a target until he hit the current one.
 
-\textit{Accuracy:} Whether or not each user hit the given target. Current pointer and target position (in pixels) were also recorded in order to give a more precise image of accuracy for each test. 
+\textit{Accuracy:} Whether or not each user hit the given target. 
+Current pointer and target position (in both cell and pixels coordinates) were also recorded in order to give a more precise image of accuracy for each test. 
 
-\textit{USE Questionnaire:} Each user was given a questionnaire after having gone through each interaction technique. There were 6 questions, all taken from the USE questionnaire \cite{lund2001measuring}. These were asked to get an understanding of how useful and easy to use each technique was. The 6 questions were the following: 
-
+\textit{USE Questionnaire:} Each user was given a questionnaire after having gone through each interaction technique. 
+There were 6 questions, all taken from the USE questionnaire \cite{lund2001measuring}. 
+These were asked to get an understanding of how useful and easy to use each technique was. 
+The 6 questions were the following: 
 %Arnold M. Lund, Measuring Usability with the USE Questionnaire, STC Usability SIG Newsletter, orginally published in the October 2001 issue (Vol 8, No. 2)
 %http://garyperlman.com/quest/quest.cgi?form=USE 
 
@@ -32,23 +48,37 @@ These where the following measures that were logged throughout the experiment:
 	\item I learned how to use it quickly
 \end{itemize}
 
-User were able to rate their answers to each question on a 7 level Likert scale. We also wrote down any comments we heard during the experiment in order to get a qualitative understanding of each technique.  
+User were able to rate their answers to each question on a 7 level Likert scale. 
+We also wrote down any comments we heard during the experiment in order to get a qualitative understanding of each technique.  
 
 \subsection{Implementation}
 
-The 4 implementation techniques mentioned above were implemented in order to push data onto the big display. These four techniques together will be referred to as \textit{push techniques}. They were implemented in a simple and short game, with the combination of a Microsoft Kinect and the accelerometer of the mobile phone used in our experiment. 
+The 4 techniques (\swipe, \tilt, \throw, and \pinch) were implemented in order to push data onto the big display. 
+These four techniques together will be referred to as \textit{push techniques}. \todo{Is it necessary to introduce a new term \textit{push techniques}? We don't have pull techniques so why not just \textit{techniques}?}
+They were implemented in a simple and short game, with the combination of Microsoft Kinect for Windows and the accelerometer of the Samsung Galaxy S II mobile phone used in our experiment. 
 
-Users would control the pointer on the large display with their hands. Which ever hand was closest to the screen would determine the position of the pointer on the large screen. This meant that users could switch hands whenever they pleased at any point during the test. 
+Users would control the pointer on the large display with their hands. 
+Which ever hand was closest to the screen would determine the position of the pointer on the large screen. 
+This meant that users could switch hands whenever they pleased at any point during the test. 
 
-The \throw technique was implemented with the help of the Kinect and the accelerometer on the mobile phone. The Kinect would be looking at the user and trying to recognize when a user moved the mobile phone 10 centimeters from behind his midsection to 10 centimeters in front of his midsection, and at the same time detect when a significant change in the accelerometer happened, as to not simply detect a unintentional wave of the arm. It would then use the position of the other hand to see where on the screen the user intended to perform the \throw technique towards. 
+The \throw technique was implemented with the help of the Kinect and the accelerometer on the mobile phone. 
+The Kinect would be looking at the user and trying to recognize when a user moved the mobile phone from 10 centimeters behind the hip to 10 centimeters in front of the hip. 
+At the same time, the phone detects when a significant change in the accelerometer happened, as to not simply detect a unintentional wave of the arm. 
+The Kinect would then use the position of the other hand to see where on the screen the user intended to perform the \throw technique towards. 
 
-The \pinch technique was also implemented with the help of the Kinect and the touch screen on the mobile phone. This technique would start by having the user pinch the shape on the screen of the mobile phone and close his or her hand around it, as if to grab it. The Kinect would then look for a opening of the hand motion, on the pointer hand, and place the given shape at that location. 
+The \pinch technique was also implemented with the help of the Kinect and the touch screen on the mobile phone. 
+This technique would start by having the user pinch the shape on the screen of the mobile phone and close his or her hand around it, as if to grab it. 
+The Kinect would then look for a opening of the hand motion, on the pointer hand, and place the given shape at that location. 
 
-The \tilt technique was implemented mostly with the accelerometer of the phone, by listening for a significant change in the x and y axis of the accelerometer, as if tilting the phone forward. The intention here was that the users would point and tilt with the phone, but because of our implementation, it was possible for users to point with one hand and tilt the phone with the other. 
+The \tilt technique was implemented mostly with the accelerometer of the phone, by listening for a significant change in the x and y axis of the accelerometer, as if tilting the phone forward. 
+The intention here was that the users would point and tilt with the phone, but because of our implementation, it was possible for users to point with one hand and tilt the phone with the other. \todo{Maybe this could be mentioned later in the result? It's kind of like a finding}
 
-The \swipe technique was implemented with touch screen of the phone. Here, we would detect when a significant swipe would happen on the screen, and then use the pointer location to place the shape that was swiped up onto the screen. Again, because of our implementation, users were capable of pointing with one hand and swiping with the other. 
+The \swipe technique was implemented with touch screen of the phone. 
+Here, we would detect when a significant swipe would happen on the screen, and then use the pointer location to place the shape that was swiped up onto the screen. 
+Again, because of our implementation, users were capable of pointing with one hand and swiping with the other. \todo{Maybe this could be mentioned later in the result? It's kind of like a finding}
 
-These four techniques were implemented in a simple target practice game, where the goal was to hit the target with the shown technique and at the same time have selected the correct shape that was displayed on the screen. This was done in order for the user to orient himself with the phone after every technique, and not just simply blindly preform the gesture without paying any attention to the phone at all.  
+These four techniques were implemented in a simple target practice game, where the goal was to hit the target with the shown technique and at the same time have selected the correct shape that was displayed on the screen. 
+This was done in order for the user to orient himself with the phone after every technique, and not just simply blindly preform the gesture without paying any attention to the phone at all.  
 
 \subsubsection{The Game}
 
@@ -61,17 +91,39 @@ These four techniques were implemented in a simple target practice game, where t
 	}
 	\label{fig:allSetup}
 \end{figure}
+\todo{Remember to reference this figure.}
 
-In the game that was created, a grid system is displayed on the large screen, where the each cell of the grid is a square. The grid can take different sizes, having large cells, where the grid is $5 \times 10$ cells, or small cells, where the grid is $10 \times 20$ cells. These will henceforth be referred to as large($5 \times 10$) and small($10 \times 20$) grid.
+In the game that was created, a grid system is displayed on the large screen, where the each cell of the grid is a square. 
+The grid can take different sizes, having large cells, where the grid is $5 \times 10$ cells, or small cells, where the grid is $10 \times 20$ cells. 
+These will henceforth be referred to as large grid ($5 \times 10$) and small grid ($10 \times 20$).
 
-The game would at random choose one of the four techniques and display a short explanatory film on a screen right beside the main game display. A shape would appear, either a square or a circle, at one of the cells in the grid. This is the target that the participant needs to hit with the given interaction technique. This shape would be chosen at random. 
+The game would at random choose one of the four techniques and display a short explanatory movie of how to perform the technique on a screen right beside the main game display. 
+A shape would appear, either a square or a circle, at one of the cells in the grid. 
+This is the target that the participant needs to hit with the given interaction technique. 
+This shape would be chosen at random. 
 
-The user would then have three free tries, in order to get to learn the technique. Only the time that it took the user to come through this practice phase was recorded. The user would have to choose the correct shape on the phone and perform the technique with that shape selected. The shapes on the phone would randomly change positions, so that the user would have to check the phone after every gesture. The grid would also randomly, as far as the user was concerned, change size from large to small or vice-versa. After 19 targets, the test for that specific technique was done, and would then be repeated for the other 3 techniques. 
+The user would then have three practice tries, in order to get familiar with the technique. 
+For the practice phase, only the time it took the user to get through was logged and not whether targets were hit or missed. 
+The user would have to choose the correct shape on the phone and perform the technique with that shape selected. 
+The shapes on the phone would randomly change positions, so that the user would have to check the phone after every gesture. 
+The grid would also randomly, as far as the user was concerned \todo{guess we need to explain this}, change size from large to small or vice-versa. 
+After 19 targets, the test for that specific technique was done, and would then be repeated for the other 3 techniques. 
+
+\todo[inline]{We should mention somewhere the jump length and how the targets were implemented.}
 
 \subsection{Procedure}
 
-Each test subject was taken into the usability lab and then given a short introduction to what we were doing and why. We would then explain how the system would work and what they had to do. We would hand them a phone, ask them to stand on a marked cross, so that the distance to the screen would always be the same, and start the test.
+Each test subject was taken into the usability lab and then given a short introduction to what we were doing and why. 
+We would then explain how the system would work and what they had to do. 
+We would hand them a phone, ask them to stand on a marked cross, so that the distance to the screen would always be the same, and start the test.
 
-One of the four techniques would be chosen at random and be presented to the user. A short explanatory movie would be shown on a screen beside the main display showing the user how to perform the technique. The user would then go through the practice period of the test, and then go through the rest of the test, going through a total of 22 targets. The only difference between the two phases was that time was the only measure that was logged during the practice phase of the test. After that, the user would then be asked to fill in a short questionnaire, based on the USE survey, described in the \textbf{Experimental Design} subsection, regarding the technique they just tried. 
+One of the four techniques would be chosen at random and be presented to the user. 
+A short explanatory movie would be shown on a screen beside the main display showing the user how to perform the technique. 
+The user would then go through the practice period of the test (3 targets), and then go through the rest of the test (19 targets), going through a total of 22 targets. 
+After that, the user would then be asked to fill in a short questionnaire, based on the USE survey, described in the \nameref{sec:expdesign} subsection, regarding the technique they just tried. 
 
-This process would be repeated four times in total, one for each technique. After that, we would then ask the test subject to fill in a small demographic survey. We asked them about their age, height, if they were left or right handed, if they had a smart phone, for how long, if they had any experience with a Kinect, Wii, Playstation Move, or any other similar air gesture based technologies, and how often they utilized them. We then thanked them for their time and sent them on their way. The entire test took on average 15 minutes. 
+This process would be repeated four times in total, one for each technique. 
+After that, we would then ask the test subject to fill in a small demographic survey. 
+We asked them about their age, height, if they were left or right handed, if they had a smart phone, for how long, if they had any experience with a Kinect, Wii, Playstation Move, or any other similar air gesture based technologies, and how often they utilized them. 
+We then thanked them for their time and sent them on their way. 
+The entire test took on average 15 minutes. 
