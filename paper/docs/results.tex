@@ -1,14 +1,13 @@
 % !TEX root = ../paper.tex
 \section{Results}
-We will now present the results that we achieved through out our experiment and also how they were achieved. We will first present our findings in respect to time, then in respect to accuracy. We will then see if there is any significant interaction between our two independent variables, grid size and technique. Finally, we will look at the questionnaires and see if there are any significant findings there. We will discuss these results later, in section \ref{sec:discussion}.  
+We will now present the results that we achieved through out our experiment and also how they were achieved. We will first present our findings in respect to time, then in respect to accuracy. We will then see if there is any significant interaction between our two independent variables, grid size and technique. Finally, we will look at the questionnaires and see if there are any significant findings there. We will discuss these results later, in the \nameref{sec:discussion} section.  
 
 \subsection{Target Hit Time}
 
-Each interaction technique was completed 22 times per participant; 4 times in practice and 18 times that were logged. In total, each technique was performed 954 times outside of the practice environment. Table \ref{tab:meanTimesTechnique} shows the mean time per. target for each of the techniques. 
+Each interaction technique was completed 22 times per participant; 4 times in practice and 18 times that were logged. In total, each technique was performed 954 times outside of the practice environment. \Cref{tab:meanTimesTechnique} shows the mean time per. target for each of the techniques. 
 \todo{How do i get the table to fill the entire column?}
-\begin{table}[]
+\begin{table}[H]
 	\centering
-	\label{tab:meanTimesTechnique}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
@@ -16,15 +15,16 @@ Each interaction technique was completed 22 times per participant; 4 times in pr
 		8,66  sec         & 5,71 sec          & 7,07 sec          & 6,00 sec         \\ \hline
 	\end{tabular}
 	\caption{Mean time for each technique per. target.}
+	\label{tab:meanTimesTechnique}
 \end{table}
 
 This difference is significant, according to a way one, repeated measures ANOVA, where $F(62,152) = x, (p<0.000)$ \todo{Help! What number do i report here instead of x?}. A pair-wise post hoc LSD test was conducted, and there was a significant difference between all techniques $(p<0.00)$, with the exception of \swipe and \tilt $(p=0.223)$. 
 
-We then examined the effect of grid size on time. Each participant had a equal mixture of small and large grid targets. This means that each technique had 9 targets of each size. Every test had 36 targets of each size, totaling 1908 targets of each size, through out all tests. Table \ref{fig:meanTimesSize} shows the mean time for each grid size. 
+We then examined the effect of grid size on time. Each participant had a equal mixture of small and large grid targets. This means that each technique had 9 targets of each size. Every test had 36 targets of each size, totaling 1908 targets of each size, through out all tests. \Cref{fig:meanTimesSize} shows the mean time for each grid size. 
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
-	\begin{tabular}{cc}
+	\begin{tabular}{|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
 		\textbf{Large Grid} & \textbf{Small Grid} \\ \hline
@@ -40,11 +40,10 @@ We applied another one way, repeated measures ANOVA, and got $F(57,185) = x, p<0
 
 As above, we will perform an analysis on the effect of each technique on accuracy as well as the effect of each grid size. There are the same amount of data points as the above analysis. 
 
-The mean for each technique can be seen in table \ref{tab:meanHitTechnique}. 
+The mean for each technique can be seen in \Cref{tab:meanHitTechnique}. 
 
-\begin{table}[]
+\begin{table}[H]
 	\centering
-	\label{tab:meanHitTechnique}
 	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
@@ -52,4 +51,5 @@ The mean for each technique can be seen in table \ref{tab:meanHitTechnique}.
 		0,72          & 0,94          & 0,88          & 0,68         \\ \hline
 	\end{tabular}
 	\caption{Mean hit for each technique per. target.}
+	\label{tab:meanHitTechnique}
 \end{table}
