@@ -5,7 +5,7 @@ We will now present the results that we achieved through out our experiment and 
 
 \subsection{Target Hit Time}
 
-Each interaction technique was completed 22 times per participant; 4 times in practice and 18 times that were logged. In total, each technique was performed 954 times outside of the practice environment. \Cref{tab:meanTimesTechnique} shows the mean time per. target for each of the techniques as well as their standard deviation. 
+Each interaction technique was completed 18 times per participant. In total, each technique was performed 954 times. \Cref{tab:meanTimesTechnique} shows the mean time per. target for each of the techniques as well as their standard deviation. 
 \todo{How do i get the table to fill the entire column?}
 \begin{table}[H]
 	\centering
@@ -37,7 +37,7 @@ We then examined the effect of grid size on time. Each participant had a equal m
 	\label{tab:meanTimesSize}
 \end{table}
 
-We applied another one way, repeated measures ANOVA, and got $F(3,3814)=2.6049$ and $F_{emp}=57.185$. Then $57.185 > 2.6049$ and $p<0.000$. This means that the grid size has a significant effect on time when hitting the target. 
+We applied another one way, repeated measures ANOVA, and got $F(1,3814)=3.8415$ and $F_{emp}=57.185$. Then $57.185 > 2.6049$ and $p<0.000$. This means that the grid size has a significant effect on time when hitting the target. 
 
 \subsection{Accuracy}
 
@@ -58,7 +58,7 @@ The mean and standard deviation for each technique can be seen in \Cref{tab:mean
 	\label{tab:meanHitTechnique}
 \end{table}
 
-We performed another one way, repeated measure ANOVA and the result was significant, with $Something$. We perform another multiple comparison post hoc LSD test to see where the significant differences are. \pinch and \tilt had $p=0.48$, which means that there was no significant difference between these two techniques. \swipe compared to \throw had $p=0.003$, and all other comparisons were $p<0.000$. 
+We performed another one way, repeated measure ANOVA and the result was significant, with $F_{t=0.05}(3,3812)= 2.6049$ and $F_{emp}=101.504$, then $101.504 > 2.6049$ and $p<0.000$. We perform another multiple comparison post hoc LSD test to see where the significant differences are. \pinch and \tilt had $p=0.48$, which means that there was no significant difference between these two techniques. \swipe compared to \throw had $p=0.003$, and all other comparisons were $p<0.000$. 
 
 We then looked at the grid sizes effect on accuracy. For that we performed another repeated measure, one way ANOVA. The results can be seen in \Cref{tab:meanHitSize}
 
@@ -75,8 +75,10 @@ We then looked at the grid sizes effect on accuracy. For that we performed anoth
 		\label{tab:meanHitSize}
 \end{table}
 
-The effect of the grid size on the accuracy of each gesture was also significant, with $F(y) = x, p<0.000$.
+The effect of the grid size on the accuracy of each gesture was also significant, with $F_{t=0.05}(1,3814)=3.8415$ and $F_{emp} = 92.609$, then $92.609 >3.8415$ and $p<0.000$.
 
 \subsection{Interaction between Grid Size and Technique}
 We also wanted to see if there was any significant interaction between our two main independent variables, grid size and technique. 
 We first performed a two way, repeated ANOVA to see if there was any interaction in regards to time. With $F_{t=0.05}(5,471)=3.8415$ and $F_{emp}= 0.114$, then $0.114 < 3.8415$ and $p=0.906$ means that there is no significant interaction between grid size and technique with regards to time. We then performed the same test, this time trying to see if the interaction had any effect on the hit rate. It resulted in $F_{t=0.05}(5,471)=3.8415$ and $F_{emp}=5.741$, then $5.741 > 3.8415$ and $p=0.001$, which means that the interaction between grid size and technique does in fact have a significant effect on success rate of the attempt. 
+
+We then conducted two one way, repeated measure ANOVA tests with techniques as effects, with regards to success. One of the tests had all large grid targets, and the other had all small grid targets. The results were significant for both of them, with $F_{t=0.05}(3,1904) = 2.6049$ and $F_{emplarge}= 43.163; F_{empsmall}=62.432$. For large targets, $43.163 > 2.6049$ and $p<0.000$. For small targets, $62.432 > 2.6049$ and $p < 0.000$.
