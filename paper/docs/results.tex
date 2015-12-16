@@ -20,7 +20,7 @@ Each interaction technique was completed 18 times per participant. In total, eac
 	\label{tab:meanTimesTechnique}
 \end{table}
 
-This difference is significant, according to a way one, repeated measures ANOVA, where $F_{t=0.05}(3,3812)= 2.6049$ and $F_{emp}=62.152$, then $62.152 > 2.6049$ and $(p<0.000)$. A multiple comparison post hoc LSD test was conducted, and there was a significant difference between all techniques $(p<0.00)$, with the exception of \swipe and \tilt $(p=0.223)$. 
+A one way, repeated measure ANOVA revealed, with a Greenhouse-Geisser correction (0.874), that the difference in time between the different techniques is in fact a significant($F(2.622, 2498.37)=67.192$, $p<0.001$). A post hoc pair-wise test using a LSD correction revealed that \pinch and \swipe($p<0.001$), \pinch and \tilt ($p<0.001$), \pinch and \throw ($p<0.001$), \swipe and \throw ($p<0.001$), and \throw and \tilt ($p<0.001$) were all significantly different from each other. However, \swipe and \tilt were not ($p=0.092$)
 
 We then examined the effect of grid size on time. Each participant had a equal mixture of small and large grid targets. This means that each technique had 9 targets of each size. Every test had 36 targets of each size, totaling 1908 targets of each size, through out all tests. \Cref{tab:meanTimesSize} shows the mean time and standard deviation for each grid size. 
 
@@ -37,7 +37,7 @@ We then examined the effect of grid size on time. Each participant had a equal m
 	\label{tab:meanTimesSize}
 \end{table}
 
-We applied another one way, repeated measures ANOVA, and got $F(1,3814)=3.8415$ and $F_{emp}=57.185$. Then $57.185 > 2.6049$ and $p<0.000$. This means that the grid size has a significant effect on time when hitting the target. 
+We applied another one way, repeated measures ANOVA($F(1,1907) = 77.587$, $p<0.001$). This means that the grid size has a significant effect on time when hitting the target. 
 
 \subsection{Accuracy}
 
@@ -58,9 +58,9 @@ The mean and standard deviation for each technique can be seen in \Cref{tab:mean
 	\label{tab:meanHitTechnique}
 \end{table}
 
-We performed another one way, repeated measure ANOVA and the result was significant, with $F_{t=0.05}(3,3812)= 2.6049$ and $F_{emp}=101.504$, then $101.504 > 2.6049$ and $p<0.000$. We perform another multiple comparison post hoc LSD test to see where the significant differences are. \pinch and \tilt had $p=0.48$, which means that there was no significant difference between these two techniques. \swipe compared to \throw had $p=0.003$, and all other comparisons were $p<0.000$. 
+We performed another one way, repeated measure ANOVA ($F(2.645,2420.246)=105.535$, $p<0.001$), which told us that the different techniques also had a significant effect on the hit ratio. We perform another pair-wise post hoc LSD test to see where the significant differences are. \pinch and \tilt had $p=0.094$, which means that there was no significant difference between these two techniques. All other techniques were significantly different from each other ($p<0.001$). 
 
-We then looked at the grid sizes effect on accuracy. For that we performed another repeated measure, one way ANOVA. The results can be seen in \Cref{tab:meanHitSize}
+We then looked at the grid sizes effect on accuracy. The mean and standard deviation can be seen in \Cref{tab:meanHitSize}. We performed another one-way, repeated measure ANOVA ($F(1,1907)=103.443$, $p<0.001$). This means that there is a significant effect from the grid sizes on the hit rate of each attempt.
 
 \begin{table}[H]
 	\centering
@@ -75,10 +75,11 @@ We then looked at the grid sizes effect on accuracy. For that we performed anoth
 		\label{tab:meanHitSize}
 \end{table}
 
-The effect of the grid size on the accuracy of each gesture was also significant, with $F_{t=0.05}(1,3814)=3.8415$ and $F_{emp} = 92.609$, then $92.609 >3.8415$ and $p<0.000$.
-
 \subsection{Interaction between Grid Size and Technique}
 We also wanted to see if there was any significant interaction between our two main independent variables, grid size and technique. 
-We first performed a two way, repeated ANOVA to see if there was any interaction in regards to time. With $F_{t=0.05}(5,471)=3.8415$ and $F_{emp}= 0.114$, then $0.114 < 3.8415$ and $p=0.906$ means that there is no significant interaction between grid size and technique with regards to time. We then performed the same test, this time trying to see if the interaction had any effect on the hit rate. It resulted in $F_{t=0.05}(5,471)=3.8415$ and $F_{emp}=5.741$, then $5.741 > 3.8415$ and $p=0.001$, which means that the interaction between grid size and technique does in fact have a significant effect on success rate of the attempt. 
+To see if the interaction between grid size and technique was having any effect on time, we performed a two way, repeated measures ANOVA with a Greenhouse-geisser correction(0.834)($F(2.503,1191.556)=0.114$, $p=0.906$). This showed no significant interaction. We then performed the same test, this time trying to see if the interaction had any effect on the hit rate(Greenhouse-geisser correction(0.896), $F(2.688,1279.720)=5.741$, $p=0.001$). This shows that the interaction between grid size and technique does in fact have a significant effect on success rate of the attempt. 
 
-We then conducted two one way, repeated measure ANOVA tests with techniques as effects, with regards to success. One of the tests had all large grid targets, and the other had all small grid targets. The results were significant for both of them, with $F_{t=0.05}(3,1904) = 2.6049$ and $F_{emplarge}= 43.163; F_{empsmall}=62.432$. For large targets, $43.163 > 2.6049$ and $p<0.000$. For small targets, $62.432 > 2.6049$ and $p < 0.000$.
+When then split the data up between the two grid sizes. We then performed a one way, repeated measure ANOVA, with the techniques as an effect and a Greenhouse-geisser correction(0.824), on all the large grid targets ($F(2.472, 1176.749)=42.773$, $p<0.001$).
+Performing a LSD pair-wise post hoc test shows that \pinch and \tilt ($p=1$) are not significantly different. \pinch and \swipe ($p<0.001$), \pinch and \throw ($p<0.001$), \swipe and \throw ($p=0.024$),  \swipe and \tilt ($p<0.001$) and \tilt and \throw ($p<0.001$) were all significantly different from each other.
+
+We then repeated the same test on all small grid targets (Greenhouse-geisser correction: 0.907, $F(2.722, 1295.674)=62.754$, $p<0.001$). A post hoc, LSD pair-wise comparison showed that \pinch and \swipe ($p<0.001$), \pinch and \throw ($p<0.001$), \pinch and \tilt ($p=0.031$), \swipe and \throw ($p=0.001$), \swipe and \tilt ($p<0.001$) and \throw and \tilt ($p<0.001$) were all significantly different. 
