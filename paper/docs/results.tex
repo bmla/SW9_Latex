@@ -1,4 +1,5 @@
 % !TEX root = ../paper.tex
+%http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_HypothesisTesting-ANOVA/BS704_HypothesisTesting-Anova_print.html
 \section{Results}
 We will now present the results that we achieved through out our experiment and also how they were achieved. We will first present our findings in respect to time, then in respect to accuracy. We will then see if there is any significant interaction between our two independent variables, grid size and technique. Finally, we will look at the questionnaires and see if there are any significant findings there. We will discuss these results later, in the \nameref{sec:discussion} section.  
 
@@ -12,14 +13,14 @@ Each interaction technique was completed 22 times per participant; 4 times in pr
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
 		 & \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\ \hline
-		Mean & 8,66  sec         & 5,71 sec          & 7,07 sec          & 6,00 sec         \\ \hline
-		Std. Dev. & 6,56 sec & 3,76 sec & 6,08 sec & 3,89 sec \\ \hline
+		Mean & 8.66  sec         & 5.71 sec          & 7.07 sec          & 6.00 sec         \\ \hline
+		Std. Dev. & 6.56 sec & 3.76 sec & 6.08 sec & 3.89 sec \\ \hline
 	\end{tabular}
 	\caption{Mean time and standard deviation for each technique per. target.}
 	\label{tab:meanTimesTechnique}
 \end{table}
 
-This difference is significant, according to a way one, repeated measures ANOVA, where $F(62,152) = x, (p<0.000)$ \todo{Help! What number do i report here instead of x?}. A pair-wise post hoc LSD test was conducted, and there was a significant difference between all techniques $(p<0.00)$, with the exception of \swipe and \tilt $(p=0.223)$. 
+This difference is significant, according to a way one, repeated measures ANOVA, where $F_{t=0.05}(3,3812)= 2.6049$ and $F_{emp}=62.152$, then $62.152 > 2.6049$ and $(p<0.000)$. A multiple comparison post hoc LSD test was conducted, and there was a significant difference between all techniques $(p<0.00)$, with the exception of \swipe and \tilt $(p=0.223)$. 
 
 We then examined the effect of grid size on time. Each participant had a equal mixture of small and large grid targets. This means that each technique had 9 targets of each size. Every test had 36 targets of each size, totaling 1908 targets of each size, through out all tests. \Cref{tab:meanTimesSize} shows the mean time and standard deviation for each grid size. 
 
@@ -29,14 +30,14 @@ We then examined the effect of grid size on time. Each participant had a equal m
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
 		 & \textbf{Large Grid} & \textbf{Small Grid} \\ \hline
-		Mean & 6,21 sec & 7,51 sec \\ \hline
-		Std. Dev. & 4,88 sec & 5,71 sec \\ \hline
+		Mean & 6.21 sec & 7.51 sec \\ \hline
+		Std. Dev. & 4.88 sec & 5.71 sec \\ \hline
 	\end{tabular}
 	\caption{Mean time and standard deviation for each grid size per. target}
 	\label{tab:meanTimesSize}
 \end{table}
 
-We applied another one way, repeated measures ANOVA, and got $F(57,185) = x, p<0.000$. This means that the grid size has a significant effect on time when hitting the target. 
+We applied another one way, repeated measures ANOVA, and got $F(3,3814)=2.6049$ and $F_{emp}=57.185$. Then $57.185 > 2.6049$ and $p<0.000$. This means that the grid size has a significant effect on time when hitting the target. 
 
 \subsection{Accuracy}
 
@@ -50,14 +51,14 @@ The mean and standard deviation for each technique can be seen in \Cref{tab:mean
 			\hline
 			\rowcolor[HTML]{9B9B9B} 
 			& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\ \hline
-			Mean & 0,72         & 0,94          & 0,88          & 0,68         \\ \hline
-			Std. Dev. & 0,45 & 0,25 & 0,32 & 0,47 \\ \hline
+			Mean & 0.72         & 0.94          & 0.88          & 0.68         \\ \hline
+			Std. Dev. & 0.45 & 0.25 & 0.32 & 0.47 \\ \hline
 	\end{tabular}
 	\caption{Mean hit  and standard deviation for each technique per. target.}
 	\label{tab:meanHitTechnique}
 \end{table}
 
-We performed another one way, repeated measure ANOVA and the result was significant, with $F(101,504) = x, p<0.000$. We perform another pair-wise post hoc LSD test to see where the significant differences are. \pinch and \tilt had $p=0.48$, which means that there was no significant difference between these two techniques. \swipe compared to \throw had $p=0.003$, and all other comparisons were $p<0.000$. 
+We performed another one way, repeated measure ANOVA and the result was significant, with $Something$. We perform another multiple comparison post hoc LSD test to see where the significant differences are. \pinch and \tilt had $p=0.48$, which means that there was no significant difference between these two techniques. \swipe compared to \throw had $p=0.003$, and all other comparisons were $p<0.000$. 
 
 We then looked at the grid sizes effect on accuracy. For that we performed another repeated measure, one way ANOVA. The results can be seen in \Cref{tab:meanHitSize}
 
@@ -67,9 +68,15 @@ We then looked at the grid sizes effect on accuracy. For that we performed anoth
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
 		& \textbf{Large Grid} & \textbf{Small Grid} \\ \hline
-		Mean & 0,87 & 0,74 \\ \hline
-		Std. Dev. & 0,34 & 0,44 \\ \hline
+		Mean & 0.87 & 0.74 \\ \hline
+		Std. Dev. & 0.34 & 0.44 \\ \hline
 		\end{tabular}
 		\caption{Mean hit and standard deviation for each grid size per. target}
 		\label{tab:meanHitSize}
-		\end{table}
+\end{table}
+
+The effect of the grid size on the accuracy of each gesture was also significant, with $F(y) = x, p<0.000$.
+
+\subsection{Interaction between Grid Size and Technique}
+We also wanted to see if there was any significant interaction between our two main independent variables, grid size and technique. 
+We first performed a two way, repeated ANOVA to see if there was any interaction in regards to time. With $F_{t=0.05}(5,471)=3.8415$ and $F_{emp}= 0.114$, then $0.114 < 3.8415$ and $p=0.906$ means that there is no significant interaction between grid size and technique with regards to time. We then performed the same test, this time trying to see if the interaction had any effect on the hit rate. It resulted in $F_{t=0.05}(5,471)=3.8415$ and $F_{emp}=5.741$, then $5.741 > 3.8415$ and $p=0.001$, which means that the interaction between grid size and technique does in fact have a significant effect on success rate of the attempt. 
