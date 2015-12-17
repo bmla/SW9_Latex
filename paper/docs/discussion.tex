@@ -34,9 +34,42 @@ Looking at the two other techniques, \pinch and \throw, their times also reflect
 	\label{fig:gridhitResults}
 \end{figure}
 
-If we look at the results in regards to the effect of the technique on the hit ratio of each attempt, shown in \Cref{fig:gridhitResults}, it is interesting to note that the two techniques that were not significantly different from each other were \tilt and \pinch. These two techniques both used the hand that controlled the pointer to activate the technique. When tilting the phone forward, usually the hand would move together with the phone causing the pointer to displace itself from the users intended position. When releasing the \pinch, the Kinect would sometimes reevaluate the location of the hand joint, now that it could see the entire hand, which would cause the pointer to displace itself from the intended position. \pinch and \tilt were also the techniques that had the largest amount of activation errors due to the implementation of the system. Sometimes, users would show large amount of their palms to the Kinect during a \pinch, even though their hand was closed, causing the Kinect to evaluate that as an opening of the hand and activate the technique. \tilt would sometimes activate if the user moved the telephone around too quickly, especially when orienting the pointer up and down on the screen.  
+If we look at the results in regards to the effect of the technique on the hit ratio of each attempt, shown in \Cref{fig:gridhitResults}, it is interesting to note that the two techniques that were not significantly different from each other were \tilt and \pinch. These two techniques both used the hand that controlled the pointer to activate the technique. When tilting the phone forward, usually the hand would move together with the phone causing the pointer to displace itself from the users intended position. When releasing the \pinch, the Kinect would sometimes reevaluate the location of the hand joint, now that it could see the entire hand, which would also cause the pointer to displace itself from the intended position. \pinch and \tilt were also the techniques that had the largest amount of activation errors due to the implementation of the system. Sometimes, users would show large amount of their palms to the Kinect during a \pinch, even though their hand was closed, causing the Kinect to evaluate that as an opening of the hand and activate the technique. \tilt would sometimes activate if the user moved the mobile around too quickly, especially when orienting the pointer up and down on the screen.  
 
-\swipe and \throw both had reasonably   
+\swipe and \throw both had reasonably high success rates. \throw did not require the user to actually move the pointer hand while activating the technique. While \swipe did require the user to perform some movement on the hand that was used as a pointer, it was very little movement. This is also a technique all smart phone users are familiar with, since a lot of applications use some form swiping to activate some functionality.
+
+If we only look at the results that were close to the target cell, it is pretty clear which techniques are more precise. 
+
+\begin{figure}[H]
+	\subfloat[]{\fbox{\includegraphics[width = 0.245\columnwidth ]{images/pinch.png}\label{fig:pinchHB}}} 
+	\subfloat[]{\fbox{\includegraphics[width = 0.245\columnwidth ]{images/swipe.png}\label{fig:swipeHB}}}
+	\subfloat[]{\fbox{\includegraphics[width = 0.245\columnwidth ]{images/throw.png}\label{fig:throwHB}}}
+	\subfloat[]{\fbox{\includegraphics[width = 0.245\columnwidth ]{images/tilt.png}\label{fig:tiltHB}}}
+	\caption{
+		Green is a hit, red is a miss
+		\protect\subref{fig:pinchHB} Pinch Hitbox
+		\protect\subref{fig:swipeHB} Swipe Hitbox
+		\protect\subref{fig:throwHB} Throw Hitbox
+		\protect\subref{fig:tiltHB} Tilt Hitbox
+	}
+	\label{fig:thitboxes}
+\end{figure}
+
+\Cref{fig:thitboxes} shows that \swipe and \throw have a large concentration of hits inside the target cell, \pinch and \tilt have quite a spread of hits outside the target cell. These figures, combined with the standard deviation of each technique, tells us that users are able to hit the targets more consistently with \swipe and \throw.
+
+The different grid sizes also proved to be significant in regards to the accuracy of each technique. This is because regardless of which technique we are talking about, it is hard to keep the pointer completely still while performing any of the techniques. Any small movement while activating the technique might lead to the pointer leaving the cell and the user then missing the target. This effect is much more pronounced in the smaller grid size. The hitboxes in \Cref{fig:shitboxes} show that there is a much larger concentration of hits inside the target with the large grid size, while the small grid size has a spread of misses near the target.
+
+\begin{figure}[H] 
+	\centering
+	\subfloat[]{\fbox{\includegraphics[width = 0.245\columnwidth ]{images/large.png}\label{fig:largeHB}}} 
+	\subfloat[]{\fbox{\includegraphics[width = 0.245\columnwidth ]{images/small.png}\label{fig:smallHB}}}
+	\caption{
+		Green is a hit, red is a miss
+		\protect\subref{fig:largeHB} Large Hitbox
+		\protect\subref{fig:smallHB} Small Hitbox
+	}
+	\label{fig:shitboxes}
+\end{figure}
 
 \subsection{Limitations}
 
