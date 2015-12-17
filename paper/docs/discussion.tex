@@ -34,7 +34,9 @@ Looking at the two other techniques, \pinch and \throw, their times also reflect
 	\label{fig:gridhitResults}
 \end{figure}
 
-If we look at the results in regards to the effect of the technique on the hit ratio of each attempt, shown in \Cref{fig:gridhitResults}, it is interesting to note that the two techniques that were not significantly different from each other were \tilt and \pinch. These were the techniques that had the largest amount of technique activation errors because of our system misunderstanding the input. When users performed a pinch, sometimes a large part of their palms would show itself to the Kinect in the process of lifting their hand. The system would misinterpret that as an opening of the hand and think that the technique was activated by the user. In regards to the tilt, if the user moved the telephone around too fast,    
+If we look at the results in regards to the effect of the technique on the hit ratio of each attempt, shown in \Cref{fig:gridhitResults}, it is interesting to note that the two techniques that were not significantly different from each other were \tilt and \pinch. These two techniques both used the hand that controlled the pointer to activate the technique. When tilting the phone forward, usually the hand would move together with the phone causing the pointer to displace itself from the users intended position. When releasing the \pinch, the Kinect would sometimes reevaluate the location of the hand joint, now that it could see the entire hand, which would cause the pointer to displace itself from the intended position. \pinch and \tilt were also the techniques that had the largest amount of activation errors due to the implementation of the system. Sometimes, users would show large amount of their palms to the Kinect during a \pinch, even though their hand was closed, causing the Kinect to evaluate that as an opening of the hand and activate the technique. \tilt would sometimes activate if the user moved the telephone around too quickly, especially when orienting the pointer up and down on the screen.  
+
+\swipe and \throw both had reasonably   
 
 \subsection{Limitations}
 
