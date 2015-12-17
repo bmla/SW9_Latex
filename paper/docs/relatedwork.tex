@@ -1,45 +1,42 @@
 % !TEX root = ../paper.tex
 \section{Related work} \label{sec:relatedwork}
-\subsection{Cross-Device interaction}
-\blockquote{\itshape{\textquote{As digital signage is an inherently visual medium, graphics and animations are increasingly used to visualize data from business applications or other feeds.
-In fulfilling its capability, a change from non-interactive information broadcasters to active mediums needs to happen.
-Combining this with the recent trend of increased number of hand-held device per capita leads to new opportunities for exploring cross-device interaction (CDI) and hence design better interaction techniques.
+
+Public displays is an inherently visual medium as such graphics and animations are increasingly used to visualize data from business applications or other feeds.A change from non-interactive information broadcasters to active medium may be beneficial. 
+Combining this with the recent trend of increased number of hand-held device per capita an opportunity for new cross-device applications in uncovered in public displays, which can help by providing new opportunities for exploring cross-device interaction (CDI), after which this knowledge can help with design of better interaction techniques.
 As such possibility are presented researchers naturally acted on them.
 
-Perhaps one of the earliest working systems illustrating CDI is by Myers et al. \cite{Myers:2001}. 
-One of the application realized within their \emph{Pebbles project} is SlideShow Commanded that utilized Personal Devices Assistants (PDA) to control a PowerPoint presentation runny on other computer or laptop.
-It was possible not just moving between slides, but also scribbling and writing on the PDA slides, while annotations are shown on the presentation for the audience.}}\cite{literature review}}
+In historic perspective, one of the earliest working cross-device applications is by Myers et al. \cite{Myers:2001}. 
+One of the applications realized within their \emph{Pebbles project} is SlideShow Commander that utilized Personal Devices Assistants (PDA) to control a PowerPoint presentation runny on other computer or laptop.
+It was possible not just moving between slides, but also scribbling and writing on the PDA slides, while annotations are shown on the presentation for the audience. 
+However the idea of cross-device have deeper roots in ubiquitous computing. Rekimoto's work \emph{pick-and-drop technique} is one of the earliers examples for exploring technique that spawns between multiple devices. The technique "allows a user to pick up an object on a display and drop it on another display as if he/she were manipulating a physical object." \cite{Rekimoto:1997}. 
+These two early work examples, even though in different fields, are entwined and would inspire future researcher work.\\
 
-Hamilton et al. created a framework for cross device interaction in \emph{Conductor} \cite{Hamilton:2014}.
-While their main focus here was creating cross device interaction between multiple interactive devices from the same type - tablets.
-Their study expanded our knowledge of how people interact with multiple devices when presented with the possibility of cross device interaction.
-\emph{JuxtaPinch} by Nielsen et al. \cite{Nielsen:2014}, investigate the the use of multiple device from different type together, by allowing a number of devices being put next to each other and ``pinched'' together to form a larger collaborative workspace.
-Expanding on the idea of collaborative workspace was moving from using multiple devices to build one large mixed device, to having more than one or more input devices towards one or more output device.
-Schmidt et al. propose a cross-device interaction style for mobiles and surfaces.
-The researchers point out that \emph{``natural forms of interaction have evolved for personal devices that we carry with us (mobiles) as well as for shared interactive displays around us (surfaces) but interaction across the two remains cumbersome in practice''} \cite{Schmidt:2012}; so in order to overcome this they propose to use mobiles as tangible input on the surface in a stylus like fashion.
-
-\blockquote{\itshape{\textquote{Skov et al. \cite{Skov:2015} illustrate six different cross-device interaction techniques for the case of card playing in \emph{Investigating Cross-Device Interaction techniques}.
-A player can see their own cards on their phone and use three different techniques for playing a card from the handheld to the tablet, which is placed on a table.
-In the other direction, i.e. when drawing a card, the player also has three techniques to choose from.
-The usability study aims to quantitatively evaluate each of the techniques and showed that there is a difference in time and number of errors between the techniques. }}\cite{literature review}}
-They recorded two types of errors, namely, interaction errors and play errors.
-The number of interaction errors shows how difficult it is for a user to perform a given technique while play errors represent the errors related to the game and is recorded when the user plays a wrong card.
-The difference in interaction errors is apparent, especially between two of the techniques for playing a card.
-
-Data transfer between devices is an area of interest in cross-device interaction.
-Marquardt et al. \cite{Marquardt:2012} study cross-device interaction on tablets with a extra layer of naturalness, by involving spatial information - proxemics.
-Based on the constructs of f-formation and micro-mobility and co-present collaboration, they build their prototype with the idea of support for fluid and minimally disruptive interaction in document transfer. 
-\blockquote{\itshape{\textquote{Bragdon et al.\cite{Bragdon:2011} propose using a combination of air gestures and touch.
-They aim to design, implement and test a system that allows a group of users to interact using air gestures and touch gestures. 
-The purpose is to increase control, support democratic access, and share items across multiple personal devices such as smartphones and laptops where ``the primary design goal is fluid, democratic sharing of content on a common display.''}}\cite{literature review}}
-
-\subsection{Large display interaction}
-\blockquote{\itshape{\textquote{Skov et al. \cite{Skov:2015}As large displays become cheaper and more frequent people research interest increased.In \emph{Shoot and Copy}, Boring et al. \cite{Boring:2007} explored the transfer of data from a large public display onto a mobile device.
+An example of such research is that of Sebastian Boring's who not only build an cross-device application but explored the implications of different techniques on it. In \emph{Shoot and Copy}, Boring et al. \cite{Boring:2007} explored the transfer of data from a large public display onto a mobile device.
 They created a method of transferring data from a large screen by using the camera on the mobile device.
-The user would take a picture of whatever content they were interested in, and would query the content server with the picture they took.
+The user would take a picture of whatever content they were interested in, after which the application would query the content server with the picture taken from the user.
 Through visual analyses, the content server would determine what content the user was interested in and would return that content to them.
-They show that there is a need for enabling data exchange between mobile devices and public displays.}}\cite{literature review}}
+They show that there is a need for enabling data exchange between mobile devices and public displays.
 In \emph{Scroll, Tilt or Move It}, Boring et al. \cite{Boring:2009} investigated cross device interaction between large displays and mobile phones.
 More specifically, he investigated three different interaction techniques in order to continuously control a pointer on a large screen from a mobile device.
 \emph{Move} and \emph{Tilt}, two of the three interaction techniques, enabled faster selection time compared to the last one, \emph{Scroll}, but at the cost of higher error rates.
 They showed that different interaction techniques have certain strengths and weaknesses, and depending on the context and use, certain techniques can be used rather than other. 
+
+Boring's ideas are influential, but are only one side of cross-device, a different idea is greatly presented with
+\emph{JuxtaPinch} by Nielsen et al. \cite{Nielsen:2014}, they investigate the  use of multiple device together, by allowing a number of devices being put next to each other and ``pinched'' together to form a larger collaborative workspace.
+Expanding on this idea of common workspace was moving away from using multiple devices to build one large mixed device. Schmidt et al. proposed a cross-device interaction style for mobiles and surfaces where one can use multiple phones to interact with a digital surface.
+The researchers point out that \emph{``natural forms of interaction have evolved for personal devices that we carry with us (mobiles) as well as for shared interactive displays around us (surfaces) but interaction across the two remains cumbersome in practice''} \cite{Schmidt:2012}; so in order to overcome this they propose to use mobiles as tangible input on the surface in a stylus like fashion.
+
+A combination of the ideas above is presented by Skov et al. \cite{Skov:2015} illustrate six different cross-device interaction techniques for the case of card playing in \emph{Investigating Cross-Device Interaction techniques}.
+A player can see their own cards on their phone and use three different techniques for playing a card from the handheld to the tablet, which is placed on a table.
+In the other direction, i.e. when drawing a card, the player also has three techniques to choose from.
+The usability study aims to quantitatively evaluate each of the techniques and showed that there is a difference in time and number of errors between the techniques. 
+They recorded two types of errors, namely, interaction errors and play errors.
+The number of interaction errors shows how difficult it is for a user to perform a given technique while play errors represent the errors related to the game and is recorded when the user plays a wrong card.
+The difference in interaction errors is apparent, especially between two of the techniques for playing a card.
+
+While the two paragraphs above ilustrated two different idea movements in cross-device, a common area of interest they have is the question of data transfer between devices.
+Hamilton and Wigdor's  work \cite{Hamilton:2014} aggregate much of the works above and clearly articulate the data transfer. In \emph{Conductor} they create a prototype framework for cross-device applications by combining a number of interactions techniques for data transfer, chaining tasks, and managing interactions sessions.
+Data transfer is a challenge and as such there are different approaches for solution. Marquardt et al. \cite{Marquardt:2012} study cross-device interaction on tablets with a extra natural modality, by involving spatial information - proxemics.Based on the constructs of f-formation and micro-mobility and co-present collaboration, they build their prototype with the idea of support for fluid and minimally disruptive interaction in document transfer. 
+Bragdon et al.\cite{Bragdon:2011} propose using a combination of air gestures and touch.
+They aim to design, implement and test a system that allows a group of users to interact using air gestures and touch gestures. The purpose is to increase control, support democratic access, and share items across multiple personal devices such as smartphones and laptops where the primary design goal is fluid, democratic sharing of content on a common display.
+
