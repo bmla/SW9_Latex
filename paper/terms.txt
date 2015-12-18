@@ -8,3 +8,4 @@ et. al.; et al.;
 don't; do not; (contractions)
 vs; vs.;
 data transfer; object transfer; (i.e. between devices)
+attempt; target; (Make sure there is no doubt or question about what an attempt is and what a target is)
