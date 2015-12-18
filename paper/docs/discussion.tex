@@ -97,7 +97,7 @@ This is most likely a combination of the complexity of some of the techniques as
 This also lead to frustration, were users thought they were performing the technique correctly and nothing was happening. 
 Four users mentioned being frustrated by the \pinch technique, while three users got frustrated with the \tilt technique
 
-The fatigue effect is also something to take into consideration. 13 people mentioned some being fatigued through out the test, while 11 of them mentioned it first during the \throw technique.
+The fatigue effect is also something to take into consideration. 13 people mentioned being fatigued through out the test and 11 of them first mentioned it during the \throw technique.
 Some users commented that it was because one arm had nothing to do but be uplifted and point to the screen, while the other arm performed all the motion.
 One user mentioned it would not have been that noticeable if the pointing arm had some motion to perform. 
 
@@ -108,6 +108,18 @@ It is still worth remembering though that \pinch was, by large, the hardest tech
 
 
 \subsection{Limitations}
+There are of course some limitations to the system we developed. 
+Firstly, the intention with the \tilt technique was that the users would point and tilt with the phone, but because of our implementation, it was possible for users to point with one hand and tilt the phone with the other.
+The same holds true for the \swipe technique, where users were able to point with one hand and swipe with the other.
 
-The intention with the \tilt technique was that the users would point and tilt with the phone, but because of our implementation, it was possible for users to point with one hand and tilt the phone with the other.
-Again, because of our implementation of the \swipe technique, users were able to point with one hand and swipe with the other.
+The way the system detects open hand is not very robust: sometimes, depending on the profile of the hand, it misreads the users intentions and believes the user opened his hand. 
+
+The system also has a very narrow definition of what throwing means. 
+This is something that can be seen when users were told to "throw" the data from the phone to the screen.
+Some would perform a much larger tilt motion, 
+others would perform a pitching motion. 
+
+The Kinect also had some problems determining where the different joints were.
+If the elbow joint was directly behind the hand joint from the Kinects perspective, it would cause the pointer to move erratically since the Kinect was not absolutely sure were the hand joint was.
+Another problem was when the user put their two hands close to each other. 
+The Kinect would again have problem determining where the hand joints were located. 
