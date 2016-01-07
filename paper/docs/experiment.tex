@@ -20,8 +20,9 @@ The 4 techniques (\swipe, \tilt, \throw, and \pinch) were implemented in order t
 They were implemented in a simple and short target practice application, where the goal was to hit the target with the shown technique. 
 
 A grid system was implemented in the test application, were each cell of the grid is a possible target. 
-As mentioned, we were interested in measuring the effect of different targets on the different techniques, therefore the grid can change into two different sizes. 
-The grid system can have large cells, where the grid is $5 \times 10$ cells, or small cells, where the grid is $10 \times 20$ cells. 
+As mentioned, we were interested in measuring the effect of different target sizes on the different techniques, therefore the grid can change into two different sizes. 
+The grid system can have large cells, where the grid is $5 \times 10$ cells and each cell is 61 pixels or 7.3 cm wide, or it could also have small cells, where the grid is $10 \times 20$ cells and each cell is 122 pixels, or 14.6 cm wide. 
+The target would be located in one of those cells, and would scale accordingly to the size of the cell.
 These will henceforth be referred to as large grid ($5 \times 10$) and small grid ($10 \times 20$). This can be seen in \Cref{fig:kinectScreen}. \todo{Add sizes}
 
 The mobile application that was developed was simple; it showed two shapes, a circle and a square, in which the user could choose which one to push to the display. The display would tell which shape was the correct one by having that shape as the target on one of the grid cells. We chose two shapes so that it did not become a search problem and spend time searching for the correct shape. We wanted the user to spend some time orienting him or her self with the phone and not just simply blindly preform the gesture without paying any attention to the phone at all. The phone screen can be seen in \Cref{fig:phoneScreen}.
@@ -120,8 +121,12 @@ For the practice phase, only the time it took the user to get through was logged
 A shape would appear, either a square or a circle, at one of the cells in the grid. 
 The user would have to choose the correct shape on the phone and perform the technique with that shape selected. 
 The shapes on the phone (\cref{fig:phoneScreen}) would randomly change positions, so that the user would have to check the phone after every technique. 
-The grid would also randomly, as far as the user was concerned, change size from large to small or vice-versa. In reality, the target sequences where hard coded by us in such a way that there was an equal distribution of large and small grid targets. We also made sure that there was an equal distribution of distances between each target. We classified them as short jumps, medium jumps, and long jumps. 
-After the practice phase, a calibration start target would be shown. This is so that we could calculate the distance between all other targets correctly. The user would then go through the rest of the test (18 targets), going through a total of 22 targets. 
+The grid would also randomly, as far as the user was concerned, change size from large to small or vice-versa. 
+In reality, the target sequences where hard coded by us in such a way that there was an equal distribution of large and small grid targets. 
+We also made sure that there was an equal distribution of distances between each target. We classified them as short jumps, medium jumps, and long jumps. 
+A short jump was 2 large cells, a medium jump was 4 large cells, and a large jump was 6 large cells.  
+After the practice phase, a calibration start target would be shown. This is so that we could calculate the distance between all other targets correctly. 
+The user would then go through the rest of the test (18 targets), going through a total of 22 targets. 
 
 That means that our experiment had the following list of conditions:
 \begin{itemize}
