@@ -1,24 +1,13 @@
 % !TEX root = ../paper.tex
 \section{Interaction techniques} \label{sec:techniques}
-In this section we illustrate and describe techniques that can be used to push information from handheld devices to large displays.
-The techniques are characterized by allowing the users to interact with a large screen in a natural way, using one or both hands, different levels of complexity and time.
+In this section we illustrate and describe techniques that can be used to push information from handheld devices to large displays with the purpose of comparing them to each other.
+We want to find and compare techniques that allows a user to intuitively walk up and use a large display.
+The techniques are characterized by allowing the users to interact with a large screen in a natural way, using one or both hands, with different levels of complexity and time.
+
 All the techniques were found in the literature and chosen based on a set of criteria outlined in \Cref{tab:techniqueCriteria}. 
-We are also interested in examining the effect of each technique on targets of different sizes. Therefore, we will implement targets of two different sizes, large and small, relative to the size of the screen. 
-
-
-We have four techniques named \swipe, \tilt, \throw, and \pinch.
-Our techniques all make use of some combination of pointing in mid-air and touch gestures on the smartphone screen.
-Mid-air pointing is achieved by using the Microsoft Kinect for Windows which uses a depth camera making it possible to track a user's hand in mid-air.
-
-\todo{Insert following paragraph later}
-A smartphones has an accelerometer and a touchscreen, former making it possible to detect motion input and the latter makes it possible to detect contact between e.g. a finger and the screen.
-These technologies are, in combination with each other, used to recognize the four techniques described in this section. 
-
-Before designing and implementing the experiment we had to find a suitable set of techniques and since the purpose of our experiment is to compare the techniques against each other, we searched for different techniques in related work.
-The idea was to find a set of diverse techniques with different criteria.
-The different criteria that we used are described in \Cref{tab:techniqueCriteria}.
-
-What we ended up with was four interaction techniques and in the following we explain why these four techniques were chosen and how they should be performed.
+We are also interested in examining the effect of each technique on targets of different sizes. 
+Therefore, we will implement targets of two different sizes, large and small, relative to the size of the screen. 
+We chose four techniques named \swipe, \tilt, \throw, and \pinch because they all fulfill different aspects of the criteria requirements in \Cref{tab:techniqueCriteria} and this allows us to compare them to each other.
 
 \begin{table}[H]
 	\centering
@@ -36,6 +25,8 @@ What we ended up with was four interaction techniques and in the following we ex
 	\label{tab:techniqueCriteria}
 \end{table}
 %Two-handed techniques which are techniques that require both hands.
+
+In the following we explain why these four techniques were chosen and how they should be performed.
 
 The \swipe technique (\Cref*{fig:swipeTechnique}) is used by Bragdon et al. \cite{Bragdon:2011} in Code Space, a system using the Kinect and smartphones to support developer meetings. 
 Bragdon et al. describes the technique as: \emph{``cross-device interaction with touch and air pointing''} and the swipe motion is described as \emph{``flicking up on the touch screen''}. 
@@ -122,3 +113,8 @@ As mentioned, the techniques have been used in previously published papers where
 The described techniques are different in the way they are performed but also the number of hands that are required to make them work.
 We chose two techniques that are one-handed (\swipe and \tilt) and two techniques that are two-handed (\throw and \pinch).
 Also, to vary the complexity we chose two techniques that require more steps (\throw and \pinch), and two techniques that require less steps for the user to complete the technique (\swipe and \tilt).
+
+All the techniques make use of some combination of pointing in mid-air and touch gestures on the smartphone screen.
+The mid-air pointing is achieved by using the Microsoft Kinect for Windows which uses a depth camera making it possible to track a user's hand in mid-air.
+As for the touch gestures, a smartphones has an accelerometer and a touchscreen, former making it possible to detect motion input and the latter makes it possible to detect contact between e.g. a finger and the screen.
+These technologies are, in combination with each other, used to recognize the four techniques described in this section. 
