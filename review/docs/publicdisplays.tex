@@ -16,38 +16,36 @@ Boring and Baur address the problem of crafting interaction techniques that can 
 %next part has to be merged with the framework explanation
 They have done so by developing a \emph{``[...] conceptual framework and technical implementation that rely solely on the public displays and users' mobile devices.''} \cite{Boring:2013}. By  leveraging cell phone cameras they have enabled from-a-distance interaction with any public-display technology.\\
 %the above barely explains the framework
-Their framework allows for calculating the phone's distance and orientation to the display, if the display's physical size is known.
-This is done by using "an algorithm... explain" FREAK which finds features
-in an image. By filtering the image (why?) and locating matching features
-from the phone and display image (revisit and explain better) it can calculate
-a transformation matrix that when applied to the x and y cordinates of the 
-phone image can be transformed into the coresponding x and y coordinates
-of the display image.
-Because this analysis is done on the image itself  it is sufficient ot have a
-subregion of the display image shown on the phone.
-(this  results in knowing the phones orientation and distance to  the screen)
-
-To correct for delay between the phone and the display, the display sync
-its clock with the phone. The Display holds a queue of images with a
-timestamp, when the phone sends an image with a timestamp it
-%say that the images has a timestamp instead of pointig it out individuallt
-is compared with the queue to select the image that comes closest to
-the time from the phone.
+%Their framework allows for calculating the phone's distance and orientation to the display, if the display's physical size is known.
+%This is done by using "an algorithm... explain" FREAK which finds features
+%in an image. By filtering the image (why?) and locating matching features
+%from the phone and display image (revisit and explain better) it can calculate
+%a transformation matrix that when applied to the x and y cordinates of the 
+%phone image can be transformed into the coresponding x and y coordinates
+%of the display image.
+%Because this analysis is done on the image itself  it is sufficient ot have a
+%subregion of the display image shown on the phone.
+%(this  results in knowing the phones orientation and distance to  the screen)
+%
+%To correct for delay between the phone and the display, the display sync
+%its clock with the phone. The Display holds a queue of images with a
+%timestamp, when the phone sends an image with a timestamp it
+%%say that the images has a timestamp instead of pointig it out individuallt
+%is compared with the queue to select the image that comes closest to
+%the time from the phone.
 
 %rephrasing
 The framework allows for calculating the phone's distance and orientation to the display, if the display's physical size is known.
 This is done by locating features on the image from the public display and matching them with the image seen on the phone. The comparison is used to calculate a transformation matrix that maps the x and y coordinates from the phone to the corresponding x and y values on the display. Because the analysis is done on the image itself  it is sufficient ot have a subregion of the display image shown on the phone.
 %gut,
 %syncing
-To support animated content, the display saves 20 screenshots per second% NO between 10 and 20updates on features were enough, but never mentions a specific number, nor the size of the   queue.
- in a queue with timestamps. When connected to a phone, it will syncronize its clock so it can compare the timestamp from the phone with the queue and select the appropiate screenshot for "feature point comparison". %"feature comparison. rewrite. 
-
-%Describe limitations 
-%describe test/experiment
+To support animated content, the display saves the screenshots in a queue with timestamps. The server that performs the calculation will syncronize its clock with the connected phone, so it can compare the timestamp from the phone with the queue and select the appropiate screenshot for feature point comparison.
+%Describe limitations
+By connecting several displays  to a server it is possible to support interaction between a user and several displays at the same time. However the amount of comparisons the server has to make also increases for each display that is added and thus decreases the detetion speed and eventually harms the real-time interaction. The set of displays that an image has to be compared against can be reduced by using GPS (location), compas (direction) and acelerometer (orientation) data from the user's phone, to discard displays that isn't being pointed at. %check gramar in this line 
 %%boring end
 
 From-a-distance interaction using a handheld devices is not the only way to interact with public displays. 
-Jacucci et al. adopted touch as a base for their ``Worlds of Information'' system.  % bad
+Jacucci et al. adopted touch as a base for their ``Worlds of Information'' system. 
 They \emph{``discuss how to design for and evaluate engagement in a public walk-up-and-use installation''} \cite{Jacucci:2010}. %  rephase. Why do they want to descuss it, what do they suggest?
 Also, low-cost motion detecting depth cameras permit gesture interactions with displays. 
 % jacuci end
