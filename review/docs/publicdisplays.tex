@@ -4,17 +4,15 @@
 \subsection{Interacting with Public Displays}
 %We should add something  here that expess how public displays are  seperated from large displays.
 Rapid progression in the technology for displays and projections, led to considerable proliferation of large displays, thanks also to their capacity to promote activity and social awareness \cite{Huang:2003}, they moved out from research laboratories into public spaces. 
-However, \emph{``these displays typically present predetermined feeds offering no interactivity''} \cite{Brignull:2003} states Brignull and Rogers. 
+However, according to Brignull and Rogers: \emph{``these displays typically present predetermined feeds offering no interactivity''} \cite{Brignull:2003}. 
 Ten years later Ojala et. al still support this thesis, that \emph{``to date, however, these displays are still used primarily as one-way commercial digital signs.''} \cite{Ojala:2012:MIP:2225044.2225065}. \\
 
-Nevertheless researchers continue to combat and change this trend, as such a body of research has formed around interactive public displays. \\
-
-A large part of this body presents unique  solutions for installations and devices for particular public settings with specific display technology \cite{Schieck:2012:AEM:2393132.2393141}.\\
+Nevertheless researchers continue to combat and change this trend, as such a body of research has formed around interactive public displays. A large part of this body presents unique  solutions for installations and devices for particular public settings with specific display technology \cite{Schieck:2012:AEM:2393132.2393141}.\\
 
 %Expand every paragraph below with more description of the systems, what they are designed to do and the technology used to acheive it, also what they contributed to research
 Boring and Baur address the problem of crafting interaction techniques that can be used in an array of settings while at the same time maintain some autonomy from the components of public space and different display technology. % what exactly does this mean? % seems ok
 %next part has to be merged with the framework explanation
-They have done so by developing a \emph{``[...] conceptual framework and technical implementation that rely solely on the public displays and users' mobile devices.''} \cite{Boring:2013}. By  leveraging cell phone cameras they have enabled from-a-distance interaction with any public-display technology.\\
+They have done so by developing a \emph{``[...] conceptual framework and technical implementation that rely solely on the public displays and users' mobile devices.''} \cite{Boring:2013}. By  leveraging cell phone cameras they have enabled from-a-distance interaction with any public-display technology.
 %the above barely explains the framework
 %Their framework allows for calculating the phone's distance and orientation to the display, if the display's physical size is known.
 %This is done by using "an algorithm... explain" FREAK which finds features
@@ -39,10 +37,13 @@ The framework allows for calculating the phone's distance and orientation to the
 This is done by locating features on the image from the public display and matching them with the image seen on the phone. The comparison is used to calculate a transformation matrix that maps the x and y coordinates from the phone to the corresponding x and y values on the display. Because the analysis is done on the image itself  it is sufficient ot have a subregion of the display image shown on the phone.
 %gut,
 %syncing
+
 To support animated content, the display saves the screenshots in a queue with timestamps. The server that performs the calculation will syncronize its clock with the connected phone, so it can compare the timestamp from the phone with the queue and select the appropiate screenshot for feature point comparison.
 %Describe limitations
+
 By connecting several displays  to a server it is possible to support interaction between a user and several displays at the same time. However the amount of comparisons the server has to make also increases for each display that is added and thus decreases the detetion speed and eventually harms the real-time interaction. The set of displays that an image has to be compared against can be reduced by using GPS (location), compas (direction) and acelerometer (orientation) data from the user's phone, to discard displays that isn't being pointed at. %check gramar in this line 
 %%boring end
+\\
 
 From-a-distance interaction using a handheld devices is not the only way to interact with public displays. 
 Jacucci et al. adopted touch as a base for their ``Worlds of Information'' system. 
