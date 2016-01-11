@@ -7,11 +7,11 @@ When talking about hit success, we mean whether or not the technique hit the giv
 When talking about accuracy, we mean the distance the attempt was from the target(in pixels).
 It is also important to note that the standard deviation, in regards to time, is quite high.
 This is because a few users took an exceedingly long amount of time in order to perform the technique properly so that the system understood what they were doing.
-\subsection{Time per target}
+
 When looking at the results on the effect of the four techniques, \pinch, \tilt, \swipe and \throw, as well as the two grid sizes, large and small, on the time per target, the results tell a rather interesting story. 
 
 \begin{figure}[H]
-	{\includegraphics[width = 1\columnwidth ]{images/timeResults.png}} 
+	{\includegraphics[width = 1\columnwidth ]{images/timeResults.pdf}} 
 	\caption{
 		Overview of the mean and standard deviation for each technique in regards to time per target.
 	}
@@ -26,10 +26,19 @@ Their standard deviations are also smaller, which means that users were more con
 
 Looking at the two other techniques, \pinch and \throw, their times also reflect the range of motion needed in order to activate each technique. \pinch requires the user to pinch the shape on their phone, lift their hand up, direct it on the screen, and then finally let go. This can be seen in its mean, where it takes almost 1.59 seconds longer to perform than the second longest technique, \throw. \throw also requires a considerable range of motion in order to activate: point with one arm, select the shape on the phone with the other arm, bring your arm back and then finally swing it forward. Both two handed techniques take significantly longer to perform than their one handed counter-parts.
 
-We noticed that users would spent relatively little time getting into the general vicinity of the target, and would spend most of their time per attempt getting the pointer on top of the actual target. This would was more pronounced in the small grid, were users would perform smaller, more careful adjustments in order to not overshot the target, which can be seen in the small grid's mean time compared to the large grid.
-\subsection{Hit ratio}
 \begin{figure}[H]
-	{\includegraphics[width = 1\columnwidth ]{images/techHitResults.png}} 
+	\centering
+	{\includegraphics[width = 0.7\columnwidth ]{images/gridTimeResults.pdf}} 
+	\caption{
+		Overview of the mean and standard deviation for each grid size in regards to time per target.
+	}
+	\label{fig:gridtimeResults}
+\end{figure}
+
+We noticed that users would spent relatively little time getting into the general vicinity of the target, and would spend most of their time per attempt getting the pointer on top of the actual target. This would was more pronounced in the small grid, were users would perform smaller, more careful adjustments in order to not overshot the target, which can be seen in the small grid's mean time compared to the large grid.
+
+\begin{figure}[H]
+	{\includegraphics[width = 1\columnwidth ]{images/techHitResults.pdf}} 
 	\caption{
 		Overview of the mean and standard deviation for each technique in regards to hit rate per target.
 	}
@@ -101,8 +110,6 @@ One user mentioned it would not have been that noticeable if the pointing arm ha
 Finally, there is also the fun aspect to take into consideration. Nine users actually mentioned having fun while performing the \pinch technique. 
 They compared it to casting a spell or causing explosions on the screen. Three other users mentioned that this technique was especially interesting. 
 It is still worth remembering though that \pinch was, by large, the hardest technique for users to learn. 
-
-
 
 \subsection{Limitations}
 There are of course some limitations to the system we developed. 

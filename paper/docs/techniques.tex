@@ -1,13 +1,12 @@
 % !TEX root = ../paper.tex
 \section{Interaction techniques} \label{sec:techniques}
-In this section we illustrate and describe techniques that can be used to push information from handheld devices to large displays with the purpose of comparing them to each other.
-We want to find and compare techniques that allows a user to intuitively walk up and use a large display.
-The techniques are characterized by allowing the users to interact with a large screen in a natural way, using one or both hands, with different levels of complexity and time.
+In this section we illustrate and describe techniques that can be used to push information from handheld devices to large displays with the purpose of empirically comparing them to each other.
+We want to find intuitive techniques that allow a user to walk up and use a large display.
+The techniques are characterized by allowing the users to interact with a large screen in a natural way using one or both hands and their mobile phone.
 
 All the techniques were found in the literature and chosen based on a set of criteria outlined in \Cref{tab:techniqueCriteria}. 
-We are also interested in examining the effect of each technique on targets of different sizes. 
-Therefore, we will implement targets of two different sizes, large and small, relative to the size of the screen. 
-We chose four techniques named \swipe, \tilt, \throw, and \pinch because they all fulfill different aspects of the criteria requirements in \Cref{tab:techniqueCriteria} and this allows us to compare them to each other.
+We are also interested in examining the effect of each technique on targets of two different sizes, large and small, relative to the size of the screen. 
+We chose four techniques named \swipe, \tilt, \throw, and \pinch because they fulfill different aspects of the criteria requirements in \Cref{tab:techniqueCriteria} and allow us to compare them to each other in an experimental setup with simple tasks.
 
 \begin{table}[H]
 	\centering
@@ -29,7 +28,7 @@ We chose four techniques named \swipe, \tilt, \throw, and \pinch because they al
 In the following we explain why these four techniques were chosen and how they should be performed.
 
 The \swipe technique (\Cref*{fig:swipeTechnique}) is used by Bragdon et al. \cite{Bragdon:2011} in Code Space, a system using the Kinect and smartphones to support developer meetings. 
-Bragdon et al. describes the technique as: \emph{``cross-device interaction with touch and air pointing''} and the swipe motion is described as \emph{``flicking up on the touch screen''}. 
+Bragdon et al. describe the technique as: \emph{``cross-device interaction with touch and air pointing''} and the swipe motion is described as \emph{``flicking up on the touch screen''}. 
 This technique was chosen because of its simplistic design and the low level of complexity.
 Only one hand is needed and the amount of effort and time required to execute this technique is minimal compared to other techniques.
 \swipe is copied exactly as described in \cite{Bragdon:2011}.
@@ -40,9 +39,9 @@ The \swipe technique is performed by
 \end{enumerate*}
 
 The \tilt technique (\Cref{fig:tiltTechnique}) is used in a collaborative application by Lucero et al. \cite{Lucero:2012} to transfer an object from a large display to the user's smartphone.
-Boring et al. uses the a tilt technique in \cite{Boring:2009} when moving a pointer on a display using a phone and though not the same application, the execution of the technique is the same.
+Boring et al. use the tilt technique in \cite{Boring:2009} when moving a pointer on a display using a phone and though not the same application, the execution of the technique is the same.
 We chose this technique because it is one handed, relatively low complexity, and much like the \swipe it is generally easy to use.
-When the direction is reversed, \tilt is an exact copy of the way Lucero et al. describes the technique.
+When the direction is reversed, \tilt is an exact copy of the way Lucero et al. describe the technique.
 The \tilt technique is performed by 
 \begin{enumerate*}[label=\itshape\roman*\upshape)]
 	\item{pointing at a target on the large display with the phone in a stretched arm, and}
@@ -65,11 +64,7 @@ The \tilt technique is performed by
 \label{fig:tiltTechnique}
 \end{figure}
 
-The \throw technique (\Cref{fig:throwTechnique}) is a combination of  
-\begin{enumerate*}[label=\itshape\alph*\upshape)]
-	\item{a technique for pointing \cite{Scheible:2008} i.e. using a hand as a cursor in mid-air, and}
-	\item{a throw technique described by Walter et al. \cite{Walter:2014} and used in a system for sharing information on large public displays.}
-\end{enumerate*}
+The \throw technique (\Cref{fig:throwTechnique}) is a combination of a technique for pointing \cite{Scheible:2008} i.e. using a hand as a cursor in mid-air, and a throw technique described by Walter et al. \cite{Walter:2014} used in a system for sharing information on large public displays.
 We chose to include this technique based on its natural and playful design.
 The technique mimics the real world scenario of throwing something like a ball somewhere or to someone.
 \throw is two handed, more complex than aforementioned techniques, and takes a little longer to execute because of the increased number of steps.
@@ -90,9 +85,9 @@ The \throw technique is performed by
 
 The \pinch technique (\Cref{fig:pinchTechnique}) is used in \cite{Ikematsu:2015} by Ikematsu et al., as part of a drag-and-drop method for moving data objects between devices.
 Chen et al. uses a pinching gesture in \cite{Chen:2014} for cross-device interaction between a smartphone and a smartwatch to control volume. 
-In \cite{Benko:2010}, Benko and Wilson used the \pinch technique for interacting with an omnidirectional dome.
-This technique is again a combination of the pointing technique used by Scheible et al. and the aforementioned pinching techniques. 
-The reason for including this technique was to imitate the action of picking up a real object e.g. piece of paper, and then moving it to another location.
+Benko and Wilson \cite{Benko:2010} used the \pinch technique for interacting with an omnidirectional dome.
+This technique is again a combination of the pointing technique used by Scheible et al. \cite{Scheible:2008} and the aforementioned pinching techniques. 
+The reason for including this technique was to imitate the natural action of picking up a real object e.g. piece of paper, and then moving it to another location.
 With \pinch we get a two handed technique which requires the user perform a series of steps and are thus considered more complex and time consuming  than the one handed \swipe and \tilt.
 The \pinch technique is performed by 
 \begin{enumerate*}[label=\itshape\roman*\upshape)]
@@ -116,5 +111,5 @@ Also, to vary the complexity we chose two techniques that require more steps (\t
 
 All the techniques make use of some combination of pointing in mid-air and touch gestures on the smartphone screen.
 The mid-air pointing is achieved by using the Microsoft Kinect for Windows which uses a depth camera making it possible to track a user's hand in mid-air.
-As for the touch gestures, a smartphones has an accelerometer and a touchscreen, former making it possible to detect motion input and the latter makes it possible to detect contact between e.g. a finger and the screen.
+As for the touch gestures, smartphones have an accelerometer and a touchscreen, making it possible to detect motion input and detect contact between e.g. a finger and the screen.
 These technologies are, in combination with each other, used to recognize the four techniques described in this section. 
