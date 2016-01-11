@@ -1,8 +1,8 @@
 % !TEX root = ../paper.tex
 \section{Experiment} \label{sec:experiment}
 The four cross device interaction techniques mentioned above were implemented and then evaluated in a lab study in order to judge their performance compared to each other. 
-We are interested to know whether or not the different techniques and target sizes have any effect on the efficiency and usefulness of pushing information to a large display. Therefore, we developed an application that would allow us to run experiments and test the effect of the different techniques and target sizes. 
-We utilized a Microsoft Kinect, a 65' inch Panasonic television with a $1920 \times 1080$ resolution and a Samsung Galaxy SII to create the entire application. 
+We are interested in knowing whether or not the different techniques with different target sizes have an effect on the efficiency and usefulness of pushing information to a large display. Therefore, we developed an application that would allow us to run experiments and test the effect of the different techniques and target sizes. 
+We utilized a Microsoft Kinect, a 65' inch Panasonic television with a $1920 \times 1080$ resolution and a Samsung Galaxy SII to create the experimental application. 
 An overview of the experiment setup can be seen in \Cref{fig:entireSetup}. 
 
 \begin{figure}[H]
@@ -16,38 +16,38 @@ An overview of the experiment setup can be seen in \Cref{fig:entireSetup}.
 
 \subsection{Implementation}
 
-The 4 techniques (\swipe, \tilt, \throw, and \pinch) were implemented in order to push data onto the big display. 
-They were implemented in a simple and short target practice application, where the goal was to hit the target with the shown technique. 
+The 4 techniques (\swipe, \tilt, \throw, and \pinch) were implemented in order to push data onto the large display. 
+They were implemented in a simple and short target practice application, where the goal was to "hit" the target on the display with the shown technique. 
 
-A grid system was implemented in the test application, were each cell of the grid is a possible target. 
-As mentioned, we were interested in measuring the effect of different target sizes on the different techniques, therefore the grid can change into two different sizes. 
+A grid system was implemented in the test application, where each cell of the grid is a possible target. 
+As mentioned, we were interested in measuring the effect of different target sizes on the different techniques, therefore the grid is implemented in two different sizes. 
 The grid system can have large cells, where the grid is $5 \times 10$ cells and each cell is 61 pixels or 7.3 cm wide, or it could also have small cells, where the grid is $10 \times 20$ cells and each cell is 122 pixels, or 14.6 cm wide. 
-The target would be located in one of those cells, and would scale accordingly to the size of the cell.
-These will henceforth be referred to as large grid ($5 \times 10$) and small grid ($10 \times 20$). This can be seen in \Cref{fig:kinectScreen}. 
+The target is located in one of those cells, and scales accordingly to the size of the cell(See \Cref{fig:kinectScreen}).
 
-The mobile application that was developed was simple; it showed two shapes, a circle and a square, in which the user could choose which one to push to the display. The display would tell which shape was the correct one by having that shape as the target on one of the grid cells. We chose two shapes so that it did not become a search problem and spend time searching for the correct shape. We wanted the user to spend some time orienting him or her self with the phone and not just simply blindly preform the gesture without paying any attention to the phone at all. The phone screen can be seen in \Cref{fig:phoneScreen}.
+The developed mobile application was simple. It showed two shapes, a circle and a square, which the user could choose to push to the display. The display would tell which shape was the correct one by having that shape as the target in one of the grid cells. We chose two shapes so that it did not become a search problem with users spending too much time searching for the correct shape. We wanted the user to spend some time orienting him or her self with the phone and not just simply performing the gesture without paying any attention to the phone at all. The phone screen can be seen in \Cref{fig:phoneScreen}.
 
 Users would control the pointer on the large display with their hands. 
 Which ever hand was closest to the screen would determine the position of the pointer on the large screen. 
 This meant that users could switch hands whenever they pleased at any point during the test. 
 
 The \throw technique was implemented with the help of the Kinect and the accelerometer on the mobile phone. 
-The Kinect would be looking at the user and trying to recognize when a user moved the mobile phone from 10 centimeters behind the hip to 10 centimeters in front of the hip. 
-At the same time, the phone detects when a significant change in the accelerometer happened, as to not simply detect a unintentional wave of the arm. 
+The Kinect looked at the user to recognize when a user moved the mobile phone from 10 centimeters behind the hip to 10 centimeters in front of the hip. 
+At the same time, the phone detects when a significant change in the accelerometer happened, so to not simply detect a unintentional wave of the arm. 
 The Kinect would then use the position of the other hand to see where on the screen the user intended to perform the \throw technique towards. 
 
 The \pinch technique was also implemented with the help of the Kinect and the touch screen on the mobile phone. 
-This technique would start by having the user pinch the shape on the screen of the mobile phone and close his or her hand around it, as if to grab it. 
-The Kinect would then look for a opening of the hand motion, on the pointer hand, and place the given shape at that location. 
+This technique started by having the user pinch the shape on the screen of the mobile phone and close his or her hand around it, as if to grab it. 
+The Kinect would then look for a opening of the hand motion, on the pointer hand, and take that as the target point.
 
-The \tilt technique was implemented mostly with the accelerometer of the phone, by listening for a significant change in the z and y axis of the accelerometer, as if tilting the phone forward. 
+The \tilt technique was implemented mostly with the accelerometer of the phone, by checking for a significant change in the z and y axis of the accelerometer, as if tilting the phone forward. 
 
-The \swipe technique was implemented with touch screen of the phone. 
-Here, we would detect when a significant swipe would happen on the screen, and then use the pointer location to place the shape that was swiped up onto the screen. 
+The \swipe technique was implemented with the touch screen of the phone. 
+Here, we detected when a significant swipe happened on the screen, and then use the pointer location to place the shape that was swiped up onto the screen. 
 
 \begin{figure}[H]
 	\centering
 	\subfloat[]{\includegraphics[width = 0.42\columnwidth , height = 2cm ]{images/kinectScreen.jpg}\label{fig:kinectScreen}} 
+	\qquad
 	\subfloat[]{\includegraphics[height = 2cm ]{images/phoneScreen.png}\label{fig:phoneScreen}}
 	\caption{
 		\protect\subref{fig:kinectScreen} The main screen of the application.
@@ -60,29 +60,24 @@ Here, we would detect when a significant swipe would happen on the screen, and t
 The experiment was conducted as a within-subject research, with the four different interaction techniques and two grid sizes as independent variables. 
 
 The within-subject research was chosen because we wanted to minimize the amount of subjects needed in order to get a significant result. We also believed that the learning effect would not be as pronounced since the four techniques are very different from each other. 
-We chose to investigate techniques because we were interested in learning about the way people interact with large displays, and the grid size because the need for precision depends on the context; sometimes we need to be as precise as possible, and sometimes we just need to be able to interact with the screen. 
+We chose to investigate techniques because we were interested in learning about the way people interact with large displays, and the two grid sizes to investigate precision. Sometimes users need to be as precise as possible, and sometimes they just need to be able to interact with a large display. 
 
-% Start percentages:
-% Pinch: 26,41509 ~ 26.4
-% Swipe: 22,64151 ~ 22.7
-% Throw: 24,5283 ~ 24.5
-% Tilt: 26,41509 ~ 26.4
-For the dependent variables, different measures of completion time and accuracy were used, as well as a short questionnaire to get the user's satisfaction with regard to the given interaction technique. 
+For the dependent variables, different measures of completion time and hit success were used, as well as a short questionnaire to get the user's satisfaction with regard to the given interaction technique. 
 Which technique started the test was randomized in order to mitigate the learning effect on the entire set of tests. 
 In the end, the \pinch gesture started 26.4\% of all tests, \swipe started 22.7\% of all tests, \throw started 24.5\% of all tests, and \tilt started 26.4\% of all tests. 
 All of this was automatically logged, and every test session was also video recorded in order to be able to go through them in case we wanted to go into detail in one of the test sessions.
 
-A simple logging mechanism was developed, which created a unique file for each user and outputted all attempts onto that file. In the end, the result was a list of 53 files, one for each test participant, where each file would have a list of attempts and grid size switches. Each attempt line would have a time stamp, whether the user hit the target or not, whether he selected the correct shape, were the target was, and where the participant hit. These where the following measures that we were able to deduce from the log files that were generated: 
+A simple logging mechanism was developed, which created a unique file for each user and outputted all attempts into that file. In the end, the result was a list of 53 files, one for each test participant, where each file would have a list of attempts and grid size switches. Each attempt would have a time stamp, whether the user hit the target or not, whether he selected the correct shape, were the target was, and where the participant hit. These where the following measures that we were able to deduce from the log files that were generated: 
 
 \textit{Total Time:} This was the time each user spent completing the test for a given interaction technique. 
-This was measured from the time each user had hit his first target after the practice period until he had hit his last target. 
-There were a total of 18 targets, plus the first target. 
+This was measured from the time each user had hit his first target after a practice period of three tries until he had hit his last target. 
+There were a total of 18 targets, plus the first target used for calibration. 
 
-\textit{Time per target:} This was the time each user spent hitting each of the target. 
-This was simply measured as the time since each user last hit a target until he hit the current one.
+\textit{Time per target:} This was the time each user spent hitting each of the targets. 
+This was measured as the time since each user last hit a target until he hit the next one.
 
-\textit{Accuracy:} Whether or not each user hit the given target. 
-Current pointer and target position (in both cell and pixels coordinates) were also recorded in order to give a more precise image of accuracy for each test. 
+\textit{Hit success:} Whether or not each user hit the given target. 
+Current pointer and target position (in both cell and pixels coordinates) were also recorded in order to give a precise value of accuracy for each attempt in terms of distance to target. 
 
 \textit{USE Questionnaire:} Each user was given a questionnaire after having gone through each interaction technique. 
 There were 6 questions, all taken from the USE questionnaire \cite{lund2001measuring}. 
@@ -98,7 +93,7 @@ The 6 questions were the following:
 	\item I learned how to use it quickly
 \end{itemize}
 
-User were able to rate their answers to each question on a 7 level Likert scale. 
+Users were able to rate their answers to each question on a 7 point Likert scale. 
 We also wrote down any comments made during the experiment and combined them with the questionnaire responses to get a better understanding of the user's response to each of the techniques. 
 
 \subsection{Participants}
@@ -110,11 +105,11 @@ They were recruited through a mixture of our social network and recruitment post
 
 \subsection{The Experiment}
 
-Each test subject was taken into the usability lab and then given a short introduction to what we were doing and why. 
-We would then explain how the system would work and what they had to do. 
+Each test subject was taken into the usability lab and given a short introduction to what we were doing and why. 
+We then explained how the system worked and what they had to do. 
 We would hand them a phone, ask them to stand on a marked cross, so that the distance to the screen would always be the same, and start the test.
 
-The application would at random choose one of the four techniques and display a short explanatory movie of how to perform the technique on a screen right beside the main application display. This can be seen in \Cref{fig:tutVideo}.
+The application chose at random one of the four techniques and display a short explanatory movie of how to perform the technique on a screen right beside the main application display(See \Cref{fig:tutVideo}).
 
 \begin{figure}[H]
 	\centering
@@ -132,10 +127,10 @@ Nothing was logged during the practice phase.
 A shape would appear, either a square or a circle, at one of the cells in the grid. 
 The user would have to choose the correct shape on the phone and perform the technique with that shape selected. 
 The shapes on the phone (\cref{fig:phoneScreen}) would randomly change positions, so that the user would have to check the phone after every technique. 
-The grid would also randomly, as far as the user was concerned, change size from large to small or vice-versa. 
+The grid would also randomly change size from large to small or vice-versa. 
 In reality, the target sequences where hard coded by us in such a way that there was an equal distribution of large and small grid targets. 
 We also made sure that there was an equal distribution of distances between each target. We classified them as short jumps, medium jumps, and long jumps. 
-A short jump was 2 large cells, a medium jump was 4 large cells, and a large jump was 6 large cells.  
+A short jump was 2 large cells(4 small cells), a medium jump was 4 large cells(8 small cells), and a large jump was 6 large cells(12 small cells).  
 After the practice phase, a calibration start target would be shown. This is so that we could calculate the distance between all other targets correctly. 
 The user would then go through the rest of the test (18 targets), going through a total of 22 targets. 
 
@@ -149,11 +144,10 @@ That means that our experiment had the following list of conditions:
 
 This means that each user had a total of $4 \times 2 \times 3 \times 3 = 72 $ targets.
 
-After going through every target for one technique, the user would then be asked to fill in the short questionnaire regarding the technique they just tried. 
+After going through every target for one technique, the user would then be asked to fill in the short questionnaire regarding the technique just tried. 
 
-This entire process would be repeated four times total, once for each technique. 
-After that, we would present them with a small demographics survey, in order to better understand the user. 
-We asked them about their age, height, if they were left or right handed, if they had a smart phone, for how long, if they had any experience with a Kinect, Wii, Playstation Move, or any other similar air gesture based technologies, and how often they utilized them. 
-
-We then thanked them for their time and sent them on their way. 
+This entire process would be repeated four times in total, once for each technique. 
+After that, we presented them with a small demographics survey, in order to better understand the user. 
+We asked them about their age, height, if they were left or right handed, if they had a smart phone, for how long, if they had any experience with a Kinect, Wii, Playstation Move, or any other similar air gesture based technologies, and how often they used them. 
+Finally, we thanked them for their time.
 The entire test took on average 15 minutes. 
