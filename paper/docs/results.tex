@@ -91,3 +91,45 @@ To determine the effect of grid size on target hit time, we applied another one 
 
 \subsection{Accuracy}
 Finally, we will perform an analysis of the accuracy and the effect of each technique with respect to grid sizes.
+Here, we took three different measures of accuracy; the distance between where the user hit and the target cell and the $x$ and $y$ axis independently as well. 
+These were all measured in pixels.
+This was because there were signs that certain techniques would usually miss in a specific direction, and we wanted to see if the data supported that. 
+An overview of the data can be in \Cref{tab:distanceSmall} and \Cref{tab:distanceLarge}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
+		\rowcolor[HTML]{9B9B9B} 
+		& (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
+		Mean Dist. & 75.97 & 5.40 & 18.60          & 76.51         \\ \hline
+		SD. Dist. & 176.15 & 47.81 & 95.29 & 177.45 \\ \hline
+		Mean XD. & 54.33 & 3.78 & 10.32 & 49.23 \\ \hline
+		SD. XD. & 140.87 & 40.15 & 81.84 & 151.36 \\ \hline
+		Mean YD. & 42.90 & 2.00 & 8.00 & 39.33 \\ \hline
+		SD. YD. & 110.30 & 26.16 & 49.37 & 99.82 \\ \hline
+	\end{tabular}
+	\caption{Mean and standard deviation for the distance, distance on the X-Axis(XD) and distance on the Y-Axis(YD) for each technique per target for small grid.}
+	\label{tab:distanceSmall}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
+		\rowcolor[HTML]{9B9B9B} 
+		& (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
+		Mean Dist. & 75.41 & 2.29 & 12.37 & 59.88         \\ \hline
+		SD. Dist. & 187.58 & 38.82 & 81.36 & 172.22 \\ \hline
+		Mean XD. & 55.32 & 1.88 & 10.32 & 49.23 \\ \hline
+		SD. XD. & 159.88 & 31.74 & 74.01 & 157.35 \\ \hline
+		Mean YD. & 37.41 & 1.14 & 4.33 & 22.86 \\ \hline
+		SD. YD. & 104.18 & 22.37 & 34.21 & 73.75 \\ \hline
+	\end{tabular}
+	\caption{Mean and standard deviation for the distance, distance on the X-Axis(XD) and distance on the Y-Axis(YD) for each technique per target for large grid.}
+	\label{tab:distanceLarge}
+\end{table} 
