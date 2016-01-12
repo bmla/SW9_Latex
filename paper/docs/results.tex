@@ -5,19 +5,49 @@ We will now present the results that we achieved through out our experiment and 
 
 \subsection{Target Hit Time}
 
-The four interaction techniques, Pinch, Swipe, Throw and Tilt were completed 18 times per participant. In total, each technique was performed 954 times. \Cref{tab:meanTimesTechnique} shows the mean time per target for each of the techniques as well as their standard deviation. 
+The four interaction techniques, Pinch, Swipe, Throw and Tilt were completed 18 times per participant. For each grid size, each technique was performed 477 times. \Cref{tab:meanTimesTechniqueSmall} and \Cref{tab:meanTimesTechniqueLarge} shows the mean time per target for each of the techniques as well as their standard deviation for both grid sizes. 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
-		 & \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\ \hline
-		Mean & 8.66  sec         & 5.71 sec          & 7.07 sec          & 6.00 sec         \\ \hline
-		Std. Dev. & 6.56 sec & 3.76 sec & 6.08 sec & 3.89 sec \\ \hline
+		 & \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\ 
+		 \rowcolor[HTML]{9B9B9B} 
+		 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
+		Mean & 9.23  sec         & 6.41 sec          & 7.73 sec          & 6.67 sec         \\ \hline
+		Std. Dev. & 6.48 sec & 4.49 sec & 6.6 sec & 4.49 sec \\ \hline
 	\end{tabular}
-	\caption{Mean time and standard deviation for each technique per target.}
-	\label{tab:meanTimesTechnique}
+	\caption{Mean time and standard deviation for each technique per target for small grid.}
+	\label{tab:meanTimesTechniqueSmall}
 \end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{9B9B9B} 
+		 & \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
+		 \rowcolor[HTML]{9B9B9B}
+		 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
+		Mean & 8.09  sec         & 5.01 sec          & 6.42 sec          & 5.33 sec         \\ \hline
+		Std. Dev. & 6.6 sec & 2.66 sec & 5.43 sec & 3.04 sec \\ \hline
+	\end{tabular}
+	\caption{Mean time and standard deviation for each technique per target for large grid.}
+	\label{tab:meanTimesTechniqueLarge}
+\end{table}
+
+%\begin{table}[H]
+%	\centering
+%	\begin{tabular}{|c|c|c|c|c|}
+%		\hline
+%		\rowcolor[HTML]{9B9B9B} 
+%		 & \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\ \hline
+%		Mean & 8.66  sec         & 5.71 sec          & 7.07 sec          & 6.00 sec         \\ \hline
+%		Std. Dev. & 6.56 sec & 3.76 sec & 6.08 sec & 3.89 sec \\ \hline
+%	\end{tabular}
+%	\caption{Mean time and standard deviation for each technique per target.}
+%	\label{tab:meanTimesTechnique}
+%\end{table}
 
 A one way, repeated measure ANOVA revealed, with a Greenhouse-Geisser correction (0.874), that the difference in time per target between the different techniques is in fact a significant($F(2.622, 2498.37)=67.192$, $p<0.001$). A post hoc pair-wise test using a LSD correction revealed that \pinch and \swipe($p<0.001$), \pinch and \tilt ($p<0.001$), \pinch and \throw ($p<0.001$), \swipe and \throw ($p<0.001$), and \throw and \tilt ($p<0.001$) were all significantly different from each other. However, \swipe and \tilt were not ($p=0.092$)
 
@@ -42,20 +72,50 @@ To determine the effect of grid size on target hit time, we applied another one 
 
 As above, we will perform an analysis on the effect of each technique on accuracy as well as the effect of each grid size. There are the same amount of data points as the above analysis. 
 
-The mean and standard deviation for each technique can be seen in \Cref{tab:meanHitTechnique}. 
+The mean and standard deviation for each technique for small and large grid size can be seen in \Cref{tab:meanHitTechniqueSmall} and \Cref{tab:meanHitTechniqueLarge} respectively. 
 
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c|c|c|c|c|}
 			\hline
 			\rowcolor[HTML]{9B9B9B} 
-			& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\ \hline
-			Mean & 0.72         & 0.94          & 0.88          & 0.68         \\ \hline
-			Std. Dev. & 0.45 & 0.25 & 0.32 & 0.47 \\ \hline
+			& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
+			\rowcolor[HTML]{9B9B9B} 
+			 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
+			Mean & 0.65         & 0.91          & 0.83          & 0.58         \\ \hline
+			Std. Dev. & 0.48 & 0.29 & 0.37 & 0.49 \\ \hline
 	\end{tabular}
-	\caption{Mean hit  and standard deviation for each technique per target.}
-	\label{tab:meanHitTechnique}
+	\caption{Mean hit  and standard deviation for each technique per target for small grid.}
+	\label{tab:meanHitTechniqueSmall}
 \end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|}
+			\hline
+			\rowcolor[HTML]{9B9B9B} 
+			& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
+			\rowcolor[HTML]{9B9B9B} 
+			 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
+			Mean & 0.78         & 0.97          & 0.94          & 0.78         \\ \hline
+			Std. Dev. & 0.41 & 0.18 & 0.25 & 0.41 \\ \hline
+	\end{tabular}
+	\caption{Mean hit  and standard deviation for each technique per target for large grid.}
+	\label{tab:meanHitTechniqueLarge}
+\end{table}
+
+%\begin{table}[H]
+%	\centering
+%	\begin{tabular}{|c|c|c|c|c|}
+%			\hline
+%			\rowcolor[HTML]{9B9B9B} 
+%			& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\ \hline
+%			Mean & 0.72         & 0.94          & 0.88          & 0.68         \\ \hline
+%			Std. Dev. & 0.45 & 0.25 & 0.32 & 0.47 \\ \hline
+%	\end{tabular}
+%	\caption{Mean hit  and standard deviation for each technique per target.}
+%	\label{tab:meanHitTechnique}
+%\end{table}
 
 In order to see the effect of each technique on the hit ratio per target, we performed another one way, repeated measure ANOVA ($F(2.645,2420.246)=105.535$, $p<0.001$), which told us that the different techniques also had a significant effect on the hit ratio. We perform another pair-wise post hoc LSD test to see where the significant differences are. \pinch and \tilt had $p=0.094$, which means that there was no significant difference between these two techniques. All other techniques were significantly different from each other ($p<0.001$). 
 
