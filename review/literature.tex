@@ -45,7 +45,11 @@
 % have to enable the "chi_draft" option for the document class. To do this, change the very first
 % line to: "\documentclass[chi_draft]{sigchi}". You can then place todo notes by using the "\todo{...}"
 % command. Make sure to disable the draft option again before submitting your final document.
+\usepackage{soul}
 \usepackage{todonotes}
+\newcommand{\hlfix}[2]{\hl{#1}\todo{#2}}
+%Example \hlfix{wrong text}{fix text}~continues here.
+
 
 % Paper metadata (use plain text, for PDF inclusion and later
 % re-using, if desired).  Use \emtpyauthor when submitting for review

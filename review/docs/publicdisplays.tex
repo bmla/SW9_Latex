@@ -6,7 +6,7 @@
 Rapid progression in the technology for displays and projections, led to considerable proliferation of large displays, thanks also to their capacity to promote activity and social awareness \cite{Huang:2003}, they moved out from research laboratories into public spaces. 
 However, according to Brignull and Rogers: \emph{``these displays typically present predetermined feeds offering no interactivity''} \cite{Brignull:2003}. 
 Ten years later Ojala et. al still support this thesis, that \emph{``to date, however, these displays are still used primarily as one-way commercial digital signs.''} \cite{Ojala:2012:MIP:2225044.2225065}. \\
-\todo[inline]{We see a difference between large display and public display that almost every paper about public display includes the context of getting the users attention. This is often done by creating content that attracts pople and tries to achieve a honeypot effect. A second challenge that is often described in papers about public display is the need to create immersion and focus on the content, as well as  working with the challenge of playfullness - to make the user do more than just play with the system.}
+\todo[inline]{We see a difference between large display and public display that almost every paper about public display includes the context of getting the users attention. This is often done by creating content that attracts people and tries to achieve a honeypot effect. A second challenge that is often described in papers about public display is the need to create immersion and focus on the content, as well as  working with the challenge of playfullness - to make the user do more than just play with the system.}
 Nevertheless researchers continue to combat and change this trend, as such a body of research has formed around interactive public displays. A large part of this body presents unique  solutions for installations and devices for particular public settings with specific display technology \cite{Schieck:2012:AEM:2393132.2393141}.\\
 
 %Expand every paragraph below with more description of the systems, what they are designed to do and the technology used to acheive it, also what they contributed to research
@@ -34,18 +34,18 @@ They have done so by developing a \emph{``[...] conceptual framework and technic
 
 %rephrasing
 The framework allows for calculating the phone's distance and orientation to the display, if the display's physical size is known.
-This is done by locating features on the image from the public display and matching them with the image seen on the phone. The comparison is used to calculate a transformation matrix that maps the x and y coordinates from the phone to the corresponding x and y values on the display. Because the analysis is done on the image itself  it is sufficient ot have a subregion of the display image shown on the phone.
+This is done by locating features on the image from the public display and matching them with the image seen on the phone. The comparison is used to calculate a transformation matrix that maps the x and y coordinates from the phone to the corresponding x and y values on the display. Because the analysis is done on the image itself  it is sufficient to have a subregion of the display image shown on the phone.
 %gut,
 %syncing
 
-To support animated content, the display saves the screenshots in a queue with timestamps. The server that performs the calculation will syncronize its clock with the connected phone, so it can compare the timestamp from the phone with the queue and select the appropiate screenshot for feature point comparison.
+To support animated content, the display saves the screenshots in a queue with timestamps. The server that performs the calculation will synchronize its clock with the connected phone, so it can compare the timestamp from the phone with the queue and select the appropriate screenshot for feature point comparison.
 %Describe limitations
 
-By connecting several displays  to a server it is possible to support interaction between a user and several displays at the same time. However the amount of comparisons the server has to make also increases for each display that is added and thus decreases the detetion speed and eventually harms the real-time interaction. The set of displays that an image has to be compared against can be reduced by using GPS (location), compas (direction) and acelerometer (orientation) data from the user's phone, to discard displays that isn't being pointed at. %check gramar in this line 
+By connecting several displays  to a server it is possible to support interaction between a user and several displays at the same time. However the amount of comparisons the server has to make also increases for each display that is added and thus decreases the detection speed and eventually harms the real-time interaction. The set of displays that an image has to be compared against can be reduced by using GPS (location), compass (direction) and accelerometer (orientation) data from the user's phone, to discard displays that isn't being pointed at. %check gramar in this line 
 %%boring end
 \\\\
-From-a-distance interaction using a handheld devices is not the only way to interact with public displays. %no shit sherlock
-Jacucci et al. adopted touch as a base for their ``Worlds of Information'' system. Their touch solution was groundbreaking due to supporting multiple touch and users at the same time. Multi-touch can create a playful environment that engages users, folsters social learning, social experience and creates an attractive honey pot effect. However, Jacucci et al. states that: ``the challenge is to move beyond ephemeral interactions, driven by the playfulness of 
+From-a-distance interaction using handheld devices is not the only way to interact with public displays. %no shit sherlock
+Jacucci et al. adopted touch as a base for their ``Worlds of Information'' system. Their touch solution was groundbreaking due to supporting multiple touch and users at the same time. Multi-touch can create a playful environment that engages users, fosters social learning, social experience and creates an attractive honey pot effect. However, Jacucci et al. states that: ``the challenge is to move beyond ephemeral interactions, driven by the playfulness of 
 the interface, and to encourage users to pay attention to the content also exploring more complex functionality''\cite{Jacucci:2010}.
 \todo[inline]{Progress pointer}
 They \emph{``discuss how to design for and evaluate engagement in a public walk-up-and-use installation''} \cite{Jacucci:2010}. %  rephase. Why do they want to descuss it, what do they suggest?
@@ -62,4 +62,5 @@ Focusing on the collaborative and cross-device side, Lucero et. al. created Mobi
 Valkanova et. al tried to focus on the discussion and natural user interaction side by creating MyPossition, a \emph{``public display in the form of a large projection, featuring an interactive poll visualisation.''} \cite{Valkanova:2014} which aimed to aggregate public opinions for local issues by utilizing voting with gestures.\\
 
 In this section we explored literature on interacting with public displays. 
-By doing so, two clusters of research papers were formed, one on cross-device interaction, and another on natural user interaction, which defines the need for their further examination in relation to the main topic.
+By doing so, two clusters of research papers emerged, one on cross-device interaction, and another on natural user interaction.
+% which defines the need for their further examination in relation to the main topic.
