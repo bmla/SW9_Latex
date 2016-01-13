@@ -38,7 +38,7 @@ The pairwise test showed that all techniques were significantly different. \pinc
 For the large grid, we got $(p<0.001)$, $(F(2.472, 1176.749)=42.773)$, (Greenhouse-Geisser correction: 0.824).
 The pairwise test showed that all of the techniques, with the exception of \pinch and \tilt, were statistically different from each other. The results were as following: \pinch and \swipe $(p<0.001)$, \pinch and \throw $(p<0.001)$, \pinch and \tilt $(p=1.000)$, \swipe and \throw $(p=0.025)$, \swipe and \tilt $(p<0.001)$, and finally \throw and \tilt $(p<0.001)$.
 
-\subsection{Efficiency}
+\subsection{Time}
 In this section we present the efficiency results which defines the amount of time spent performing a technique.
 We perform an analysis of the efficiency and the effect of each technique with respect to grid sizes.
 
@@ -56,27 +56,42 @@ For each grid size, each technique was performed 477 times.
 		 \rowcolor[HTML]{9B9B9B} 
 		 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
 		Small & 9.23 sec        & 6.41 sec          & 7.73 sec          & 6.67 sec         \\
-		 & (6.48)        & (4.49)          & (6.60)         & (4.49)         \\ \hline
+		 & (6.48 sec)        & (4.49 sec)          & (6.60 sec)         & (4.49 sec)         \\ \hline
 		Large & 8.09 sec         & 5.01 sec          & 6.42 sec          & 5.33 sec         \\
-		 & (6.60)         & (2.66)          & (5.43)      & (3.04)         \\ \hline
+		 & (6.60 sec)         & (2.66 sec)          & (5.43 sec)      & (3.04 sec)         \\ \hline
 	\end{tabular}
 	\end{adjustbox}
 	\caption{Mean time and standard deviation for each technique per target for small and large grid.}
 	\label{tab:meanTimesTechnique}
 \end{table}
 
-A one way, repeated measure ANOVA revealed, with a Greenhouse-Geisser correction (0.874), that the difference in time per target between the different techniques is in fact a significant($F(2.622, 2498.37)=67.192$, $p<0.001$). A post hoc pair-wise test using a LSD correction revealed that \pinch and \swipe($p<0.001$), \pinch and \tilt ($p<0.001$), \pinch and \throw ($p<0.001$), \swipe and \throw ($p<0.001$), and \throw and \tilt ($p<0.001$) were all significantly different from each other. However, \swipe and \tilt were not ($p=0.092$)
+To get the effect of each technique on the time for the different grid sizes, we performed two one-way ANOVA's, one for the small grid and another for the large grid.
+A post-hoc pairwise LSD test to see where the significant difference were.
 
-We then examined the effect of grid size on time. Each participant had a equal mixture of small and large grid targets. This means that the four techniques had 9 targets of each size; four large and four small. Every test had 36 targets of each size, totaling 1908 targets of each size throughout all tests. \Cref{tab:meanTimesTechnique} shows the mean time per target and standard deviation for each grid size. 
+For the the small grid, we got $(p<0.001)$, $(F(2.740, 1304.290)=26.523)$, (Greenhouse-Geisser correction: 0.913).
+The pairwise test showed that all techniques were significantly different except \swipe and \tilt. 
+\pinch and \swipe had $(p < 0.001)$, 
+\pinch and \throw $(p <0.001)$, 
+\pinch and \tilt $(p < 0.001)$, 
+\swipe and \throw $(p < 0.001)$, 
+\swipe and \tilt $(p = 0.354)$ and finally, 
+\throw and \tilt had $(p = 0.004)$. 
 
-To determine the effect of grid size on target hit time, we applied another one way, repeated measures ANOVA($F(1,1907) = 77.587$, $p<0.001$). This means that the grid size has a significant effect on time when hitting the target. 
+For the large grid, we got $(p<0.001)$, $(F(2.221, 1057.144)=44.539)$, (Greenhouse-Geisser correction: 0.740).
+The pairwise test showed that all of the techniques, with the exception of \swipe and \tilt, were statistically different from each other. The results were as following: 
+\pinch and \swipe $(p<0.001)$, 
+\pinch and \throw $(p<0.001)$, 
+\pinch and \tilt $(p<0.001)$, 
+\swipe and \throw $(p<0.001)$, 
+\swipe and \tilt $(p=0.077)$, and finally 
+\throw and \tilt $(p<0.001)$.
 
 \subsection{Accuracy}
 Finally, we will perform an analysis of the accuracy and the effect of each technique with respect to grid sizes.
 Here, we took three different measures of accuracy; the distance between where the user hit and the target cell and the $x$ and $y$ axis independently as well. 
 These were all measured in pixels.
 This was because there were signs that certain techniques would usually miss in a specific direction, and we wanted to see if the data supported that. 
-An overview of the data can be in \Cref{tab:distanceSmall} and \Cref{tab:distanceLarge}.
+An overview of the distance can be seen in \Cref{tab:distance}.
 
 \begin{table}[H]
 	\centering
@@ -88,14 +103,14 @@ An overview of the data can be in \Cref{tab:distanceSmall} and \Cref{tab:distanc
 		& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
 		\rowcolor[HTML]{9B9B9B} 
 		& (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-		Small & 75.97 & 5.40 & 18.60          & 76.51         \\
-		& (176.15) & (47.81) & (95.29) & (177.45) \\ \hline
-		Large & 75.41 & 2.29 & 12.37 & 59.88         \\
-		& (187.58) & (38.82) & (81.36) & (172.22) \\ \hline
+		Small & 75.97 px & 5.40 px & 18.60 px  & 76.51 px         \\
+		& (176.15 px) & (47.81 px) & (95.29 px) & (177.45 px) \\ \hline
+		Large & 75.41 px & 2.29 px & 12.37 px & 59.88 px         \\
+		& (187.58 px) & (38.82 px) & (81.36 px) & (172.22 px) \\ \hline
 	\end{tabular}
 	\end{adjustbox}
 	\caption{Mean and standard deviation for the distance for each technique per target for small grid.}
-	\label{tab:distanceSmall}
+	\label{tab:distance}
 \end{table}
 
 \begin{table}[H]
@@ -108,19 +123,20 @@ An overview of the data can be in \Cref{tab:distanceSmall} and \Cref{tab:distanc
 		& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
 		\rowcolor[HTML]{9B9B9B} 
 		& (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-		Small XD. & 54.33 & 3.78 & 10.32 & 49.23 \\
-		& (140.87) & (40.15) & (81.84) & (151.36) \\ \hline
-		Large XD. & 55.32 & 1.88 & 10.32 & 49.23 \\
-		& (159.88) & (31.74) & (74.01) & (157.35) \\ \hline
-		Small YD. & 42.90 & 2.00 & 8.00 & 39.33 \\
-		& (110.30) & (26.16) & (49.37) & (99.82) \\ \hline
-		Large YD. & 37.41 & 1.14 & 4.33 & 22.86 \\
-		& (104.18) & (22.37) & (34.21) & (73.75) \\ \hline
+		Small XD. & 54.33 px & 3.78 px & 10.32 px & 49.23 px \\
+		& (140.87 px) & (40.15 px) & (81.84 px) & (151.36 px) \\ \hline
+		Large XD. & 55.32 px & 1.88 px & 10.32 px & 49.23 px \\
+		& (159.88 px) & (31.74 px) & (74.01 px) & (157.35 px) \\ \hline
+		Small YD. & 42.90 px & 2.00 px & 8.00 px & 39.33 px \\
+		& (110.30 px) & (26.16 px) & (49.37 px) & (99.82 px) \\ \hline
+		Large YD. & 37.41 px & 1.14 px & 4.33 px & 22.86 px \\
+		& (104.18 px) & (22.37 px) & (34.21 px) & (73.75 px) \\ \hline
 	\end{tabular}
 	\end{adjustbox}
 	\caption{Mean and standard deviation for distance on the X-Axis(XD) and distance on the Y-Axis(YD) for each technique per target for small grid.}
-	\label{tab:distanceSmall}
+	\label{tab:distanceXY}
 \end{table}
+\todo{we need a reference to this xy table}
 
 We performed three one way ANOVA's with all 3 different measures of sizes.
 For distance, we got $(p<0.001)$ $(F(4.768, 2269.348) = 30.636)$ (Greenhouse-Geisser correction of 0.681).
