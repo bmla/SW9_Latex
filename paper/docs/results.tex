@@ -31,6 +31,14 @@ The success rate's mean and standard deviation for each technique for small and 
 	\label{tab:meanHitTechnique}
 \end{table}
 
+\begin{figure}[H]
+	{\includegraphics[width = 1\columnwidth ]{images/success.png}} 
+	\caption{
+		Overview of the mean and standard deviation for each technique in regards to hit rate per target.
+	}
+	\label{fig:successResults}
+\end{figure}
+
 In order to see the effect of each technique on the hit ratio per target for the different grid sizes, we performed two different one-way ANOVA's, where we split the data between the two different grid sizes.
 We then performed a post-hoc pairwise LSD test to see where the significant difference were.
  
@@ -65,6 +73,14 @@ We perform an analysis of the efficiency and the effect of each technique with r
 	\label{tab:meanTimesTechnique}
 \end{table}
 
+\begin{figure}[H]
+	{\includegraphics[width = 1\columnwidth ]{images/time.png}} 
+	\caption{
+		Overview of the mean and standard deviation for each technique in regards to time per target.
+	}
+	\label{fig:timeResults}
+\end{figure}
+
 To get the effect of each technique on the time for the different grid sizes, we performed two one-way ANOVA's, one for the small grid and another for the large grid.
 A post-hoc pairwise LSD test to see where the significant difference were.
 
@@ -86,7 +102,7 @@ The pairwise test showed that all of the techniques, with the exception of \swip
 \swipe and \tilt $(p=0.077)$, and finally 
 \throw and \tilt $(p<0.001)$.
 
-\subsection{Accuracy}
+\subsection{Distance}
 Finally, we will perform an analysis of the accuracy and the effect of each technique with respect to grid sizes.
 Here, we took three different measures of accuracy; the distance between where the user hit and the target cell and the $x$ and $y$ axis independently as well. 
 These were all measured in pixels.
@@ -113,6 +129,15 @@ An overview of the distance can be seen in \Cref{tab:distance}.
 	\label{tab:distance}
 \end{table}
 
+\begin{figure}[H]
+	{\includegraphics[width = 1\columnwidth ]{images/distance.png}} 
+	\caption{
+		Overview of the mean and standard deviation for each technique in regards to distance.
+	}
+	\label{fig:distanceResults}
+\end{figure}
+\todo{we need a reference to this distance graph}
+
 \begin{table}[H]
 	\centering
 	\textbf{X and Y Distance Means}\\[4pt]
@@ -136,11 +161,36 @@ An overview of the distance can be seen in \Cref{tab:distance}.
 	\caption{Mean and standard deviation for distance on the X-Axis(XD) and distance on the Y-Axis(YD) for each technique per target for small grid.}
 	\label{tab:distanceXY}
 \end{table}
-\todo{we need a reference to this xy table}
+\todo{we need a reference to this xy table and the graph}
 
-We performed three one way ANOVA's with all 3 different measures of sizes.
-For distance, we got $(p<0.001)$ $(F(4.768, 2269.348) = 30.636)$ (Greenhouse-Geisser correction of 0.681).
-For distance on the X-axis, we got $(p<0.001)$, $(F(4.788,2278.99) = 21.984)$ (Greenhouse-Geisser correction of 0.684).
-Finally, for the distance on the Y-axis, we got $(p<0.001)$, $(F(248987.377, 8612.168)=28.911)$ (Greenhouse-Geisser correction of 0.624).
+\begin{figure}[H]
+	{\includegraphics[width = 1\columnwidth ]{images/distance_axis.png}} 
+	\caption{
+		Overview of the mean and standard deviation for each technique in regards distance on the x-axis and y-axis.
+	}
+	\label{fig:distanceXYResults}
+\end{figure}
 
-We then performed a post hoc LSD test to see where the significant differences were located. 
+We performed two one way ANOVA's, one for each grid size, on the distance data.
+
+For the the small grid, we got $(p<0.001)$, $(F(2.341, 1114.249)=37.504)$, (Greenhouse-Geisser correction: 0.780).
+The pairwise test showed that all techniques were significantly different except \pinch and \tilt. 
+\pinch and \swipe had $(p < 0.001)$, 
+\pinch and \throw $(p <0.001)$, 
+\pinch and \tilt $(p = 0.961)$, 
+\swipe and \throw $(p = 0.008)$, 
+\swipe and \tilt $(p < 0.001)$ and finally, 
+\throw and \tilt had $(p < 0.001)$. 
+
+For the large grid, we got $(p<0.001)$, $(F(2.176, 1036.004)=33.315)$, (Greenhouse-Geisser correction: 0.725).
+The pairwise test showed that all of the techniques, with the exception of \pinch and \tilt, were statistically different from each other. The results were as following: 
+\pinch and \swipe had $(p < 0.001)$, 
+\pinch and \throw $(p <0.001)$, 
+\pinch and \tilt $(p = 0.171)$, 
+\swipe and \throw $(p = 0.015)$, 
+\swipe and \tilt $(p < 0.001)$ and finally, 
+\throw and \tilt had $(p < 0.001)$. 
+
+\todo[inline]{Jeni: Should we include the numbers from the SPSS analysis of the X-distance and Y-distance data?}
+
+%We then performed a post hoc LSD test to see where the significant differences were located. 
