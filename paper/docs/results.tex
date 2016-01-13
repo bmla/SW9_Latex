@@ -1,7 +1,7 @@
 % !TEX root = ../paper.tex
 %http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_HypothesisTesting-ANOVA/BS704_HypothesisTesting-Anova_print.html
 \section{Results}
-We will now present the results that we achieved through out our experiment and also how they were achieved. We will first present our findings in respect to success rate, then in respect to efficiency, and finally in respect to accuracy. We will show that there is a significant interaction between our two independent variables, grid size and technique, with regards to success rate. Finally, we will look at the questionnaires and show the significant findings there. We will discuss these results later, in the \nameref{sec:discussion} section.  
+We will now present the results that we achieved through out our experiment and also how they were achieved. We will first present our findings in respect to success rate, then in respect to efficiency, and finally in respect to accuracy. Finally, we will look at the questionnaires and show the significant findings there. We will discuss these results later, in the \nameref{sec:discussion} section.  
 
 \subsection{Success Rate}
 In this section we will present the results related to the success of hitting a target.
@@ -41,8 +41,14 @@ The success rate's mean and standard deviation for each technique for small and 
 	\label{tab:meanHitTechniqueLarge}
 \end{table}
 
-In order to see the effect of each technique on the hit ratio per target for small grid, we performed a one way, repeated measure ANOVA ($F(2.645,2420.246)=105.535$, $p<0.001$), which told us that the different techniques had a significant effect on the hit ratio. 
-We perform another pair-wise post hoc LSD test to see where the significant differences are. \pinch and \tilt had $p=0.094$, which means that there was no significant difference between these two techniques. All other techniques were significantly different from each other ($p<0.001$). 
+In order to see the effect of each technique on the hit ratio per target for the different grid sizes, we performed two different one-way ANOVA's, where we split the data between the two different grid sizes.
+We then performed a post-hoc pairwise LSD test to see where the significant difference were.
+ 
+For the the small grid, we got $(p<0.001)$, $(F(2.722, 1295.674)=62.754)$, (Greenhouse-Geisser correction: 0.907).
+The pairwise test showed that all techniques were significantly different. \pinch and \swipe had $(p < 0.001)$, \pinch and \throw $(p <0.001)$, \pinch and \tilt $(p = 0.031)$, \swipe and \throw $(p=0.001)$, \swipe and \tilt $(p < 0.001)$ and finally, \throw and \tilt had $(p<0.001)$. 
+
+For the large grid, we got $(p<0.001)$, $(F(2.472, 1176.749)=42.773)$, (Greenhouse-Geisser correction: 0.824).
+The pairwise test showed that all of the techniques, with the exception of \pinch and \tilt, were statistically different from each other. The results were as following: \pinch and \swipe $(p<0.001)$, \pinch and \throw $(p<0.001)$, \pinch and \tilt $(p=1.000)$, \swipe and \throw $(p=0.025)$, \swipe and \tilt $(p<0.001)$, and finally \throw and \tilt $(p<0.001)$.
 
 \subsection{Efficiency}
 In this section we present the efficiency results which defines the amount of time spent performing a technique.
