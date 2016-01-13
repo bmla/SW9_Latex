@@ -7,38 +7,26 @@ We will now present the results that we achieved through out our experiment and 
 In this section we will present the results related to the success of hitting a target.
 We will perform an analysis of the success rate and the effect of each technique with respect to grid sizes.
 
-The success rate's mean and standard deviation for each technique for small and large grid size can be seen in \Cref{tab:meanHitTechniqueSmall} and \Cref{tab:meanHitTechniqueLarge} respectively.
+The success rate's mean and standard deviation for each technique for small and large grid size can be seen in \Cref{tab:meanHitTechnique}.
 
 \begin{table}[H]
 	\centering
-	\textbf{Small Grid Success Rate}\\[4pt]
+	\textbf{Success Rate Means}\\[4pt]
+	\begin{adjustbox}{width=\columnwidth}
 	\begin{tabular}{|c|c|c|c|c|}
 			\hline
 			\rowcolor[HTML]{9B9B9B} 
 			& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
 			\rowcolor[HTML]{9B9B9B} 
 			 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-			Mean & 0.65         & 0.91          & 0.83          & 0.58         \\ \hline
-			Std. Dev. & 0.48 & 0.29 & 0.37 & 0.49 \\ \hline
+			Small & 0.65        & 0.91         & 0.83         & 0.58        \\
+			 & (0.48)        & (0.29)         & (0.37)         & (0.49)        \\ \hline
+			Large & 0.78        & 0.97         & 0.94         & 0.78        \\
+			 & (0.41)        & (0.18)         & (0.25)         & (0.41)        \\ \hline
 	\end{tabular}
-	\caption{Mean hit  and standard deviation for each technique per target for small grid.}
-	\label{tab:meanHitTechniqueSmall}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\textbf{Large Grid Success Rate}\\[4pt]
-	\begin{tabular}{|c|c|c|c|c|}
-			\hline
-			\rowcolor[HTML]{9B9B9B} 
-			& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
-			\rowcolor[HTML]{9B9B9B} 
-			 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-			Mean & 0.78         & 0.97          & 0.94          & 0.78         \\ \hline
-			Std. Dev. & 0.41 & 0.18 & 0.25 & 0.41 \\ \hline
-	\end{tabular}
-	\caption{Mean hit  and standard deviation for each technique per target for large grid.}
-	\label{tab:meanHitTechniqueLarge}
+	\end{adjustbox}
+	\caption{Mean hit  and standard deviation for each technique per target for small and large grid.}
+	\label{tab:meanHitTechnique}
 \end{table}
 
 In order to see the effect of each technique on the hit ratio per target for the different grid sizes, we performed two different one-way ANOVA's, where we split the data between the two different grid sizes.
@@ -56,42 +44,30 @@ We perform an analysis of the efficiency and the effect of each technique with r
 
 The four interaction techniques, \pinch, \swipe, \throw and \tilt were completed 18 times per participant. 
 For each grid size, each technique was performed 477 times. 
-\Cref{tab:meanTimesTechniqueSmall} and \Cref{tab:meanTimesTechniqueLarge} shows the mean time per target for each of the techniques as well as their standard deviation for both grid sizes. 
+\Cref{tab:meanTimesTechnique} shows the mean time per target for each of the techniques as well as their standard deviation for both grid sizes. 
 \begin{table}[H]
 	\centering
-	\textbf{Small Grid Efficiency}\\[4pt]
+	\textbf{Time Means}\\[4pt]
+	\begin{adjustbox}{width=\columnwidth}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
 		 & \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\ 
 		 \rowcolor[HTML]{9B9B9B} 
 		 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-		Mean & 9.23  sec         & 6.41 sec          & 7.73 sec          & 6.67 sec         \\ \hline
-		Std. Dev. & 6.48 sec & 4.49 sec & 6.6 sec & 4.49 sec \\ \hline
+		Small & 9.23 sec        & 6.41 sec          & 7.73 sec          & 6.67 sec         \\
+		 & (6.48)        & (4.49)          & (6.60)         & (4.49)         \\ \hline
+		Large & 8.09 sec         & 5.01 sec          & 6.42 sec          & 5.33 sec         \\
+		 & (6.60)         & (2.66)          & (5.43)      & (3.04)         \\ \hline
 	\end{tabular}
-	\caption{Mean time and standard deviation for each technique per target for small grid.}
-	\label{tab:meanTimesTechniqueSmall}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\textbf{Large Grid Efficiency}\\[4pt]
-	\begin{tabular}{|c|c|c|c|c|}
-		\hline
-		\rowcolor[HTML]{9B9B9B} 
-		 & \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
-		 \rowcolor[HTML]{9B9B9B}
-		 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-		Mean & 8.09  sec         & 5.01 sec          & 6.42 sec          & 5.33 sec         \\ \hline
-		Std. Dev. & 6.6 sec & 2.66 sec & 5.43 sec & 3.04 sec \\ \hline
-	\end{tabular}
-	\caption{Mean time and standard deviation for each technique per target for large grid.}
-	\label{tab:meanTimesTechniqueLarge}
+	\end{adjustbox}
+	\caption{Mean time and standard deviation for each technique per target for small and large grid.}
+	\label{tab:meanTimesTechnique}
 \end{table}
 
 A one way, repeated measure ANOVA revealed, with a Greenhouse-Geisser correction (0.874), that the difference in time per target between the different techniques is in fact a significant($F(2.622, 2498.37)=67.192$, $p<0.001$). A post hoc pair-wise test using a LSD correction revealed that \pinch and \swipe($p<0.001$), \pinch and \tilt ($p<0.001$), \pinch and \throw ($p<0.001$), \swipe and \throw ($p<0.001$), and \throw and \tilt ($p<0.001$) were all significantly different from each other. However, \swipe and \tilt were not ($p=0.092$)
 
-We then examined the effect of grid size on time. Each participant had a equal mixture of small and large grid targets. This means that the four techniques had 9 targets of each size; four large and four small. Every test had 36 targets of each size, totaling 1908 targets of each size, through out all tests. \Cref{tab:meanTimesSize} shows the mean time per target and standard deviation for each grid size. 
+We then examined the effect of grid size on time. Each participant had a equal mixture of small and large grid targets. This means that the four techniques had 9 targets of each size; four large and four small. Every test had 36 targets of each size, totaling 1908 targets of each size throughout all tests. \Cref{tab:meanTimesTechnique} shows the mean time per target and standard deviation for each grid size. 
 
 To determine the effect of grid size on target hit time, we applied another one way, repeated measures ANOVA($F(1,1907) = 77.587$, $p<0.001$). This means that the grid size has a significant effect on time when hitting the target. 
 
@@ -104,41 +80,47 @@ An overview of the data can be in \Cref{tab:distanceSmall} and \Cref{tab:distanc
 
 \begin{table}[H]
 	\centering
+	\textbf{Distance Means}\\[4pt]
+	\begin{adjustbox}{width=\columnwidth}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
 		& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
 		\rowcolor[HTML]{9B9B9B} 
 		& (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-		Mean Dist. & 75.97 & 5.40 & 18.60          & 76.51         \\ \hline
-		SD. Dist. & 176.15 & 47.81 & 95.29 & 177.45 \\ \hline
-		Mean XD. & 54.33 & 3.78 & 10.32 & 49.23 \\ \hline
-		SD. XD. & 140.87 & 40.15 & 81.84 & 151.36 \\ \hline
-		Mean YD. & 42.90 & 2.00 & 8.00 & 39.33 \\ \hline
-		SD. YD. & 110.30 & 26.16 & 49.37 & 99.82 \\ \hline
+		Small & 75.97 & 5.40 & 18.60          & 76.51         \\
+		& (176.15) & (47.81) & (95.29) & (177.45) \\ \hline
+		Large & 75.41 & 2.29 & 12.37 & 59.88         \\
+		& (187.58) & (38.82) & (81.36) & (172.22) \\ \hline
 	\end{tabular}
-	\caption{Mean and standard deviation for the distance, distance on the X-Axis(XD) and distance on the Y-Axis(YD) for each technique per target for small grid.}
+	\end{adjustbox}
+	\caption{Mean and standard deviation for the distance for each technique per target for small grid.}
 	\label{tab:distanceSmall}
 \end{table}
 
 \begin{table}[H]
 	\centering
+	\textbf{X and Y Distance Means}\\[4pt]
+	\begin{adjustbox}{width=\columnwidth}
 	\begin{tabular}{|c|c|c|c|c|}
 		\hline
 		\rowcolor[HTML]{9B9B9B} 
 		& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
 		\rowcolor[HTML]{9B9B9B} 
 		& (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-		Mean Dist. & 75.41 & 2.29 & 12.37 & 59.88         \\ \hline
-		SD. Dist. & 187.58 & 38.82 & 81.36 & 172.22 \\ \hline
-		Mean XD. & 55.32 & 1.88 & 10.32 & 49.23 \\ \hline
-		SD. XD. & 159.88 & 31.74 & 74.01 & 157.35 \\ \hline
-		Mean YD. & 37.41 & 1.14 & 4.33 & 22.86 \\ \hline
-		SD. YD. & 104.18 & 22.37 & 34.21 & 73.75 \\ \hline
+		Small XD. & 54.33 & 3.78 & 10.32 & 49.23 \\
+		& (140.87) & (40.15) & (81.84) & (151.36) \\ \hline
+		Large XD. & 55.32 & 1.88 & 10.32 & 49.23 \\
+		& (159.88) & (31.74) & (74.01) & (157.35) \\ \hline
+		Small YD. & 42.90 & 2.00 & 8.00 & 39.33 \\
+		& (110.30) & (26.16) & (49.37) & (99.82) \\ \hline
+		Large YD. & 37.41 & 1.14 & 4.33 & 22.86 \\
+		& (104.18) & (22.37) & (34.21) & (73.75) \\ \hline
 	\end{tabular}
-	\caption{Mean and standard deviation for the distance, distance on the X-Axis(XD) and distance on the Y-Axis(YD) for each technique per target for large grid.}
-	\label{tab:distanceLarge}
-\end{table} 
+	\end{adjustbox}
+	\caption{Mean and standard deviation for distance on the X-Axis(XD) and distance on the Y-Axis(YD) for each technique per target for small grid.}
+	\label{tab:distanceSmall}
+\end{table}
 
 We performed three one way ANOVA's with all 3 different measures of sizes.
 For distance, we got $(p<0.001)$ $(F(4.768, 2269.348) = 30.636)$ (Greenhouse-Geisser correction of 0.681).
