@@ -41,25 +41,6 @@ The success rate's mean and standard deviation for each technique for small and 
 	\label{tab:meanHitTechniqueLarge}
 \end{table}
 
-\begin{table}[]
-	\centering
-	\caption{My caption}
-	\label{my-label}
-	\begin{adjustbox}{width=\columnwidth}
-	\begin{tabular}{lllllllll}
-		& PL    & PS    & SL    & SS    & ThL   & ThS   & TiL   & TiS   \\
-		PL  & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 \\
-		PS  & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 \\
-		SL  & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 \\
-		SS  & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 \\
-		ThL & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 \\
-		ThS & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 \\
-		TiL & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 \\
-		TiS & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999 & 0.999
-	\end{tabular}
-	\end{adjustbox}
-\end{table}
-
 In order to see the effect of each technique on the hit ratio per target for small grid, we performed a one way, repeated measure ANOVA ($F(2.645,2420.246)=105.535$, $p<0.001$), which told us that the different techniques had a significant effect on the hit ratio. 
 We perform another pair-wise post hoc LSD test to see where the significant differences are. \pinch and \tilt had $p=0.094$, which means that there was no significant difference between these two techniques. All other techniques were significantly different from each other ($p<0.001$). 
 
@@ -159,6 +140,64 @@ For distance on the X-axis, we got $(p<0.001)$, $(F(4.788,2278.99) = 21.984)$ (G
 Finally, for the distance on the Y-axis, we got $(p<0.001)$, $(F(248987.377, 8612.168)=28.911)$ (Greenhouse-Geisser correction of 0.624).
 
 We then performed a post hoc LSD test to see where the significant differences were located. 
+
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{fig:xandydistance}
+	\begin{adjustbox}{width=1\columnwidth}
+	\begin{tabular}{|
+			>{\columncolor[HTML]{C0C0C0}}l |
+			>{\columncolor[HTML]{CBCEFB}}l |
+			>{\columncolor[HTML]{CBCEFB}}l |
+			>{\columncolor[HTML]{CBCEFB}}l |l|l|
+			>{\columncolor[HTML]{FFCE93}}l |
+			>{\columncolor[HTML]{FFCE93}}l |
+			>{\columncolor[HTML]{FFCE93}}l |}
+		\hline
+		& \cellcolor[HTML]{C0C0C0}PL & \cellcolor[HTML]{C0C0C0}PS    & \cellcolor[HTML]{C0C0C0}SL             & \cellcolor[HTML]{C0C0C0}SS             & \cellcolor[HTML]{C0C0C0}ThL            & \cellcolor[HTML]{C0C0C0}ThS            & \cellcolor[HTML]{C0C0C0}TiL            & \cellcolor[HTML]{C0C0C0}TiS \\ \hline
+		PL  & \cellcolor[HTML]{FFFFFF}   & \cellcolor[HTML]{FFCE93}0.918 & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \textbf{0.001}                         & 0.541                                  & 0.904                       \\ \hline
+		PS  & 0.419                      & \cellcolor[HTML]{FFFFFF}      & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \textbf{0.001}                         & 0.600                                  & 0.978                       \\ \hline
+		SL  & \textbf{0.001}             & \textbf{0.001}                & \cellcolor[HTML]{FFFFFF}               & \cellcolor[HTML]{FFCE93}0.421          & \cellcolor[HTML]{FFCE93}\textbf{0.023} & \textbf{0.001}                         & \textbf{0.001}                         & \textbf{0.001}              \\ \hline
+		SS  & \textbf{0.001}             & \textbf{0.001}                & 0.590                                  & \cellcolor[HTML]{FFFFFF}               & \cellcolor[HTML]{FFCE93}0.092          & \textbf{0.008}                         & \textbf{0.001}                         & \textbf{0.001}              \\ \hline
+		ThL & \textbf{0.001}             & \textbf{0.001}                & 0.091                                  & \cellcolor[HTML]{CBCEFB}0.240          & \cellcolor[HTML]{FFFFFF}               & 0.354                                  & \textbf{0.001}                         & \textbf{0.001}              \\ \hline
+		ThS & \textbf{0.001}             & \textbf{0.001}                & \textbf{0.006}                         & \cellcolor[HTML]{CBCEFB}\textbf{0.020} & \cellcolor[HTML]{CBCEFB}0.181          & \cellcolor[HTML]{FFFFFF}               & \textbf{0.001}                         & \textbf{0.001}              \\ \hline
+		TiL & \textbf{0.014}             & \textbf{0.001}                & \textbf{0.001}                         & \cellcolor[HTML]{CBCEFB}\textbf{0.001} & \cellcolor[HTML]{CBCEFB}\textbf{0.001} & \cellcolor[HTML]{CBCEFB}\textbf{0.001} & \cellcolor[HTML]{FFFFFF}               & 0.608                       \\ \hline
+		TiS & 0.773                      & 0.592                         & \textbf{0.001}                         & \cellcolor[HTML]{CBCEFB}\textbf{0.001} & \cellcolor[HTML]{CBCEFB}\textbf{0.001} & \cellcolor[HTML]{CBCEFB}\textbf{0.001} & \cellcolor[HTML]{CBCEFB}\textbf{0.003} & \cellcolor[HTML]{FFFFFF}    \\ \hline
+	\end{tabular}
+	\end{adjustbox}
+\end{table}
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[]
+	\centering
+	\caption{My caption}
+	\label{tab:distance}
+	\begin{adjustbox}{width=1\columnwidth}
+	\begin{tabular}{|
+			>{\columncolor[HTML]{C0C0C0}}l |
+			>{\columncolor[HTML]{FFFFFF}}l |
+			>{\columncolor[HTML]{FFFFFF}}l |
+			>{\columncolor[HTML]{FFFFFF}}l |
+			>{\columncolor[HTML]{FFFFFF}}l |l|
+			>{\columncolor[HTML]{FFCE93}}l |
+			>{\columncolor[HTML]{FFCE93}}l |
+			>{\columncolor[HTML]{FFCE93}}l |}
+		\hline
+		& \cellcolor[HTML]{C0C0C0}PL & \cellcolor[HTML]{C0C0C0}PS    & \cellcolor[HTML]{C0C0C0}SL             & \cellcolor[HTML]{C0C0C0}SS             & \cellcolor[HTML]{C0C0C0}ThL            & \cellcolor[HTML]{C0C0C0}ThS       & \cellcolor[HTML]{C0C0C0}TiL       & \cellcolor[HTML]{C0C0C0}TiS \\ \hline
+		PL  &                            & \cellcolor[HTML]{FFCE93}0.961 & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \textbf{0.001}                    & 0.171                             & 0.928                       \\ \hline
+		PS  &                            &                               & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \textbf{0.001}                    & 0.156                             & 0.961                       \\ \hline
+		SL  & \textbf{}                  & \textbf{}                     &                                        & \cellcolor[HTML]{FFCE93}0.273          & \cellcolor[HTML]{FFCE93}\textbf{0.001} & \textbf{0.001}                    & \textbf{0.001}                    & \textbf{0.001}              \\ \hline
+		SS  & \textbf{}                  & \textbf{}                     &                                        &                                        & \cellcolor[HTML]{FFCE93}0.110          & \textbf{0.008}                    & \textbf{0.001}                    & \textbf{0.001}              \\ \hline
+		ThL & \textbf{}                  & \textbf{}                     &                                        &                                        & \cellcolor[HTML]{FFFFFF}               & 0.282                             & \textbf{0.001}                    & \textbf{0.001}              \\ \hline
+		ThS & \textbf{}                  & \textbf{}                     & \textbf{}                              & \textbf{}                              & \cellcolor[HTML]{FFFFFF}               & \cellcolor[HTML]{FFFFFF}          & \textbf{0.001}                    & \textbf{0.001}              \\ \hline
+		TiL & \textbf{}                  & \textbf{}                     & \textbf{}                              & \textbf{}                              & \cellcolor[HTML]{FFFFFF}\textbf{}      & \cellcolor[HTML]{FFFFFF}\textbf{} & \cellcolor[HTML]{FFFFFF}          & 0.120                       \\ \hline
+		TiS &                            &                               & \textbf{}                              & \textbf{}                              & \cellcolor[HTML]{FFFFFF}\textbf{}      & \cellcolor[HTML]{FFFFFF}\textbf{} & \cellcolor[HTML]{FFFFFF}\textbf{} & \cellcolor[HTML]{FFFFFF}    \\ \hline
+	\end{tabular}
+	\end{adjustbox}
+\end{table}
 
 For distances between target and pointer, we got: 
 \pinch(large) and \pinch(small) (p=0.961), \pinch(large) and \swipe(large) (p<0.001), \pinch(large) and \swipe(small) (p<0.001), \pinch(large) and \throw(large) (p<0.001), \pinch(large) and \throw(small) (p<0.001), \pinch(large) and \tilt(large) (p=0.171), \pinch(large) and \tilt(small) (p=0.928), \pinch(small) and \swipe(large) (p<0.001), \pinch(small) and \swipe(small) (p<0.001), \pinch(small) and \throw(large) (p<0.001), \pinch(small) and \throw(small) (p<0.001), \pinch(small) and \tilt(large) (p=0.156), \pinch(small) and \tilt(small) (p=0.961), \swipe(large) and \swipe(small) (p=0.273), \swipe(large) and \throw(large) (p=0.015), \swipe(large) and \throw(small) (p=0.001), \swipe(large) and \tilt(large) (p<0.001), \swipe(large) and \tilt(small) (p<0.001), \swipe(small) and \throw(large) (p=0.110), \swipe(small) and \throw(small) (p=0.008), \swipe(small) and \tilt(large) (p<0.001), \swipe(small) and \tilt(small) (p<0.001), \throw(large) and \throw(small) (p=0.282), \throw(large) and \tilt(large) (p<0.001), \throw(large) and \tilt(small) (p<0.001), \throw(small) and \tilt(large) (p<0.001), \throw(small) and \tilt(small) (p<0.001), \tilt(large) and \tilt(small) (p=0.120).
