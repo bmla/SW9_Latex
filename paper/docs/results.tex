@@ -2,14 +2,14 @@
 %http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_HypothesisTesting-ANOVA/BS704_HypothesisTesting-Anova_print.html
 \section{Results}
 We will now present the results that we achieved through out our experiment and also how they were achieved. We will first present our findings in respect to success rate, then in respect to efficiency, and finally in respect to accuracy. Finally, we will look at the questionnaires and show the significant findings there. We will discuss these results later, in the \nameref{sec:discussion} section.  
-The four interaction techniques, \pinch, \swipe, \throw and \tilt were completed 18 times per participant. 
+Each of the four interaction techniques, \pinch, \swipe, \throw and \tilt were completed 18 times per participant. 
 For each grid size, each technique was performed 477 times. 
 
 \subsection{Success Rate}
 In this section we will present the results related to the success of hitting a target.
 We will perform an analysis of the success rate and the effect of each technique with respect to grid sizes.
 
-The success rate's mean and standard deviation for each technique for small and large grid size can be seen in \Cref{tab:meanHitTechnique}.
+The success rate's mean and standard deviation for each technique for small and large grid size can be seen in \Cref{tab:meanHitTechnique} and in \Cref{fig:successResults} the results are shown as a graph.
 
 \begin{table}[H]
 	\centering
@@ -38,7 +38,6 @@ The success rate's mean and standard deviation for each technique for small and 
 	}
 	\label{fig:successResults}
 \end{figure}
-\todo{Put reference to this graph}
 
 In order to see the effect of each technique on the hit ratio per target for the different grid sizes, we performed two different one-way ANOVA's, where we split the data between the two different grid sizes.
 We then performed a post-hoc pairwise LSD test to see where the significant difference were.
@@ -108,7 +107,15 @@ Finally, we will perform an analysis of the accuracy and the effect of each tech
 Here, we took three different measures of accuracy; the distance between where the user hit and the target cell and the $x$ and $y$ axis independently as well. 
 These were all measured in pixels.
 This was because there were signs that certain techniques would usually miss in a specific direction, and we wanted to see if the data supported that. 
-An overview of the distance can be seen in \Cref{tab:distance}.
+An overview of the distance can be seen in \Cref{tab:distance} and \Cref{fig:distanceResults}.
+
+\begin{figure}[H]
+	{\includegraphics[width = 1\columnwidth ]{images/distance.png}} 
+	\caption{
+		Overview of the mean and standard deviation for each technique in regards to distance.
+	}
+	\label{fig:distanceResults}
+\end{figure}
 
 \begin{table}[H]
 	\centering
@@ -130,14 +137,25 @@ An overview of the distance can be seen in \Cref{tab:distance}.
 	\label{tab:distance}
 \end{table}
 
-\begin{figure}[H]
-	{\includegraphics[width = 1\columnwidth ]{images/distance.png}} 
-	\caption{
-		Overview of the mean and standard deviation for each technique in regards to distance.
-	}
-	\label{fig:distanceResults}
-\end{figure}
-\todo{we need a reference to this distance graph}
+We performed two one way ANOVA's, one for each grid size, on the distance data.
+
+For the the small grid, we got $(p<0.001)$, $(F(2.341, 1114.249)=37.504)$, (Greenhouse-Geisser correction: 0.780).
+The pairwise test showed that all techniques were significantly different except \pinch and \tilt. 
+\pinch and \swipe had $(p < 0.001)$, 
+\pinch and \throw $(p <0.001)$, 
+\pinch and \tilt $(p = 0.961)$, 
+\swipe and \throw $(p = 0.008)$, 
+\swipe and \tilt $(p < 0.001)$ and finally, 
+\throw and \tilt had $(p < 0.001)$. 
+
+For the large grid, we got $(p<0.001)$, $(F(2.176, 1036.004)=33.315)$, (Greenhouse-Geisser correction: 0.725).
+The pairwise test showed that all of the techniques, with the exception of \pinch and \tilt, were statistically different from each other. The results were as following: 
+\pinch and \swipe had $(p < 0.001)$, 
+\pinch and \throw $(p <0.001)$, 
+\pinch and \tilt $(p = 0.171)$, 
+\swipe and \throw $(p = 0.015)$, 
+\swipe and \tilt $(p < 0.001)$ and finally, 
+\throw and \tilt had $(p < 0.001)$. 
 
 \begin{table}[H]
 	\centering
@@ -162,7 +180,6 @@ An overview of the distance can be seen in \Cref{tab:distance}.
 	\caption{Mean and standard deviation for distance on the X-Axis(XD) and distance on the Y-Axis(YD) for each technique per target for small grid.}
 	\label{tab:distanceXY}
 \end{table}
-\todo{we need a reference to this xy table and the graph}
 
 \begin{figure}[H]
 	{\includegraphics[width = 1\columnwidth ]{images/distance_axis.png}} 
@@ -172,25 +189,8 @@ An overview of the distance can be seen in \Cref{tab:distance}.
 	\label{fig:distanceXYResults}
 \end{figure}
 
-We performed two one way ANOVA's, one for each grid size, on the distance data.
-
-For the the small grid, we got $(p<0.001)$, $(F(2.341, 1114.249)=37.504)$, (Greenhouse-Geisser correction: 0.780).
-The pairwise test showed that all techniques were significantly different except \pinch and \tilt. 
-\pinch and \swipe had $(p < 0.001)$, 
-\pinch and \throw $(p <0.001)$, 
-\pinch and \tilt $(p = 0.961)$, 
-\swipe and \throw $(p = 0.008)$, 
-\swipe and \tilt $(p < 0.001)$ and finally, 
-\throw and \tilt had $(p < 0.001)$. 
-
-For the large grid, we got $(p<0.001)$, $(F(2.176, 1036.004)=33.315)$, (Greenhouse-Geisser correction: 0.725).
-The pairwise test showed that all of the techniques, with the exception of \pinch and \tilt, were statistically different from each other. The results were as following: 
-\pinch and \swipe had $(p < 0.001)$, 
-\pinch and \throw $(p <0.001)$, 
-\pinch and \tilt $(p = 0.171)$, 
-\swipe and \throw $(p = 0.015)$, 
-\swipe and \tilt $(p < 0.001)$ and finally, 
-\throw and \tilt had $(p < 0.001)$. 
+To get a better understanding of the distance we decided to examine the distance in regards to the x-axis and in regards to the y-axis.
+The results can be seen in \Cref{tab:distanceXY} and \Cref{fig:distanceXYResults}
 
 \todo[inline]{Jeni: Should we include the numbers from the SPSS analysis of the X-distance and Y-distance data?}
 
