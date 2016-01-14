@@ -7,11 +7,11 @@
 
 
 Echo Building Litterature
-::START "LitBuilder" /D "%~dp0review" /wait  "BuildLiterature.bat" -nonstop 
+START "LitBuilder" /D "%~dp0review" /wait  "BuildLiterature.bat" -nonstop 
 
 
 Echo Building Paper
-::START "PaperBuilder" /D "%~dp0paper" /wait "BuildPaper.bat" -nonstop
+START "PaperBuilder" /D "%~dp0paper" /wait "BuildPaper.bat" -nonstop
 
 
 Echo Building Combined PDF
