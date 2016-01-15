@@ -1,7 +1,7 @@
 % !TEX root = ../paper.tex
 %http://sphweb.bumc.bu.edu/otlt/MPH-Modules/BS/BS704_HypothesisTesting-ANOVA/BS704_HypothesisTesting-Anova_print.html
 \section{Results}
-We will now present the results that we achieved through out our experiment and also how they were achieved. We will first present our findings in respect to success rate, then in respect to efficiency, and finally in respect to accuracy. Finally, we will look at the questionnaires and show the significant findings there. We will discuss these results later, in the \nameref{sec:discussion} section.  
+We will now present the results that we achieved through out our experiment and also how they were achieved. We will first present our findings in respect to success rate(based on hit success), then in respect to efficiency(based on time per target), and finally in respect to accuracy(based on distance to target). Finally, we will look at the questionnaires and show the significant findings there in terms of ease of use. We will discuss these results later, in the \nameref{sec:discussion} section.  
 Each of the four interaction techniques, \pinch, \swipe, \throw and \tilt were completed 18 times per participant. 
 For each grid size, each technique was performed 477 times. 
 
@@ -9,11 +9,11 @@ For each grid size, each technique was performed 477 times.
 In this section we will present the results related to the success of hitting a target.
 We will perform an analysis of the success rate and the effect of each technique with respect to grid sizes.
 
-The success rate's mean and standard deviation for each technique for small and large grid size can be seen in \Cref{tab:meanHitTechnique} and in \Cref{fig:successResults} the results are shown as a graph.
+The success rate's mean and standard deviation, M(St.D.) for each technique for small(S) and large(L) grid size can be seen in \Cref{tab:meanHitTechnique} and in \Cref{fig:successResults} the results are shown as a graph.
 
 \begin{table}[H]
 	\centering
-	\textbf{Success Rate Means}\\[4pt]
+	\textbf{Success Hit Means}\\[4pt]
 	\begin{adjustbox}{width=\columnwidth}
 	\begin{tabular}{|c|c|c|c|c|}
 			\hline
@@ -21,10 +21,8 @@ The success rate's mean and standard deviation for each technique for small and 
 			& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
 			\rowcolor[HTML]{9B9B9B} 
 			 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-			Small & 0.65        & 0.91         & 0.83         & 0.58        \\
-			 & (0.48)        & (0.29)         & (0.37)         & (0.49)        \\ \hline
-			Large & 0.78        & 0.97         & 0.94         & 0.78        \\
-			 & (0.41)        & (0.18)         & (0.25)         & (0.41)        \\ \hline
+			S & 0.65 (0.48)       & 0.91 (0.29)         & 0.83 (0.37)         & 0.58 (0.49)        \\ \hline
+			L & 0.78 (0.41)        & 0.97 (0.18)         & 0.94 (0.25)        & 0.78 (0.41)       \\ \hline
 	\end{tabular}
 	\end{adjustbox}
 	\caption{Mean hit  and standard deviation for each technique per target for small and large grid.}
@@ -34,7 +32,7 @@ The success rate's mean and standard deviation for each technique for small and 
 \begin{figure}[H]
 	{\includegraphics[width = 1\columnwidth ]{images/success.png}} 
 	\caption{
-		Overview of the mean and standard deviation for each technique in regards to hit rate per target.
+		Mean and standard deviation for each technique in regards to hit rate per target.
 	}
 	\label{fig:successResults}
 \end{figure}
@@ -48,11 +46,11 @@ The pairwise test showed that all techniques were significantly different. \pinc
 For the large grid, we got $(p<0.001)$, $(F(2.472, 1176.749)=42.773)$, (Greenhouse-Geisser correction: 0.824).
 The pairwise test showed that all of the techniques, with the exception of \pinch and \tilt, were statistically different from each other. The results were as following: \pinch and \swipe $(p<0.001)$, \pinch and \throw $(p<0.001)$, \pinch and \tilt $(p=1.000)$, \swipe and \throw $(p=0.025)$, \swipe and \tilt $(p<0.001)$, and finally \throw and \tilt $(p<0.001)$.
 
-\subsection{Time}
+\subsection{Efficiency}
 In this section we present the efficiency results which defines the amount of time spent performing a technique.
 We perform an analysis of the efficiency and the effect of each technique with respect to grid sizes.
 
-\Cref{tab:meanTimesTechnique} shows the mean time per target for each of the techniques as well as their standard deviation for both grid sizes. 
+\Cref{tab:meanTimesTechnique} shows the mean time per target in seconds for each of the techniques as well as their standard deviation for both grid sizes. 
 \begin{table}[H]
 	\centering
 	\textbf{Time Means}\\[4pt]
@@ -63,10 +61,8 @@ We perform an analysis of the efficiency and the effect of each technique with r
 		 & \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\ 
 		 \rowcolor[HTML]{9B9B9B} 
 		 & (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-		Small & 9.23 sec        & 6.41 sec          & 7.73 sec          & 6.67 sec         \\
-		 & (6.48 sec)        & (4.49 sec)          & (6.60 sec)         & (4.49 sec)         \\ \hline
-		Large & 8.09 sec         & 5.01 sec          & 6.42 sec          & 5.33 sec         \\
-		 & (6.60 sec)         & (2.66 sec)          & (5.43 sec)      & (3.04 sec)         \\ \hline
+		S & 9.23 (6.48)          & 6.41  (4.49)         & 7.73 (6.60)          & 6.67 (4.49)  \\ \hline
+		L & 8.09 (6.60)          & 5.01  (2.66)          & 6.42 (5.43)          & 5.33 (3.04) \\ \hline
 	\end{tabular}
 	\end{adjustbox}
 	\caption{Mean time and standard deviation for each technique per target for small and large grid.}
@@ -76,7 +72,7 @@ We perform an analysis of the efficiency and the effect of each technique with r
 \begin{figure}[H]
 	{\includegraphics[width = 1\columnwidth ]{images/time.png}} 
 	\caption{
-		Overview of the mean and standard deviation for each technique in regards to time per target.
+		Mean and standard deviation for each technique in regards to time per target.
 	}
 	\label{fig:timeResults}
 \end{figure}
@@ -102,17 +98,17 @@ The pairwise test showed that all of the techniques, with the exception of \swip
 \swipe and \tilt $(p=0.077)$, and finally 
 \throw and \tilt $(p<0.001)$.
 
-\subsection{Distance}
+\subsection{Accuracy}
 Finally, we will perform an analysis of the accuracy and the effect of each technique with respect to grid sizes.
-Here, we took three different measures of accuracy; the distance between where the user hit and the target cell and the $x$ and $y$ axis independently as well. 
+Here, we took three different measures of accuracy; the distance between where the user hit and the target cell as well as taking the $x$ and $y$ axis independently. 
 These were all measured in pixels.
-This was because there were signs that certain techniques would usually miss in a specific direction, and we wanted to see if the data supported that. 
-An overview of the distance can be seen in \Cref{tab:distance} and \Cref{fig:distanceResults}.
+This was because there were signs that certain techniques might miss in a specific direction, and we wanted to see if the data supported that. 
+An overview of the distance mean and standard deviation in pixels can be seen in \Cref{tab:distance} and \Cref{fig:distanceResults}.
 
 \begin{figure}[H]
 	{\includegraphics[width = 1\columnwidth ]{images/distance.png}} 
 	\caption{
-		Overview of the mean and standard deviation for each technique in regards to distance.
+		Mean and standard deviation for each technique in regards to distance.
 	}
 	\label{fig:distanceResults}
 \end{figure}
@@ -127,13 +123,11 @@ An overview of the distance can be seen in \Cref{tab:distance} and \Cref{fig:dis
 		& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
 		\rowcolor[HTML]{9B9B9B} 
 		& (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-		Small & 75.97 px & 5.40 px & 18.60 px  & 76.51 px         \\
-		& (176.15 px) & (47.81 px) & (95.29 px) & (177.45 px) \\ \hline
-		Large & 75.41 px & 2.29 px & 12.37 px & 59.88 px         \\
-		& (187.58 px) & (38.82 px) & (81.36 px) & (172.22 px) \\ \hline
+		S & 75.97 (176.15) & 5.40 (47.81) & 18.60 (95.29)  & 76.51  (177.45) \\ \hline
+		L & 75.41 (187.58) & 2.29 (38.82) & 12.37 (81.36) & 59.88 (172.22) \\ \hline
 	\end{tabular}
 	\end{adjustbox}
-	\caption{Mean and standard deviation for the distance for each technique per target for small grid.}
+	\caption{Mean and standard deviation for the distance for each technique per target for small and large grid.}
 	\label{tab:distance}
 \end{table}
 
@@ -167,14 +161,10 @@ The pairwise test showed that all of the techniques, with the exception of \pinc
 		& \textbf{Pinch} & \textbf{Swipe} & \textbf{Throw} & \textbf{Tilt} \\
 		\rowcolor[HTML]{9B9B9B} 
 		& (n = 477) & (n = 477) & (n = 477) & (n = 477) \\ \hline
-		Small XD. & 54.33 px & 3.78 px & 10.32 px & 49.23 px \\
-		& (140.87 px) & (40.15 px) & (81.84 px) & (151.36 px) \\ \hline
-		Large XD. & 55.32 px & 1.88 px & 10.32 px & 49.23 px \\
-		& (159.88 px) & (31.74 px) & (74.01 px) & (157.35 px) \\ \hline
-		Small YD. & 42.90 px & 2.00 px & 8.00 px & 39.33 px \\
-		& (110.30 px) & (26.16 px) & (49.37 px) & (99.82 px) \\ \hline
-		Large YD. & 37.41 px & 1.14 px & 4.33 px & 22.86 px \\
-		& (104.18 px) & (22.37 px) & (34.21 px) & (73.75 px) \\ \hline
+		S XD. & 54.33 (140.87) & 3.78 (40.15) & 10.32 (81.84) & 49.23 (151.36) \\ \hline
+		L XD. & 55.32 (159.88) & 1.88 (31.74) & 10.32 (74.01) & 49.23 (157.35) \\ \hline
+		S YD. & 42.90 (110.30) & 2.00 (26.16) & 8.00 (49.37) & 39.3 (99.82)3 \\ \hline
+		L YD. & 37.41 (104.18) & 1.14 (22.37) & 4.33 (34.21) & 22.86 (73.75) \\ \hline
 	\end{tabular}
 	\end{adjustbox}
 	\caption{Mean and standard deviation for distance on the X-Axis(XD) and distance on the Y-Axis(YD) for each technique per target for small grid.}
@@ -184,7 +174,7 @@ The pairwise test showed that all of the techniques, with the exception of \pinc
 \begin{figure}[H]
 	{\includegraphics[width = 1\columnwidth ]{images/distance_axis.png}} 
 	\caption{
-		Overview of the mean and standard deviation for each technique in regards distance on the x-axis and y-axis.
+		Mean and standard deviation for each technique in regards distance on the x-axis and y-axis.
 	}
 	\label{fig:distanceXYResults}
 \end{figure}
