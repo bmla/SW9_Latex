@@ -23,5 +23,6 @@
 *.synctex.gz
 *.bcf
 *.pdf
+!*/images/*.pdf
 *.run.xml
 *.orig.tex
