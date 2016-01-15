@@ -11,7 +11,7 @@ Sometimes, the system would misunderstand the gesture a user made, so that it ei
 Activation means that the system interpreted the gestures the user performed as an attempt to hit the target.
 This is further discussed in \Cref{sec:limitations}
 
-When looking at the results on the effect of the four techniques, \pinch, \swipe, \throw and \tilt, as well as the two grid sizes, small and large, on the time per target, the results tell a rather interesting story. 
+When looking at the results on the effect of the four techniques, \pinch, \swipe, \throw and \tilt, as well as the two target sizes, small and large, on the time per target, the results tell a rather interesting story. 
 
 \subsection{Success Rate}
 If we look at the results in regards to the effect of the technique on the success rate of each attempt, it is interesting to note that the two techniques that were not significantly different from each other were \tilt and \pinch. These two techniques both used the hand that controlled the pointer to activate the technique. When tilting the phone forward, usually the hand would move together with the phone causing the pointer to displace itself from the users intended position. When releasing the \pinch, the Kinect would sometimes reevaluate the location of the hand joint, now that it could see the entire hand, which would also cause the pointer to displace itself from the intended position. \pinch and \tilt were also the techniques that had the largest amount of activation errors due to the implementation of the system.
@@ -26,12 +26,13 @@ Their standard deviations are also smaller, which means that users were more con
 
 Looking at the two other techniques, \pinch and \throw, their times also reflect the range of motion needed in order to activate each technique. \pinch requires the user to pinch the shape on their phone, lift their hand up, direct it on the screen, and then finally let go. This can be seen in its mean, where it takes almost 1.59 seconds longer to perform than the second longest technique, \throw. \throw also requires a considerable range of motion in order to activate: point with one arm, select the shape on the phone with the other arm, bring your arm back and then finally swing it forward. Both two handed techniques take significantly longer to perform than their one handed counter-parts.
 
-We noticed that users would spent relatively little time getting into the general vicinity of the target, and would spend most of their time per attempt getting the pointer on top of the actual target. This was more pronounced in the small grid, were users would perform smaller, more careful adjustments in order to not overshot the target, which can be seen when comparing the mean times of each technique in the two different grid sizes..
+We noticed that users would spent relatively little time getting into the general vicinity of the target, and would spend most of their time per attempt getting the pointer on top of the actual target. 
+This was more pronounced for the small target, were users would perform smaller, more careful adjustments in order to not overshot the target, which can be seen when comparing the mean times of each technique for the two different target sizes.
 
 \subsection{Accuracy}
 If we look at the results regarding the distance from the target, it paints quite a clear image of which of the techniques are more accurate. 
 \swipe is by far the most accurate of the four techniques.
-It is so precise, that it is actually more precise in the small grid than all other techniques are in the large grid. 
+It is so precise, that it is actually more precise for the small target than all other techniques are for the large target. 
 \Cref{fig:thitboxes} is an image that shows the location of each hit compared to the given target cell. 
 
 The figures show that \swipe and \throw have a large concentration of hits inside the target cell, where \pinch and \tilt have quite a spread of hits outside the target cell. 
@@ -50,14 +51,14 @@ This shows us that users are capable of hitting the target with \swipe and \thro
 	\subfloat[]{\fbox{\includegraphics[width = 0.22\columnwidth ]{images/hitboxes/tiltlarge.png}\label{fig:largetiltHB}}} 
 	\caption{
 		Hit location illustration for each technique. Green is a hit, red is a miss
-		\protect\subref{fig:smallpinchHB} Pinch (Small Grid)
-		\protect\subref{fig:smallswipeHB} Swipe (Small Grid)
-		\protect\subref{fig:smallthrowHB} Throw (Small Grid)
-		\protect\subref{fig:smalltiltHB} Tilt (Small Grid)
-		\protect\subref{fig:largepinchHB} Pinch (Large Grid)
-		\protect\subref{fig:largeswipeHB} Swipe (Large Grid)
-		\protect\subref{fig:largethrowHB} Throw (Large Grid)
-		\protect\subref{fig:largetiltHB} Tilt (Large Grid)
+		\protect\subref{fig:smallpinchHB} Pinch (Small target)
+		\protect\subref{fig:smallswipeHB} Swipe (Small target)
+		\protect\subref{fig:smallthrowHB} Throw (Small target)
+		\protect\subref{fig:smalltiltHB} Tilt (Small target)
+		\protect\subref{fig:largepinchHB} Pinch (Large target)
+		\protect\subref{fig:largeswipeHB} Swipe (Large target)
+		\protect\subref{fig:largethrowHB} Throw (Large target)
+		\protect\subref{fig:largetiltHB} Tilt (Large target)
 	}
 	\label{fig:thitboxes}
 \end{figure}
