@@ -3,8 +3,8 @@
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{url}
-%\usepackage{showframe}
-\input{preamble}
+\usepackage{enumitem}
+\usepackage[a4paper]{geometry}
 
 %fancy style for pagenumbers
 \fancypagestyle{customplain}{%
@@ -16,9 +16,14 @@
 
 \includepdf[fitpaper,pages=-,pagecommand={\thispagestyle{empty}}]{posterv2.pdf}
 \newpage\null\thispagestyle{empty}\newpage
-\cleardoublepage
 
+\newgeometry{left=2.5cm,bottom=0.1cm}
 \input{formalities/titlesheet}
+\restoregeometry
+
+\cleardoublepage
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
 
 \setcounter{page}{1}
 \includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{review/literature.pdf}
