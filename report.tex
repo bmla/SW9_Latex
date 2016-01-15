@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{pdfpages}
 \usepackage{fancyhdr}
+\usepackage{graphicx}
 
 %fancy style for pagenumbers
 \fancypagestyle{customplain}{%
@@ -9,6 +10,11 @@
 \setlength{\footskip}{80pt}
 \renewcommand*\headrulewidth{0pt}}
 \begin{document}
+	
+\includepdf[pages=-,pagecommand={\thispagestyle{empty}}]{poster_page2.pdf}
+\newpage\null\thispagestyle{empty}\newpage
+\newpage\null\thispagestyle{empty}\newpage
+\setcounter{page}{1}
 \includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{review/literature.pdf}
 \newpage\null\thispagestyle{empty}\newpage
 \cleardoublepage
