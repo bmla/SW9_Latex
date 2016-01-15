@@ -2,10 +2,13 @@ Tilt:
 	- Shared some accidental recognitions
 Pinch:
 	- Few start issues with undestanding the technique
-	- After that, and the technique was understood, everything looked good
+	- After that, and the technique was understood, 
+	  everything looked good
 Swipe:
 	- No questions about the technique
 	- No problems
-	- Was paying more attention to the video this time then previously
+	- Was paying more attention to the video this time 
+	  then previously
 Throw:
-	- The video is not clear about the motion (the fact that you have to do a bigger gesture)
+	- The video is not clear about the motion 
+	  (the fact that you have to do a bigger gesture)
