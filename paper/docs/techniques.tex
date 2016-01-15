@@ -28,68 +28,12 @@ We chose four techniques named \pinch, \swipe, \throw and \tilt because they ful
 
 In the following we explain why these four techniques were chosen and how they should be performed.
 
-The \swipe technique (\Cref*{fig:swipeTechnique}) is used by Bragdon et al. \cite{Bragdon:2011} in Code Space, a system using the Kinect and smartphones to support developer meetings. 
-Bragdon et al. describe the technique as: \emph{``cross-device interaction with touch and air pointing''} and the swipe motion is described as \emph{``flicking up on the touch screen''}. 
-This technique was chosen because of its simplistic design and the low level of complexity.
-Only one hand is needed and the amount of effort and time required to execute this technique is minimal compared to other techniques.
-\swipe is copied exactly as described in \cite{Bragdon:2011}.
-The \swipe technique is performed by 
-\begin{enumerate*}[label=\itshape\roman*\upshape)]
-	\item{pointing at a target on the large display with the phone in a stretched arm, and}
-	\item{making a forwards swipe motion with the thumb on the phone's screen (\cref{fig:swipeTechnique}).}
-\end{enumerate*}
-
-The \tilt technique (\Cref{fig:tiltTechnique}) is used in a collaborative application by Lucero et al. \cite{Lucero:2012} to transfer an object from a large display to the user's smartphone.
-Boring et al. use the tilt technique in \cite{Boring:2009} when moving a pointer on a display using a phone and though not the same application, the execution of the technique is the same.
-We chose this technique because it is one handed, relatively low complexity, and much like the \swipe it is generally easy to use.
-When the direction is reversed, \tilt is an exact copy of the way Lucero et al. describe the technique.
-The \tilt technique is performed by 
-\begin{enumerate*}[label=\itshape\roman*\upshape)]
-	\item{pointing at a target on the large display with the phone in a stretched arm, and}
-	\item{making a forwards tilt with the phone (\cref{fig:tiltTechnique}).}
-\end{enumerate*}
-
-\begin{figure}[H]
-\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/swipe_a.jpg}\label{fig:swipeTechniqueA}}
-\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/swipe_b.jpg}\label{fig:swipeTechniqueB}}
-\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/swipe_c.jpg}\label{fig:swipeTechniqueC}}
-\caption{The \swipe technique is performed by using the thumb to swipe.}
-\label{fig:swipeTechnique}
-\end{figure}
-
-\begin{figure}[H]
-\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/tilt_a.jpg}\label{fig:tiltTechniqueA}}
-\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/tilt_b.jpg}\label{fig:tiltTechniqueB}}
-\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/tilt_c.jpg}\label{fig:tiltTechniqueC}}
-\caption{The \tilt technique is performed by doing a forward tilt motion with the phone.}
-\label{fig:tiltTechnique}
-\end{figure}
-
-The \throw technique (\Cref{fig:throwTechnique}) is a combination of a technique for pointing \cite{Scheible:2008} i.e. using a hand as a cursor in mid-air, and a throw technique described by Walter et al. \cite{Walter:2014} used in a system for sharing information on large public displays.
-We chose to include this technique based on its natural and playful design.
-The technique mimics the real world scenario of throwing something like a ball somewhere or to someone.
-\throw is two handed, more complex than aforementioned techniques, and takes a little longer to execute because of the increased number of steps.
-The \throw technique is performed by 
-\begin{enumerate*}[label=\itshape\roman*\upshape)]
-	\item{pointing at a target on the large display with one hand (\cref{fig:throwTechniqueA});}
-	\item{holding the phone in the other hand (\cref{fig:throwTechniqueB});}
-	\item{and making a swinging motion towards the large display (\cref{fig:throwTechniqueC}).}
-\end{enumerate*}
-
-\begin{figure}[H]
-\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/throw_a.jpg}\label{fig:throwTechniqueA}}
-\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/throw_b.jpg}\label{fig:throwTechniqueB}}
-\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/throw_c.jpg}\label{fig:throwTechniqueC}}
-\caption{\protect\subref{fig:throwTechniqueA} First step of the \throw technique is to point at the screen. \protect\subref{fig:throwTechniqueB} Second step is to select data. \protect\subref{fig:throwTechniqueC} Third and final step is to do a swinging motion with the phone towards the screen.}
-\label{fig:throwTechnique}
-\end{figure}
-
 The \pinch technique (\Cref{fig:pinchTechnique}) is used in \cite{Ikematsu:2015} by Ikematsu et al., as part of a drag-and-drop method for moving data objects between devices.
 Chen et al. uses a pinching gesture in \cite{Chen:2014} for cross-device interaction between a smartphone and a smartwatch to control volume. 
-Benko and Wilson \cite{Benko:2010} used the \pinch technique for interacting with an omnidirectional dome.
+Benko and Wilson \cite{Benko:2010} used the \pinch technique for interacting with omnidirectional visualizations in a dome.
 This technique is again a combination of the pointing technique used by Scheible et al. \cite{Scheible:2008} and the aforementioned pinching techniques. 
 The reason for including this technique was to imitate the natural action of picking up a real object e.g. piece of paper, and then moving it to another location.
-With \pinch we get a two handed technique which requires the user perform a series of steps and are thus considered more complex and time consuming  than the one handed \swipe and \tilt.
+With \pinch we get a two handed technique which requires the user to perform a series of steps and are thus considered more complex and time consuming  than the one handed \swipe and \tilt.
 The \pinch technique is performed by 
 \begin{enumerate*}[label=\itshape\roman*\upshape)]
 	\item{holding the phone in one hand and making a pinch gesture on the phone with the other hand (\cref{fig:pinchTechniqueA}), subsequently closing the hand;}
@@ -105,12 +49,68 @@ The \pinch technique is performed by
 \label{fig:pinchTechnique}
 \end{figure}
 
+The \swipe technique (\Cref*{fig:swipeTechnique}) is used by Bragdon et al. \cite{Bragdon:2011} in Code Space, a system using the Kinect and smartphones to support developer meetings. 
+Bragdon et al. describe the technique as: \emph{``cross-device interaction with touch and air pointing''} and the swipe motion is described as \emph{``flicking up on the touch screen''}. 
+This technique was chosen because of its simplistic design and the low level of complexity.
+Only one hand is needed and the amount of effort and time required to execute this technique is minimal compared to other techniques.
+\swipe is copied exactly as described in \cite{Bragdon:2011}.
+The \swipe technique is performed by 
+\begin{enumerate*}[label=\itshape\roman*\upshape)]
+	\item{pointing at a target on the large display with the phone in a stretched arm, and}
+	\item{making a forwards swipe motion with the thumb on the phone's screen (\cref{fig:swipeTechnique}).}
+\end{enumerate*}
+
+\begin{figure}[H]
+\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/swipe_a.jpg}\label{fig:swipeTechniqueA}}
+\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/swipe_b.jpg}\label{fig:swipeTechniqueB}}
+\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/swipe_c.jpg}\label{fig:swipeTechniqueC}}
+\caption{The \swipe technique is performed by using the thumb to swipe from \protect\subref{fig:swipeTechniqueA} to \protect\subref{fig:swipeTechniqueC}.}
+\label{fig:swipeTechnique}
+\end{figure}
+
+The \throw technique (\Cref{fig:throwTechnique}) is a combination of a technique for pointing \cite{Scheible:2008} i.e. using a hand as a cursor in mid-air, and a throw technique described by Walter et al. \cite{Walter:2014} used in a system for sharing information on large public displays.
+We chose to include this technique based on its natural and playful design.
+The technique mimics the real world scenario of throwing something like a ball somewhere or to someone.
+\throw is two handed, more complex than aforementioned techniques, and takes a little longer to execute because of the increased number of steps.
+The \throw technique is performed by 
+\begin{enumerate*}[label=\itshape\roman*\upshape)]
+	\item{pointing at a target on the large display with one hand (\cref{fig:throwTechniqueA});}
+	\item{holding the phone in the other hand and selecting data (\cref{fig:throwTechniqueB});}
+	\item{and making a swinging motion towards the large display (\cref{fig:throwTechniqueC}).}
+\end{enumerate*}
+
+\begin{figure}[H]
+\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/throw_a.jpg}\label{fig:throwTechniqueA}}
+\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/throw_b.jpg}\label{fig:throwTechniqueB}}
+\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/throw_c.jpg}\label{fig:throwTechniqueC}}
+\caption{\protect\subref{fig:throwTechniqueA} First step of the \throw technique is to point at the screen. \protect\subref{fig:throwTechniqueB} Second step is to select data. \protect\subref{fig:throwTechniqueC} Third and final step is to do a swinging motion with the phone towards the screen.}
+\label{fig:throwTechnique}
+\end{figure}
+
+The \tilt technique (\Cref{fig:tiltTechnique}) is used in a collaborative application by Lucero et al. \cite{Lucero:2012} to transfer an object from a large display to the user's smartphone.
+Boring et al. \cite{Boring:2009} use the tilt technique when moving a pointer on a display using a phone and though not the same application, the execution of the technique is the same.
+We chose this technique because it is one handed, relatively low complexity, and much like the \swipe it is generally easy to use.
+When the direction is reversed, \tilt is an exact copy of the way Lucero et al. describe the technique.
+The \tilt technique is performed by 
+\begin{enumerate*}[label=\itshape\roman*\upshape)]
+	\item{pointing at a target on the large display with the phone in a stretched arm, and}
+	\item{making a forwards tilt with the phone (\cref{fig:tiltTechnique}).}
+\end{enumerate*}
+
+\begin{figure}[H]
+\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/tilt_a.jpg}\label{fig:tiltTechniqueA}}
+\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/tilt_b.jpg}\label{fig:tiltTechniqueB}}
+\subfloat[]{\includegraphics[width = 0.33\columnwidth]{images/tilt_c.jpg}\label{fig:tiltTechniqueC}}
+\caption{The \tilt technique is performed by doing a forward tilt motion with the phone from \protect\subref{fig:tiltTechniqueA} to \protect\subref{fig:tiltTechniqueC}.}
+\label{fig:tiltTechnique}
+\end{figure}
+
 As mentioned, the techniques have been used in previously published papers where they were part of applications or systems, facilitating interaction between devices such as phone to display interaction and vice versa. 
 The described techniques are different in the way they are performed but also the number of hands that are required to make them work.
 We chose two techniques that are one-handed (\swipe and \tilt) and two techniques that are two-handed (\throw and \pinch).
 Also, to vary the complexity we chose two techniques that require more steps (\throw and \pinch), and two techniques that require less steps for the user to complete the technique (\swipe and \tilt).
 
 All the techniques make use of some combination of pointing in mid-air and touch gestures on the smartphone screen.
-The mid-air pointing is achieved by using the Microsoft Kinect for Windows which uses a depth camera making it possible to track a user's hand in mid-air.
+The mid-air pointing interaction is achieved by using the Microsoft Kinect for Windows which uses a depth camera making it possible to track a user's hand in mid-air.
 As for the touch gestures, smartphones have an accelerometer and a touchscreen, making it possible to detect motion input and detect contact between e.g. a finger and the screen.
 These technologies are, in combination with each other, used to recognize the four techniques described in this section. 
