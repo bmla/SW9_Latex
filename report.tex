@@ -21,6 +21,13 @@
 
 \setcounter{page}{1}
 \includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{paper/paper.pdf}
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+\thispagestyle{empty}
+\includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{appendix/appendix.pdf}
 %OR
 %\includepdf[pages=1-,pagecommand={\thispagestyle{fancy}}]{paper1.pdf}
 %\includepdf[pages=1-,pagecommand={\thispagestyle{fancy}}]{paper2.pdf}
