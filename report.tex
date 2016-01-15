@@ -2,6 +2,9 @@
 \usepackage{pdfpages}
 \usepackage{fancyhdr}
 \usepackage{graphicx}
+\usepackage{url}
+\usepackage{showframe}
+\input{preamble}
 
 %fancy style for pagenumbers
 \fancypagestyle{customplain}{%
@@ -14,6 +17,8 @@
 \includepdf[fitpaper,pages=-,pagecommand={\thispagestyle{empty}}]{posterv2.pdf}
 \newpage\null\thispagestyle{empty}\newpage
 \cleardoublepage
+
+\input{formalities/titlesheet}
 
 \setcounter{page}{1}
 \includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{review/literature.pdf}
