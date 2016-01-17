@@ -1,0 +1,202 @@
+\documentclass{article}
+\usepackage{bookman}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{pdfpages}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{enumitem}
+\usepackage[a4paper]{geometry}
+%\geometry{showframe}
+%\geometry{left=2.5cm}
+\usepackage[utf8]{inputenc}% Brug af æ, ø og å
+\usepackage{etoolbox}
+
+\usepackage{adjustbox}
+\usepackage{longtable}
+\usepackage{verbatim}
+\usepackage{pdflscape}
+\usepackage{tocloft}
+
+\usepackage{fancybox}
+\usepackage[T1]{fontenc}
+\usepackage{ragged2e}
+
+%fancy style for pagenumbers
+\fancypagestyle{customplain}{%
+\fancyhf{}%
+\fancyhf[cf]{\thepage}%
+\setlength{\footskip}{80pt}
+\renewcommand*\headrulewidth{0pt}}
+
+\fancypagestyle{appendixplain}{%
+\fancyhf{}%
+\fancyhf[cf]{\thepage}%
+\setlength{\footskip}{90pt}
+\renewcommand*\headrulewidth{0pt}}
+
+\newenvironment{newab}
+		{\small
+			\begin{center}
+				\bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+			\end{center}
+			\list{}{
+				\setlength{\leftmargin}{.5cm}%
+				\setlength{\rightmargin}{\leftmargin}%
+			}%
+			\item\relax}
+		%{\endlist}
+		
+\newenvironment{dummy}{}
+
+\makeatletter
+\renewcommand{\@cftmaketoctitle}{}
+\makeatother
+
+\AtBeginDocument{                                               
+  \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}    
+  \renewcommand\cftsecdotsep{\cftdot}                         
+  \renewcommand\cftsubsecdotsep{\cftdot}                      
+  \renewcommand{\cftfigleader}{\cftdotfill{\cftsecdotsep}}
+  \renewcommand{\cfttableader}{\cftdotfill{\cftsecdotsep}}
+}
+
+\begin{document}
+\newlength{\drop}
+\setcounter{page}{1}
+
+\includepdf[fitpaper,pages=-,pagecommand={\thispagestyle{empty}}]{posterv2.pdf}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\newgeometry{left=2.5cm}
+\thispagestyle{empty}
+\input{formalities/titlesheet}
+\restoregeometry
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\newpage
+\begin{dummy}
+\drop=0.1\textheight
+		\centering
+		\vspace*{\baselineskip}
+		\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+		\rule{\textwidth}{0.4pt}\\[\baselineskip]
+		{\LARGE TABLE OF CONTENTS}\\[0.2\baselineskip]
+		\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+		\rule{\textwidth}{1.6pt}\\[\baselineskip]
+		\scshape
+		\vspace*{2\baselineskip}
+		%Edited by \\[\baselineskip]
+		\vspace*{2\baselineskip}
+		\vspace*{2\baselineskip}
+		\vspace*{2\baselineskip}
+\tableofcontents
+\vspace*{2\baselineskip}
+	\vspace*{2\baselineskip}
+	\vspace*{2\baselineskip}
+	\vspace*{2\baselineskip}
+		{\scshape 2016} \\
+		{\large AALBORG UNIVERSITY}\par
+\end{dummy}
+\newpage
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{preface}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{introduction}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{paper1intro}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{review/literature.pdf}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{paper2intro}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{paper/paper.pdf}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{conclusion}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\pagestyle{appendixplain}
+
+\addtocontents{toc}{\protect\renewcommand{\protect\cftsecleader}{\hfill}}
+\cftaddtitleline{toc}{section}{Appendices}{}
+\includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{appendix.pdf}
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{appendix/docs/appendixA}
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{appendix/docs/appendixB}
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{appendix/docs/appendixC}
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{appendix/docs/appendixD}
+
+\input{appendix/docs/appendixE}
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\input{appendix/docs/appendixF}
+
+\input{appendix/docs/appendixG}
+
+\thispagestyle{empty}
+\cleardoublepage
+
+\input{appendix/docs/appendixH}
+\clearpage
+\includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{poster_page_back.pdf}
+%\includepdf[pages=-,pagecommand={\thispagestyle{customplain}},fitpaper,rotateoversize]{appendix/appendix.pdf}
+%OR
+%\includepdf[pages=1-,pagecommand={\thispagestyle{fancy}}]{paper1.pdf}
+%\includepdf[pages=1-,pagecommand={\thispagestyle{fancy}}]{paper2.pdf}
+\end{document}
