@@ -35,8 +35,19 @@
 \setlength{\footskip}{90pt}
 \renewcommand*\headrulewidth{0pt}}
 
-
-
+\newenvironment{newab}
+		{\small
+			\begin{center}
+				\bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+			\end{center}
+			\list{}{
+				\setlength{\leftmargin}{.5cm}%
+				\setlength{\rightmargin}{\leftmargin}%
+			}%
+			\item\relax}
+		%{\endlist}
+		
+\newenvironment{dummy}{}
 
 \AtBeginDocument{                                               
   \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}    
@@ -69,7 +80,13 @@
 \newpage
 \cleardoublepage
 
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
 \input{preface}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
 \cleardoublepage
 
 \input{introduction}
@@ -79,6 +96,9 @@
 \cleardoublepage
 
 \input{paper1intro}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
 \cleardoublepage
 
 \includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{review/literature.pdf}
