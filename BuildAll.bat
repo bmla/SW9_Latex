@@ -12,8 +12,8 @@ START "LitBuilder" /D "%~dp0review" /wait  "BuildLiterature.bat" -nonstop
 Echo Building Paper
 START "PaperBuilder" /D "%~dp0paper" /wait "BuildPaper.bat" -nonstop
 
-Echo Building Appendix
-START "AppendixBuilder" /D "%~dp0appendix" /wait "BuildAppendix.bat" -nonstop
+:: Echo Building Appendix
+:: START "AppendixBuilder" /D "%~dp0appendix" /wait "BuildAppendix.bat" -nonstop
 
 
 Echo Building Combined PDF

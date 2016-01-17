@@ -5,6 +5,17 @@
 \usepackage{url}
 \usepackage{enumitem}
 \usepackage[a4paper]{geometry}
+%\geometry{showframe}
+\geometry{left=2.5cm}
+\usepackage[utf8]{inputenc}% Brug af æ, ø og å
+\usepackage{etoolbox}
+
+\usepackage{adjustbox}
+\usepackage{longtable}
+\usepackage{pdfpages}
+\usepackage{verbatim}
+\usepackage{pdflscape}
+\usepackage{tocloft}
 
 %fancy style for pagenumbers
 \fancypagestyle{customplain}{%
@@ -12,39 +23,93 @@
 \fancyhf[cf]{\thepage}%
 \setlength{\footskip}{80pt}
 \renewcommand*\headrulewidth{0pt}}
+
+\fancypagestyle{appendixplain}{%
+\fancyhf{}%
+\fancyhf[cf]{\thepage}%
+\setlength{\footskip}{90pt}
+\renewcommand*\headrulewidth{0pt}}
+
+
+
+
+\AtBeginDocument{                                               
+  \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}    
+  \renewcommand\cftsecdotsep{\cftdot}                         
+  \renewcommand\cftsubsecdotsep{\cftdot}                      
+  \renewcommand{\cftfigleader}{\cftdotfill{\cftsecdotsep}}
+  \renewcommand{\cfttableader}{\cftdotfill{\cftsecdotsep}}
+}
+
 \begin{document}
+\setcounter{page}{1}
 
 \includepdf[fitpaper,pages=-,pagecommand={\thispagestyle{empty}}]{posterv2.pdf}
-\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
 
-\newgeometry{left=2.5cm,bottom=0.1cm}
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
+\newgeometry{left=2.5cm}
+\thispagestyle{empty}
 \input{formalities/titlesheet}
 \restoregeometry
-
 \cleardoublepage
+
 \newpage\null\thispagestyle{empty}\newpage
 \cleardoublepage
 
-\thispagestyle{empty}
+\newpage
+\tableofcontents
+\newpage
+\cleardoublepage
+
+\input{preface}
+\cleardoublepage
+
 \input{introduction}
 \cleardoublepage
+
 \newpage\null\thispagestyle{empty}\newpage
 \cleardoublepage
 
-\setcounter{page}{1}
+\input{paper1intro}
+\cleardoublepage
+
 \includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{review/literature.pdf}
+\cleardoublepage
+
 \newpage\null\thispagestyle{empty}\newpage
 \cleardoublepage
 
-\setcounter{page}{1}
+\input{paper2intro}
+\cleardoublepage
+
 \includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{paper/paper.pdf}
+\cleardoublepage
+
+\input{conclusion}
+\cleardoublepage
+
 \newpage\null\thispagestyle{empty}\newpage
 \cleardoublepage
 
-\pagenumbering{roman}
+\pagenumbering{Roman}
 \setcounter{page}{1}
-\thispagestyle{empty}
-\includepdf[pages=-,pagecommand={\thispagestyle{customplain}},fitpaper,rotateoversize]{appendix/appendix.pdf}
+\pagestyle{appendixplain}
+
+\addtocontents{toc}{\protect\renewcommand{\protect\cftsecleader}{\hfill}}
+\cftaddtitleline{toc}{section}{Appendices}{}
+
+\input{appendix/docs/appendixA}
+\input{appendix/docs/appendixB}
+\input{appendix/docs/appendixC}
+\input{appendix/docs/appendixD}
+\input{appendix/docs/appendixE}
+\input{appendix/docs/appendixF}
+\input{appendix/docs/appendixG}
+\input{appendix/docs/appendixH}
+%\includepdf[pages=-,pagecommand={\thispagestyle{customplain}},fitpaper,rotateoversize]{appendix/appendix.pdf}
 %OR
 %\includepdf[pages=1-,pagecommand={\thispagestyle{fancy}}]{paper1.pdf}
 %\includepdf[pages=1-,pagecommand={\thispagestyle{fancy}}]{paper2.pdf}
