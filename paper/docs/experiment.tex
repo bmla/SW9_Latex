@@ -24,6 +24,10 @@ As mentioned, we were interested in measuring the effect of different target siz
 The grid system can have large cells, where the grid is $5 \times 10$ cells and each cell is 61 pixels or 7.3 cm wide, or it could also have small cells, where the grid is $10 \times 20$ cells and each cell is 122 pixels, or 14.6 cm wide. 
 The target is located in one of those cells, and scales accordingly to the size of the cell(See \Cref{fig:kinectScreen}).
 
+A red dot works as the pointer in the screen; it is the location that would be hit when the user performed the given technique. 
+The yellow highlighted cell is the cell in which the pointer is currently located inside of. 
+This is extra feedback for the user so that he knows exactly were he will hit once we performs the technique.
+
 The developed mobile application was simple. It showed two shapes, a circle and a square, which the user could choose to push to the display. The display would tell which shape was the correct one by having that shape as the target in one of the grid cells. We chose two shapes so that it did not become a search problem with users spending too much time searching for the correct shape. We wanted the user to spend some time orienting him or her self with the phone and not just simply performing the gesture without paying any attention to the phone at all. The phone screen can be seen in \Cref{fig:phoneScreen}.
 
 Users would control the pointer on the large display with their hands. 
@@ -50,7 +54,7 @@ The \tilt technique was implemented mostly with the accelerometer of the phone, 
 	\qquad
 	\subfloat[]{\includegraphics[height = 3.3cm ]{images/phoneScreenshot.png}\label{fig:phoneScreen}}
 	\caption{
-		\protect\subref{fig:kinectScreen} The large display screen of the application.
+		\protect\subref{fig:kinectScreen} The large display screen of the application, with the red dot in the highlighted square as the starting point and the black circle as the target.
 		\protect\subref{fig:phoneScreen} The phone screen showing the two shapes.
 	}
 	\label{fig:allSetup}
