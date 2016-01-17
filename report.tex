@@ -110,7 +110,13 @@
 \input{paper2intro}
 \cleardoublepage
 
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
 \includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{paper/paper.pdf}
+\cleardoublepage
+
+\newpage\null\thispagestyle{empty}\newpage
 \cleardoublepage
 
 \input{conclusion}
@@ -127,12 +133,34 @@
 \cftaddtitleline{toc}{section}{Appendices}{}
 
 \input{appendix/docs/appendixA}
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
 \input{appendix/docs/appendixB}
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
 \input{appendix/docs/appendixC}
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
 \input{appendix/docs/appendixD}
+
 \input{appendix/docs/appendixE}
+
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
+
 \input{appendix/docs/appendixF}
+
 \input{appendix/docs/appendixG}
+
+\thispagestyle{empty}
+\cleardoublepage
+
 \input{appendix/docs/appendixH}
 %\includepdf[pages=-,pagecommand={\thispagestyle{customplain}},fitpaper,rotateoversize]{appendix/appendix.pdf}
 %OR
