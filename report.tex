@@ -49,6 +49,10 @@
 		
 \newenvironment{dummy}{}
 
+\makeatletter
+\renewcommand{\@cftmaketoctitle}{}
+\makeatother
+
 \AtBeginDocument{                                               
   \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}    
   \renewcommand\cftsecdotsep{\cftdot}                         
@@ -58,6 +62,7 @@
 }
 
 \begin{document}
+\newlength{\drop}
 \setcounter{page}{1}
 
 \includepdf[fitpaper,pages=-,pagecommand={\thispagestyle{empty}}]{posterv2.pdf}
@@ -76,7 +81,29 @@
 \cleardoublepage
 
 \newpage
+\begin{dummy}
+\drop=0.1\textheight
+		\centering
+		\vspace*{\baselineskip}
+		\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
+		\rule{\textwidth}{0.4pt}\\[\baselineskip]
+		{\LARGE TABLE OF CONTENTS}\\[0.2\baselineskip]
+		\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+		\rule{\textwidth}{1.6pt}\\[\baselineskip]
+		\scshape
+		\vspace*{2\baselineskip}
+		%Edited by \\[\baselineskip]
+		\vspace*{2\baselineskip}
+		\vspace*{2\baselineskip}
+		\vspace*{2\baselineskip}
 \tableofcontents
+\vspace*{2\baselineskip}
+	\vspace*{2\baselineskip}
+	\vspace*{2\baselineskip}
+	\vspace*{2\baselineskip}
+		{\scshape 2016} \\
+		{\large AALBORG UNIVERSITY}\par
+\end{dummy}
 \newpage
 \cleardoublepage
 
@@ -131,8 +158,10 @@
 
 \addtocontents{toc}{\protect\renewcommand{\protect\cftsecleader}{\hfill}}
 \cftaddtitleline{toc}{section}{Appendices}{}
+\includepdf[pages=-,pagecommand={\thispagestyle{customplain}}]{appendix.pdf}
 
-\input{appendiciesIntro}
+\newpage\null\thispagestyle{empty}\newpage
+\cleardoublepage
 
 \input{appendix/docs/appendixA}
 
