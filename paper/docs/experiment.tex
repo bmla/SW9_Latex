@@ -16,7 +16,7 @@ An overview of the experiment setup can be seen in \Cref{fig:entireSetup}.
 
 \subsection{Implementation}
 
-The 4 techniques (\swipe, \tilt, \throw, and \pinch) were implemented in order to push data onto the large display. 
+The 4 techniques (\pinch, \swipe, \throw, and \tilt) were implemented in order to push data onto the large display. 
 They were implemented in a simple and short target practice application, where the goal was to "hit" the target on the display with the shown technique. 
 
 A grid system was implemented in the test application, where each cell of the grid is a possible target. 
@@ -25,8 +25,8 @@ The grid system can have large cells, where the grid is $5 \times 10$ cells and 
 The target is located in one of those cells, and scales accordingly to the size of the cell(See \Cref{fig:kinectScreen}).
 
 A red dot works as the pointer in the screen; it is the location that would be hit when the user performed the given technique. 
-The yellow highlighted cell is the cell in which the pointer is currently located inside of. 
-This is extra feedback for the user so that he knows exactly were he will hit once we performs the technique.
+The yellow highlighted cell is the cell in which the pointer is currently located inside. 
+This is extra feedback for the user so he knows exactly were he will hit once he performs the technique.
 
 The developed mobile application was simple. It showed two shapes, a circle and a square, which the user could choose to push to the display. The display would tell which shape was the correct one by having that shape as the target in one of the grid cells. We chose two shapes so that it did not become a search problem with users spending too much time searching for the correct shape. We wanted the user to spend some time orienting him or her self with the phone and not just simply performing the gesture without paying any attention to the phone at all. The phone screen can be seen in \Cref{fig:phoneScreen}.
 
