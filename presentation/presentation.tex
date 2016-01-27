@@ -1,0 +1,188 @@
+\documentclass[10pt]{beamer}
+\usetheme[
+%%% options passed to the outer theme
+%    hidetitle,           % hide the (short) title in the sidebar
+    hideauthor,          % hide the (short) author in the sidebar
+%    hideinstitute,       % hide the (short) institute in the bottom of the sidebar
+%    shownavsym,          % show the navigation symbols
+%    width=2cm,           % width of the sidebar (default is 2 cm)
+%    hideothersubsections,% hide all subsections but the subsections in the current section
+%    hideallsubsections,  % hide all subsections
+%    left                % right of left position of sidebar (default is right)
+  ]{Aalborg}
+  
+% If you want to change the colors of the various elements in the theme, edit and uncomment the following lines
+% Change the bar and sidebar colors:
+%\setbeamercolor{Aalborg}{fg=red!20,bg=red}
+%\setbeamercolor{sidebar}{bg=red!20}
+% Change the color of the structural elements:
+%\setbeamercolor{structure}{fg=red}
+% Change the frame title text color:
+%\setbeamercolor{frametitle}{fg=blue}
+% Change the normal text color background:
+%\setbeamercolor{normal text}{bg=gray!10}
+% ... and you can of course change a lot more - see the beamer user manual.
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+% Or whatever. Note that the encoding and the font should match. If T1
+% does not look nice, try deleting the line with the fontenc.
+\usepackage{helvet}
+\usepackage{array} % needed for \arraybackslash
+\usepackage{graphicx}
+\usepackage{adjustbox} % for \adjincludegraphics
+
+
+% colored hyperlinks
+\newcommand{\chref}[2]{%
+  \href{#1}{{\usebeamercolor[bg]{Aalborg}#2}}%
+}
+
+\title[Cross Device Interaction between Mobile Devices and Large Displays]% optional, use only with long paper titles
+{Cross Device Interaction between Mobile Devices and Large Displays}
+
+\subtitle{}  % could also be a conference name
+
+\date{\today}
+
+\author[]{%
+  Bjarke M. Lauridsen  Ivan S. Penchev  Elias Ringhauge  Eric V. Ruder
+}
+% - Give the names in the same order as they appear in the paper.
+% - Use the \inst{?} command only if the authors have different
+%   affiliation. See the beamer manual for an example
+
+%\institute[
+%%  {\includegraphics[scale=0.2]{aau_segl}}\\ %insert a company, department or university logo
+%  Dept.\ of Electronic Systems\\
+%  Aalborg University\\
+%  Denmark
+%] % optional - is placed in the bottom of the sidebar on every slide
+%{% is placed on the bottom of the title page
+%  Department of Electronic Systems\\
+%  Aalborg University\\
+%  Denmark
+%  
+%  %there must be an empty line above this line - otherwise some unwanted space is added between the university and the country (I do not know why;( )
+%}
+
+% specify the logo in the top right/left of the slide
+\pgfdeclareimage[height=1cm]{mainlogo}{AAUgraphics/aau_logo_new} % placed in the upper left/right corner
+\logo{\pgfuseimage{mainlogo}}
+
+% specify a logo on the titlepage (you can specify additional logos an include them in 
+% institute command below
+\pgfdeclareimage[height=1.5cm]{titlepagelogo}{AAUgraphics/aau_logo_new} % placed on the title page
+%\pgfdeclareimage[height=1.5cm]{titlepagelogo2}{AAUgraphics/aau_logo_new} % placed on the title page
+\titlegraphic{% is placed on the bottom of the title page
+  \pgfuseimage{titlepagelogo}
+%  \hspace{1cm}\pgfuseimage{titlepagelogo2}
+}
+
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
+
+\begin{document}
+% the titlepage
+{\aauwavesbg
+\begin{frame}[plain,noframenumbering] % the plain option removes the sidebar and header from the title page
+  \titlepage
+\end{frame}}
+%%%%%%%%%%%%%%%%
+
+% TOC
+\begin{frame}{Table of Content}{}
+\tableofcontents
+\end{frame}
+%%%%%%%%%%%%%%%%
+
+\section{Overview}
+\subsection{Introduction}
+\begin{frame}{Overview}{Introduction}
+
+\end{frame}
+
+\subsection{The idea of Synchronous Gestures}
+\begin{frame}{Overview}{Synchronous Gestures}
+
+\end{frame}
+
+\begin{frame}{Overview}{Synchronous Gestures}
+
+\end{frame}
+
+%\begin{frame}{Overview}{Synchronous Gestures}
+%\includegraphics[width=0.5\textwidth]{images/bumpGraphs.jpg} 
+%\includegraphics[width=0.5\textwidth]{images/otherGraphs.jpg}
+%\end{frame}
+
+\begin{frame}{Overview}{Synchronous Gestures}
+
+\end{frame}
+
+\begin{frame}{Overview}{Synchronous Gestures}
+
+\end{frame}
+
+
+\section{Results presented in the paper}
+\begin{frame}{Results presented in the paper}{}
+
+\end{frame}
+
+\section{Related work}
+\subsection{Pick-and-Drop}
+\begin{frame}{Related Work}{Pick-and-Drop (UIST 1997)}
+
+\end{frame}
+
+\subsection{ConnecTables}
+\begin{frame}{Related Work}{ConnecTables (UIST 2001)}
+
+\end{frame}
+
+\subsection{The Triangles System}
+\begin{frame}{Related Work}{The Triangles System (CHI 1998)}
+
+\end{frame}
+
+\section{In relation to research}
+\begin{frame}{Importance in relation to the research (1)}{Synchronous Gestures in research}
+
+\end{frame}
+
+\begin{frame}{Importance in relation to the research (2)}{Synchronous Gestures in research}
+
+\end{frame}
+
+\begin{frame}{Importance in relation to the research (3)}{Synchronous Gestures in research}
+
+\end{frame}
+
+%\item Conductor: Enabling and Understanding Cross-Device Interaction (CHI 2014)
+%		\begin{itemize}
+%			\item Conductor is a prototype framework which serves as an exemplar for the construction of cross-device applications
+%			\item Interaction methods by which users can easily share information, chain tasks across devices, and manage sessions across devices.
+%		\end{itemize}
+
+\section{Semester project and synchrony}
+\begin{frame}{Synchronous Gestures in relation to our semester project}{}
+
+\end{frame}
+
+\section{Relevance and use in practice}
+\begin{frame}{Use in practice}{}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%
+
+{\aauwavesbg%
+\begin{frame}[plain,noframenumbering]%
+  \finalpage{Thank you! \\ \vspace{0.2cm} }
+\end{frame}}
+%%%%%%%%%%%%%%%%
+
+\end{document}
