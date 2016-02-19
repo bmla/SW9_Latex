@@ -1,0 +1,59 @@
+% !TEX root = ../literature.tex
+% Core argument from jeni: The paragraphs should never start with the authors name, actually it should insteead start with an introcution on what are the user going to expect to read in this section and get the important part up first.
+
+\subsection{Interacting with Public Displays}
+Rapid progression in the technology for displays and projections, led to considerable proliferation of large displays, thanks also to their capacity to promote activity and social awareness \cite{Huang:2003}, they moved out from research laboratories into public spaces. 
+However, according to Brignull and Rogers: \emph{``these displays typically present predetermined feeds offering no interactivity''} \cite{Brignull:2003}. 
+Ten years later Ojala et. al still support this thesis, that \emph{``to date, however, these displays are still used primarily as one-way commercial digital signs.''} \cite{Ojala:2012:MIP:2225044.2225065}. \\
+Nevertheless researchers continue to combat and change this trend, as such a body of research has formed around interactive public displays. A large part of this body presents unique  solutions for installations and devices for particular public settings with specific display technology \cite{Schieck:2012:AEM:2393132.2393141}.
+
+Boring and Baur address the problem of crafting interaction techniques that can be used in an array of settings while at the same time maintain some autonomy from the components of public space and different display technology. % what exactly does this mean? % seems ok
+%next part has to be merged with the framework explanation
+They have done so by developing a \emph{``[...] conceptual framework and technical implementation that rely solely on the public displays and users' mobile devices.''} \cite{Boring:2013}. By  leveraging cell phone cameras they have enabled from-a-distance interaction with any public-display technology.
+%the above barely explains the framework
+%Their framework allows for calculating the phone's distance and orientation to the display, if the display's physical size is known.
+%This is done by using "an algorithm... explain" FREAK which finds features
+%in an image. By filtering the image (why?) and locating matching features
+%from the phone and display image (revisit and explain better) it can calculate
+%a transformation matrix that when applied to the x and y cordinates of the 
+%phone image can be transformed into the coresponding x and y coordinates
+%of the display image.
+%Because this analysis is done on the image itself  it is sufficient ot have a
+%subregion of the display image shown on the phone.
+%(this  results in knowing the phones orientation and distance to  the screen)
+%
+%To correct for delay between the phone and the display, the display sync
+%its clock with the phone. The Display holds a queue of images with a
+%timestamp, when the phone sends an image with a timestamp it
+%%say that the images has a timestamp instead of pointig it out individuallt
+%is compared with the queue to select the image that comes closest to
+%the time from the phone.
+
+%rephrasing
+The framework allows for calculating the phone's distance and orientation to the display, if the display's physical size is known.
+This is done by locating features on the image from the public display and matching them with the image seen on the phone. The comparison is used to calculate a transformation matrix that maps the x and y coordinates from the phone to the corresponding x and y values on the display. Because the analysis is done on the image itself  it is sufficient to have a subregion of the display image shown on the phone.
+%gut,
+%syncing
+
+To support animated content, the display saves the screenshots in a queue with timestamps. The server that performs the calculation will synchronize its clock with the connected phone, so it can compare the timestamp from the phone with the queue and select the appropriate screenshot for feature point comparison.
+%Describe limitations
+
+By connecting several displays  to a server it is possible to support interaction between a user and several displays at the same time. However the amount of comparisons the server has to make also increases for each display that is added and thus decreases the detection speed and eventually harms the real-time interaction. The set of displays that an image has to be compared against can be reduced by using GPS (location), compass (direction) and accelerometer (orientation) data from the user's phone, to discard displays that isn't being pointed at.
+
+From-a-distance interaction using handheld devices is not the only way to interact with public displays. %no shit sherlock
+Jacucci et al. adopted touch as a base for their ``Worlds of Information'' system. Their touch solution was groundbreaking due to supporting multiple touch and users at the same time. Multi-touch can create a playful environment that engages users, fosters social learning, social experience and creates an attractive honey pot effect. However, Jacucci et al. states that: ``the challenge is to move beyond ephemeral interactions, driven by the playfulness of 
+the interface, and to encourage users to pay attention to the content also exploring more complex functionality''\cite{Jacucci:2010}.
+%\todo[inline]{Progress pointer}
+They \emph{``discuss how to design for and evaluate engagement in a public walk-up-and-use installation''} and state that a \emph{````walk-up-and-use'' system needs to be so self-explanatory that first-time or one-time users need no prior introduction or training''}\cite{Jacucci:2010}. %  rephase. Why do they want to descuss it, what do they suggest?
+%Also, low-cost motion detecting depth cameras permit gesture interactions with displays. 
+From their survey data they found that overall users responded positively to the system, but different groups of users either found it less interesting or felt less competent, indicating that supporting different levels of competence did not work perfectly. They conclude that the Walk-up-and-use display can greatly benefit from multiple touch support, but it was not all users who fully exploited this feature.
+
+Gang Ren and his team explain how they used input based on gestures to navigate 3D imagery and how such interaction techniques influence social dynamics around the display. 
+They point out that\emph{ ``for large public displays, gestural interaction can enhance the experience of not only the current user but also the people sharing that public space or activity.''} \cite{Ren:2013}.
+
+This observation led to value which could be exploited, as Lucero et. al. tried to do. 
+Focusing on the collaborative and cross-device side, Lucero et. al. created MobiComics with the purpose to \emph{``explore shared collocated interaction with mobile phones and public displays in indoor public place.''} \cite{Lucero:2012}. They discovered that most of their participants (36) were positive about using their personal devices to create a common interaction space, but some of them would only share their devices with people they knew. Additionally they found that half of their participants raised concerns for privacy in regards to taking pictures of strangers in the public space and 10 were also concerned about people being able to keep \emph{MobiComics} after the session.
+
+Valkanova et. al tried to focus on the discussion and natural user interaction side by creating MyPossition, a \emph{``public display in the form of a large projection, featuring an interactive poll visualisation.''} \cite{Valkanova:2014} which aimed to aggregate public opinions for local issues by utilizing voting with gestures. By allowing passersby to vote on civic topics the system is an example that succeeded in getting people to interact with the content rather than merely playfully exploring the interactive features. This was achieved by presenting people with personal traits of previous participants that we in the form of silhouettes or photographs, which led to observed considerable discussion and nudging among people, in particular beyond the interaction area in front of the screen, accountability of their vote positively impacted the overall enticement of onlookers to engage with the system and the ongoing topic.
+
+In this section we explored literature on interacting with public displays. Firstly we see a difference between large display and public display that almost every paper about public display includes the context of getting the users attention. This is often done by creating content that attracts people and tries to achieve a honeypot effect. another challenge  is the need to create immersion and focus on the content, as well as  working with the challenge of playfullness - to make the user do more than just play with the system. Finally we can see two clusters of research papers emerged, one on natural user interaction, and another on cross-device interaction.
